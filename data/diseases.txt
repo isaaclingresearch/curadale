@@ -80,7 +80,6 @@ Accessory deep peroneal nerve
 Accessory navicular bone
 Accessory pancreas
 Achalasia
-
 Achalasia-Addisonianism-Alacrimia syndrome
 Achalasia alacrimia syndrome
 Achalasia, familial esophageal
@@ -104,7 +103,6 @@ Acidemia, propionic
 Acitretine antenatal infection
 Ackerman syndrome
 Acne rosacea
-
 Acne vulgaris; often called acne
 Acoustic neuroma
 Acoustic schwannomas
@@ -118,7 +116,6 @@ Acral dysostosis dyserythropoiesis
 Acral renal mandibular syndrome
 Acro coxo mesomelic dysplasia
 Acrocallosal syndrome, Schinzel type
-
 Acrocephalopolydactyly
 Acrocephalosyndactyly Jackson Weiss type
 Acrocephaly
@@ -141,7 +138,6 @@ Acrofacial dysostosis Weyers type
 Acrofrontofacionasal dysostosis
 Acrokeratoelastoidosis of Costa
 Acromegaloid changes cutis verticis gyrata corneal
-
 Acromegaloid facial appearance syndrome
 Acromegaloid hypertrichosis syndrome
 Acromegaly
@@ -163,7 +159,6 @@ Acrorenal syndrome recessive
 Acrorenoocular syndrome
 Acrospiroma
 ACTH deficiency
-
 ACTH resistance
 Actinic keratosis
 Actinomycetales causes anal infection
@@ -171,7 +166,6 @@ Actinomycosis
 Activated protein C resistance
 Acutane embryopathy
 Acute anxiety
-
 Acute articular rheumatism
 Acute erythroblastic leukemia
 Acute febrile neutrophilic dermatosis
@@ -182,7 +176,6 @@ Acute lymphoblastic leukemia
 Acute lymphoblastic leukemia congenital sporadic aniridia
 Acute lymphocytic leukemia
 Acute megakaryoblastic leukemia
-
 Acute monoblastic leukemia
 Acute monocytic leukemia
 Acute mountain sickness
@@ -208,16 +201,13 @@ Acute pancreatitis
 Acute posterior multifocal placoid pigment epitheliopathy
 Acute promyelocytic leukemia
 Acute renal failure
-
 Acute respiratory distress syndrome
 Acute tubular necrosis
 Acyl-CoA dehydrogenase, medium chain, deficiency of
-
 Acyl-CoA dehydrogenase, short chain, deficiency of
 Acyl-CoA dehydrogenase, very long chain, deficiency of
 Acyl-CoA oxidase deficiency
 Adactylia unilateral dominant
-
 ADAM complex
 Adams–Nance syndrome
 Adams–Oliver syndrome
@@ -241,7 +231,6 @@ Adenylosuccinate lyase deficiency
 Adie syndrome
 Adiposis dolorosa, aka Dercum's disease
 Adolescent benign focal crisis
-
 Adrenal adenoma, familial
 Adrenal cancer
 Adrenal disorder
@@ -262,12 +251,10 @@ Adrenoleukodystrophy, autosomal, neonatal form
 Adrenoleukodystrophy, X-linked
 Adrenomyodystrophy
 Adult attention deficit hyperactivity disorder
-
 Adult-onset Still's disease
 Adult syndrome
 Advanced sleep phase syndrome
 Aerosinusitis
-
 Afibrinogenemia
 African trypanosomiasis
 Agammaglobulinemia
@@ -286,7 +273,6 @@ Agyria pachygyria polymicrogyria
 Agyria-pachygyria type 1
 Ahumada-Del Castillo syndrome
 Aicardi–Goutières syndromes
-
 Aicardi syndrome
 Aichmophobia
 AIDS
@@ -297,7 +283,6 @@ Akaba–Hayasaka syndrome
 Akesson syndrome
 Aksu–Stckhausen syndrome
 Al Awadi Teebi Farag syndrome
-
 Al Frayh Facharzt Haque syndrome
 Al Gazali Al Talabani syndrome
 Al Gazali Aziz Salem syndrome
@@ -306,7 +291,6 @@ Al Gazali Hirschsprung syndrome
 Al Gazali Khidr Prem Chandran syndrome
 Al Gazali Sabrinathan Nair syndrome
 Alagille–Watson syndrome (AWS)
-
 Alar nasal cartilages coloboma of telecanthus
 Albers–Schonberg disease
 Albinism
@@ -329,7 +313,6 @@ Alcohol withdrawal syndrome
 Alcoholic hepatitis
 Alcoholic liver cirrhosis
 Aldolase A deficiency
-
 Aldred syndrome
 Aleukemic leukemia cutis
 Alexander disease
@@ -344,7 +327,6 @@ Allergic autoimmune thyroiditis
 Allergic bronchopulmonary aspergillosis
 Allergic encephalomyelitis
 Aloi Tomasini Isaia syndrome
-
 Alopecia
 Alopecia anosmia deafness hypogonadism syndrome
 Alopecia areata
@@ -361,7 +343,6 @@ Alopecia totalis
 Alopecia universalis
 Alopecia universalis onychodystrophy vitiligo
 Alpers disease
-
 Alpha 1-antitrypsin deficiency
 Alpha-2 deficient collagen disease
 Alpha-ketoglutarate dehydrogenase deficiency
@@ -389,7 +370,6 @@ Alzheimer's disease
 Alzheimer's disease, early-onset
 Alzheimer's disease, familial
 Amaurosis
-
 Amaurosis congenita of Leber
 Amaurosis congenita of Leber, type 1
 Amaurosis congenita of Leber, type 2
@@ -422,7 +402,6 @@ Amnesia, source
 Amnesia, transient global
 Amyotrophic lateral sclerosis
 Anaphylaxis
-
 Anaplasmosis
 Anaplastic thyroid cancer
 Andersen's disease
@@ -440,7 +419,6 @@ Aneurysm
 Aneurysm, intracranial berry
 Aneurysm of sinus of Valsalva
 Angel shaped phalangoep
-
 Anger irritation syndrome[1]
 Angiofollicular lymph hyperplasia
 Angioimmunoblastic lymphadenopathy with dysproteinemia
@@ -461,7 +439,6 @@ Angiostrongyliasis
 Angiotensin renin aldosterone hypertension
 Anguillulosis
 Aniridia
-
 Aniridia absent patella
 Aniridia ataxia renal agenesis psychomotor retardation
 Aniridia cerebellar ataxia mental deficiency
@@ -483,11 +460,9 @@ Ankylosis
 Ankylosis of teeth
 Ankylostomiasis
 Annular constricting bands
-
 Annular pancreas
 Annuloaortic ectasia
 Anodontia
-
 Anomic aphasia
 Anonychia
 Anonychia ectrodactyly
@@ -516,12 +491,10 @@ Anorexia nervosa
 Anorexia nervosa binge-purge type
 Anorexia nervosa restricting type
 Anorgasmia
-
 Anosmia
 Anotia
 Anotia facial palsy cardiac defect
 Ansell–Bywaters–Elderking syndrome
-
 Anterior horn disease
 Anterior pituitary insufficiency, familial
 Anterograde amnesia
@@ -541,7 +514,6 @@ Antithrombin deficiency, congenital
 Antley–Bixler syndrome
 Anton syndrome
 Aorta-pulmonary artery fistula
-
 Aortic aneurysm
 Aortic arch anomaly peculiar facies mental retardation
 Aortic arch interruption
@@ -554,7 +526,6 @@ Aortic valve stenosis
 Aortic valves stenosis of the child
 Aortic window
 Apert like polydactyly syndrome
-
 Apert syndrome
 Aphalangia
 Aphalangia hemivertebrae
@@ -565,13 +536,11 @@ Aplasia
 Aplasia cutis autosomal recessive
 Aplasia cutis congenita
 Aplasia cutis congenita dominant
-
 Aplasia cutis congenita epibulbar dermoids
 Aplasia cutis congenita intestinal lymphangiectasia
 Aplasia cutis congenita of limbs recessive
 Aplasia cutis congenita recessive
 Aplasia cutis-myopia
-
 Aplasia/hypoplasia of pelvis, femur, fibula, and ulna with abnormal digits and nails
 Aplastic anemia
 Aplastic crisis
@@ -581,22 +550,17 @@ Apparent mineralocorticoid excess
 Appelt–Gerken–Lenz syndrome
 Appendicitis
 Apraxia
-
 Apraxia, Ideomotor
 Apraxia manual
 Apraxia, ocular motor, Cogan type
 Apudoma
 Aqueductal stenosis
-
 Aqueductal stenosis, X-linked
 Arachindonic acid, absence of
-
 Arachnodactyly
 Arachnodactyly ataxia cataract aminoaciduria mental retardation
-
 Arachnodactyly mental retardation dysmorphism
 Arachnoid cysts
-
 Arachnoiditis
 Arakawa's syndrome II
 Arbovirosis
@@ -616,24 +580,20 @@ Aromatase deficiency
 Aromatase excess syndrome
 Aromatic amino acid decarboxylase deficiency
 Arrhinia
-
 Arrhythmogenic right ventricular dysplasia
 Arroyo–Garcia–Cimadevilla syndrome
 Arrythmogenic right ventricular dysplasia, familial
 Arsenic poisoning
 Arterial calcification of infancy
-
 Arterial dysplasia
 Arterial tortuosity
 Arteriovenous malformation
 Arteritis
 Arthritis
-
 Arthritis, juvenile
 Arthritis short stature deafness
 Arthrogryposis
 Arthrogryposis due to muscular dystrophy
-
 Arthrogryposis ectodermal dysplasia other anomalies
 Arthrogryposis epileptic seizures migrational brain disorder
 Arthrogryposis IUGR thoracic dystrophy
@@ -653,7 +613,6 @@ Arthrogryposis renal dysfunction cholestasis syndrome
 Arthrogryposis spinal muscular atrophy
 Arylsulfatase A deficiency
 Asbestosis
-
 Ascariasis
 Ascher's syndrome
 Aseptic meningitis
@@ -674,7 +633,6 @@ Astrocytoma
 Astrovirus infection
 Asymmetric septal hypertrophy
 Ataxia
-
 Ataxia, Marie's
 Ataxia telangiectasia
 Ataxia telangiectasia variant V1
@@ -704,7 +662,6 @@ Attention deficit hyperactivity disorder
 Attenuated FAP
 Atypical lipodystrophy
 Auditory processing disorder
-
 Aughton syndrome
 Ausems Wittebol Post Hennekam syndrome
 Autism
@@ -727,7 +684,6 @@ Axial osteomalacia
 Axial osteosclerosis
 Ayazi syndrome
 Baber's syndrome
-
 Babesiosis
 Bacillus cereus infection
 Bacterial endocarditis
@@ -747,26 +703,22 @@ Balo disease
 Balo's concentric sclerosis
 Bamforth syndrome
 BANF acoustic neurinoma
-
 Bangstad syndrome
 Banki syndrome
 Bannayan–Zonana syndrome
 Banti's syndrome
 Bantu siderosis
 Baraitser–Brett–Piesowicz syndrome
-
 Baraitser–Rodeck–Garner syndrome
 Barber–Say syndrome
 Barbiturate dependence
 Barbiturate overdose
 Bardet–Biedl syndrome
 Bardet–Biedl syndrome, type 1
-
 Bardet–Biedl syndrome, type 2
 Bardet–Biedl syndrome, type 3
 Bardet–Biedl syndrome, type 4
 Bare lymphocyte syndrome 2
-
 Bare lymphocyte syndrome
 Baritosis
 Barnicoat–Baraitser syndrome
@@ -798,7 +750,6 @@ Baz Effect
 B-cell lymphomas
 Bd syndrome
 Beals syndrome
-
 Beardwell syndrome
 Bébé–Collodion syndrome
 Becker disease
@@ -813,7 +764,6 @@ Bejel
 Bellini–Chiumello–Rinoldi syndrome
 Bell's palsy
 Ben Ari Shuper Mimouni syndrome
-
 Benallegue–Lacete syndrome
 Bencze syndrome
 Benign astrocytoma
@@ -849,7 +799,6 @@ Beta-thalassemia
 Bethlem myopathy
 Bhaskar Jagannathan syndrome
 Bickel Fanconi glycogenosis
-
 Bicuspid aortic valve
 Bidirectional tachycardia
 Biemond syndrome
@@ -871,24 +820,19 @@ Biliary tract cancer
 Billard Toutain Maheut syndrome
 Billet Bear syndrome
 Bindewald–Ulmer–Muller syndrome
-
 Binswanger's disease
 Bipolar disorder
 Bipolar I disorder
-
 Bipolar II disorder
 Biotin deficiency
-
 Biotinidase deficiency 
 Bird headed dwarfism Montreal type
 Birdshot chorioretinopathy
 Birt–Hogg–Dubé syndrome
 Bixler–Christian–Gorlin syndrome
 Björnstad syndrome
-
 BK virus nephritis
 Black piedra
-
 Bladder and prostate diseases
 Bladder neoplasm
 Blamronesis
@@ -913,7 +857,6 @@ Blepharoptosis-myopia-ectopia lentis
 Blepharospasm
 Blethen–Wenick–Hawkins syndrome
 Blomstrand syndrome
-
 Blood coagulation disorders
 Blood platelet disorders
 Blood vessel disorder
@@ -923,7 +866,6 @@ Blue cone monochromatism
 Blue diaper syndrome
 Blue rubber bleb nevus
 BOD syndrome
-
 Boder syndrome
 Body dysmorphic disorder
 Boil
@@ -946,7 +888,6 @@ Book syndrome
 Boomerang dysplasia
 Booth– Haworth–Dilling syndrome
 Borderline personality disorder
-
 Borjeson syndrome
 Bork–Stender–Schmidt syndrome
 Borreliosis
@@ -966,15 +907,12 @@ Bowing congenital short bones
 Bowing of long bones congenital
 Boylan–Dew–Greco syndrome
 Brachioskeletogenital syndrome
-
 Brachman-de Lange syndrome
 Brachycephalofrontonasal dysplasia
-
 Brachycephaly deafness cataract mental retardation
 Brachydactylous dwarfism Mseleni type
 Brachydactyly
 Brachydactyly absence of distal phalanges
-
 Brachydactyly anonychia
 Brachydactyly clinodactyly
 Brachydactyly dwarfism mental retardation
@@ -988,7 +926,6 @@ Brachydactyly scoliosis carpal fusion
 Brachydactyly small stature face anomalies
 Brachydactyly Smorgasbord type
 Brachydactyly tibial hypoplasia
-
 Brachydactyly type A1
 Brachydactyly type A2
 Brachydactyly type A3
@@ -1001,7 +938,6 @@ Brachydactyly type D
 Brachydactyly type E
 Brachydactyly types B and E combined
 Brachymesomelia renal syndrome
-
 Brachymesophalangy 2 and 5
 Brachymesophalangy mesomelic short limbs osseous anomalies
 Brachymesophalangy type 2
@@ -1011,7 +947,6 @@ Brachyolmia recessive Hobaek type
 Brachyolmia
 Brachytelephalangy characteristic facies Kallmann
 Braddock–Carey syndrome
-
 Braddock–Jones–Superneau syndrome
 Bradykinesia
 Brain cavernous angioma
@@ -1026,13 +961,11 @@ Brazilian hemorrhagic fever
 Breast cancer
 Breast cancer, familial
 Breast and ovarian cancer
-
 Brief psychotic disorder
 Bright's disease
 Brittle bone disease
 Brittle bone syndrome lethal type
 Brittle cornea syndrome
-
 Broad beta disease
 Broad-betalipoproteinemia
 Bromidrosiphobia
@@ -1047,14 +980,12 @@ Bronchopulmonary dysplasia
 Brown syndrome
 Brown-Séquard syndrome
 Brucellosis
-
 Bruck syndrome
 Brugada syndrome
 Brunoni syndrome
 Bruton type agammaglobulinemia
 Bruyn Scheltens syndrome
 Bubonic plague
-
 Budd–Chiari syndrome
 Buerger's disease
 Bulbospinal amyotrophy, X-linked
@@ -1075,12 +1006,9 @@ Bustos–Simosa–Pinto–Cisternas syndrome
 Buttiens–Fryns syndrome
 Butyrylcholinesterase deficiency
 Byssinosis
-
 C syndrome
-
 C1 esterase deficiency (angioedema)
 Cacchi–Ricci disease
-
 CACH syndrome
 Café au lait spots syndrome
 Caffeine-induced sleep disorder
@@ -1096,7 +1024,6 @@ Calpainopathy
 Calvarial doughnut lesions-bone fragility syndrome
 Calvarial hyperostosis
 Camera–Marugo–Cohen syndrome
-
 Camfak syndrome
 Campomelia Cumming type
 Camptobrachydactyly
@@ -1122,13 +1049,11 @@ Cantu–Sanchez–Corona–Fragoso syndrome
 Cantu–Sanchez–Corona–Garcia syndrome
 Cantu–Sanchez–Corona–Hernandes syndrome
 Capillary leak syndrome
-
 Capillary leak syndrome with monoclonal gammopathy
 Capillary venous leptomeningeal angiomatosis
 Caplan's syndrome
 CAPOS syndrome
 Caratolo–Cilio–Pessagno syndrome
-
 Carbamoyl phosphate synthetase deficiency
 Carbamoyl phosphate synthetase I deficiency
 Carbohydrate deficient glycoprotein syndrome
@@ -1140,7 +1065,6 @@ Carcinoma, squamous cell
 Carcinoma, squamous cell of head and neck
 Carcinophobia
 Cardiac amyloidosis
-
 Cardiac and laterality defects
 Cardiac arrest
 Cardiac conduction defect, familial
@@ -1150,7 +1074,6 @@ Cardiac malformation
 Cardiac tamponade
 Cardiac valvular dysplasia, X-linked
 Cardioauditory syndrome
-
 Cardioauditory syndrome of Sanchez-Cascos
 Cardiofacial syndrome short limbs
 Cardiofaciocutaneous syndrome
@@ -1174,7 +1097,6 @@ Cardioskeletal myopathy-neutropenia
 Cardiospasm
 Cardiospondylocarpofacial syndrome
 Caregiver syndrome
-
 Carey–Fineman–Ziter syndrome
 Carnevale–Canun–Mendoza syndrome
 Carnevale–Hernandez–Castillo syndrome
@@ -1182,10 +1104,8 @@ Carnevale–Krajewska–Fischetto syndrome
 Carney syndrome
 Carnitine palmitoyl transferase deficiency
 Carnitine palmitoyltransferase I deficiency
-
 Carnitine palmitoyltransferase II deficiency
 Carnitine transporter deficiency
-
 Carnitine-acylcarnitine translocase deficiency
 Carnosinase deficiency
 Carnosinemia
@@ -1200,20 +1120,16 @@ Carpo tarsal osteolysis recessive
 Carpotarsal osteochondromatosis
 Carrington syndrome
 Cartilage hair hypoplasia like syndrome
-
 Cartilage–hair hypoplasia
 Cartilaginous neoplasms
 Cartwright–Nelson–Fryns syndrome
 Cassia–Stocco–Dos Santos syndrome
-
 Castleman's disease
 Castro–Gago–Pombo–Novo syndrome
 Cat-cry syndrome – see Cri du chat syndrome
-
 Cat-eye syndrome aka Schmid–Fraccaro syndrome
 Cat-scratch disease
 Cataract
-
 Cataract, congenital ichthyosis
 Cataract aberrant oral frenula growth retardation
 Cataract anterior polar dominant
@@ -1235,11 +1151,9 @@ Cataract, congenital, with microcornea or slight microphthalmia
 Cataract, total congenital
 Cataract-glaucoma
 CATCH 22 syndrome
-
 Catecholamine hypertension
 Catel–Manzke syndrome
 Caudal appendage deafness
-
 Caudal duplication
 Caudal regression syndrome
 Causalgia
@@ -1248,7 +1162,6 @@ Cavernous lymphangioma
 Cavernous sinus thrombosis
 Cayler syndrome
 CCA syndrome
-
 Ccge syndrome
 CCHS
 CDG syndrome
@@ -1260,7 +1173,6 @@ CDG syndrome type 3
 CDG syndrome type 4
 CDK4 linked melanoma
 Cecato De lima Pinheiro syndrome
-
 Celiac disease epilepsy occipital calcifications
 Celiac sprue
 Cenani–Lenz syndactylism
@@ -1275,11 +1187,9 @@ Centronuclear myopathy
 Centrotemporal epilepsy
 Cephalopolysyndactyly
 Ceramidase deficiency
-
 Ceramide trihexosidosis
 Ceraunophobia
 Cerebellar agenesis
-
 Cerebellar ataxia areflexia pes cavus optic atrophy
 Cerebellar ataxia ectodermal dysplasia
 Cerebellar ataxia infantile with progressive external ophthalmoplegia
@@ -1294,7 +1204,6 @@ Cerebelloolivary atrophy
 Cerebelloparenchymal disorder 3
 Cerebellum agenesis hydrocephaly
 Cerebral amyloid angiopathy
-
 Cerebral amyloid angiopathy, familial
 Cerebral aneurysm
 Cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy
@@ -1320,7 +1229,6 @@ Cerebro-costo-mandibular syndrome
 Cerebro-oculo-facio-skeletal syndrome
 Cerebroretinal vasculopathy
 Ceroid lipofuscinois, neuronal
-
 Ceroid lipofuscinois, neuronal 1, infantile
 Ceroid lipofuscinois, neuronal 2, late infantile
 Ceroid lipofuscinois, neuronal 3, juvenile
@@ -1335,7 +1243,6 @@ Cervical spinal stenosis
 Cervical vertebral fusion
 Cervicooculoacoustic syndrome
 Chagas disease
-
 Chalazion
 Chanarin disease
 Chanarin–Dorfman syndrome ichthyosis
@@ -1347,7 +1254,6 @@ Chaotic atrial tachycardia
 Char syndrome
 Charcot disease
 Charcot–Marie–Tooth disease
-
 Charcot–Marie–Tooth disease deafness dominant type
 Charcot–Marie–Tooth disease deafness mental retardation
 Charcot–Marie–Tooth disease deafness recessive type
@@ -1371,12 +1277,10 @@ Charcot–Marie–Tooth disease, X-linked type 2, recessive
 Charcot–Marie–Tooth disease, X-linked type 3, recessive
 Charcot–Marie–Tooth peroneal muscular atrophy, X-linked
 CHARGE syndrome
-
 Charles' disease
 Charlie M syndrome
 Chavany–Brunhes syndrome
 Chediak–Higashi syndrome
-
 Cheilitis glandularis
 Chemke–Oliver–Mallek syndrome
 Chemodectoma
@@ -1384,7 +1288,6 @@ Chemophobia
 Chen-Kung Ho–Kaufman–Mcalister syndrome
 Cherubism
 Chiari type 1 malformation
-
 Chiari–Frommel syndrome
 Chickenpox
 Chikungunya
@@ -1403,7 +1306,6 @@ Chlamydia pneumoniae
 Chlamydia trachomatis
 Chlamydial and gonococcal conjunctivitis
 Choanal atresia deafness cardiac defects dysmorphia
-
 Cholangiocarcinoma
 Cholangitis, primary sclerosing
 Cholecystitis
@@ -1422,7 +1324,6 @@ Cholesterol ester storage disease
 Cholesterol esterification disorder
 Cholesterol pneumonia
 Chondroblastoma
-
 Chondrocalcinosis
 Chondrocalcinosis familial articular
 Chondrodysplasia lethal recessive
@@ -1442,7 +1343,6 @@ Chondromatosis (benign)
 Chondrosarcoma (malignant)
 Chondrysplasia punctata, humero-metacarpal type
 Chordoma
-
 Chorea
 Chorea acanthocytosis
 Chorea familial benign
@@ -1461,18 +1361,15 @@ Choroiditis
 Choroiditis, serpiginous
 Choroido cerebral calcification syndrome infantile
 Christian–Demyer–Franken syndrome
-
 Christian–Johnson–Angenieta syndrome
 Christian syndrome
 Christianson–Fourie syndrome
 Christmas disease
 Chromhidrosis
 Chromomycosis
-
 Chromophobe renal carcinoma
 Chromosomal triplication
 Chromosome 1 ring
-
 Chromosome 1, 1p36 deletion syndrome
 Chromosome 1, deletion q21 q25
 Chromosome 1, duplication 1p21 p32
@@ -1489,7 +1386,6 @@ Chromosome 1, trisomy 1q32 qter
 Chromosome 1, trisomy 1q42 qter
 Chromosome 1, uniparental disomy 1q12 q21
 Chromosome 10 ring
-
 Chromosome 10, distal trisomy 10q
 Chromosome 10, monosomy 10p
 Chromosome 10, monosomy 10q
@@ -1510,7 +1406,6 @@ Chromosome 12, trisomy 12q
 Chromosome 12p deletion
 Chromosome 12p partial deletion
 Chromosome 13 duplication
-
 Chromosome 13 ring
 Chromosome 13, partial monosomy 13q
 Chromosome 13p duplication
@@ -1532,7 +1427,6 @@ Chromosome 15q, partial deletion
 Chromosome 15q, tetrasomy
 Chromosome 15q, trisomy
 Chromosome 16, trisomy 16p
-
 Chromosome 16, trisomy 16q
 Chromosome 16, trisomy
 Chromosome 16, uniparental disomy
@@ -1556,7 +1450,6 @@ Chromosome 19 ring
 Chromosome 19, trisomy 19q
 Chromosome 1q, duplication 1q12 q21
 Chromosome 2, monosomy 2p22
-
 Chromosome 2, monosomy 2pter p24
 Chromosome 2, monosomy 2q
 Chromosome 2, monosomy 2q24
@@ -1567,7 +1460,6 @@ Chromosome 2, trisomy 2pter p24
 Chromosome 2, trisomy 2q
 Chromosome 2, trisomy 2q37
 Chromosome 20 ring
-
 Chromosome 20, deletion 20p
 Chromosome 20, duplication 20p
 Chromosome 20, trisomy
@@ -1583,7 +1475,6 @@ Chromosome 22, monosome mosaic
 Chromosome 22, trisomy q11 q13
 Chromosome 22, trisomy
 Chromosome 3 duplication syndrome
-
 Chromosome 3, monosomy 3p
 Chromosome 3, monosomy 3p14 p11
 Chromosome 3, monosomy 3p2
@@ -1597,7 +1488,6 @@ Chromosome 3, trisomy 3q
 Chromosome 3, trisomy 3q13 2 q25
 Chromosome 3, Trisomy 3q2
 Chromosome 4 ring
-
 Chromosome 4 short arm deletion
 Chromosome 4, monosomy 4p14 p16
 Chromosome 4, monosomy 4q
@@ -1614,7 +1504,6 @@ Chromosome 5, trisomy 5pter p13 3
 Chromosome 5, trisomy 5q
 Chromosome 5, uniparental disomy
 Chromosome 6 ring
-
 Chromosome 6, deletion 6q13 q15
 Chromosome 6, monosomy 6p23
 Chromosome 6, monosomy 6q
@@ -1634,7 +1523,6 @@ Chromosome 7, trisomy 7p13 p12 2
 Chromosome 7, trisomy 7q
 Chromosome 7, trisomy mosaic
 Chromosome 8 deletion
-
 Chromosome 8 ring
 Chromosome 8, monosomy 8p
 Chromosome 8, monosomy 8p2
@@ -1658,7 +1546,6 @@ Chromosome 9, trisomy mosaic
 Chromosome 9, trisomy
 Chromosomes 1 and 2, monosomy 2q duplication 1p
 Chronic berylliosis
-
 Chronic bronchitis
 Chronic demyelinizing neuropathy with IgM monoclonal
 Chronic erosive gastritis
@@ -1681,13 +1568,11 @@ Chronic renal failure
 Chronic spasmodic dysphonia
 Chronic, infantile, neurological, cutaneous, articular syndrome
 Chudley–Lowry–Hoar syndrome
-
 Chudley–Rozdilsky syndrome
 Chudley–Mccullough syndrome
 Churg–Strauss syndrome
 Chylous ascites
 Cicatricial pemphigoid
-
 Ciguatera fish poisoning
 Ciliary discoordination, due to random ciliary orientation
 Ciliary dyskinesia, due to transposition of ciliary microtubules
@@ -1698,10 +1583,8 @@ Circumscribed cutaneous aplasia of the vertex
 Circumscribed disseminated keratosis Jadassohn–Lew type
 Citrullinemia
 Clarkson disease
-
 Clayton–Smith–Donnai syndrome
 Cleft hand absent tibia
-
 Cleft lip
 Cleft lip and palate malrotation cardiopathy
 Cleft lip and/or palate with mucous cysts of lower
@@ -1717,7 +1600,6 @@ Cleft lip palate-tetraphocomelia
 Cleft lip with or without cleft palate
 Cleft lower lip cleft lateral canthi chorioretinal
 Cleft palate
-
 Cleft palate cardiac defect ectrodactyly
 Cleft palate colobomata radial synostosis deafness
 Cleft palate heart disease polydactyly absent tibia
@@ -1729,10 +1611,8 @@ Cleft tongue syndrome
 Cleft upper lip median cutaneous polyps
 Clefting ectropion conical teeth
 Cleidocranial dysplasia
-
 Cleidocranial dysplasia micrognathia absent thumbs
 Cloacal exstrophy
-
 Clonal hypereosinophilia
 Clouston syndrome
 Cloverleaf skull bone dysplasia
@@ -1741,7 +1621,6 @@ Clubfoot
 Cluster headache
 CMV antenatal infection
 COACH syndrome
-
 Coal workers' pneumoconiosis
 Coarctation of aorta dominant
 Coarse face hypotonia constipation
@@ -1764,14 +1643,12 @@ Coffin–Lowry syndrome
 Coffin–Siris syndrome
 COFS syndrome
 Cogan–Reese syndrome
-
 Cogan syndrome
 Cohen-Gibson syndrome
 Cohen–Hayden syndrome
 Cohen–Lockood–Wyborney syndrome
 Cohen syndrome
 Colavita–Kozlowski syndrome
-
 Cold abscess
 Cold agglutination syndrome
 Cold agglutinin disease
@@ -1787,7 +1664,6 @@ Collaural fistula
 Collins–Pope syndrome
 Collins–Sakati syndrome
 Coloboma chorioretinal cerebellar vermis aplasia
-
 Coloboma hair abnormality
 Coloboma of choroid and retina
 Coloboma of eye lens
@@ -1810,7 +1686,6 @@ Color blindness
 Colorado tick fever
 Colver–Steer–Godman syndrome
 Combarros–Calleja–Leno syndrome
-
 Combined hyperlipidemia, familial
 Combined malonic and methylmalonic aciduria
 Common cold
@@ -1827,7 +1702,6 @@ Complex 4 mitochondrial respiratory chain deficiency
 Complex 5 mitochondrial respiratory chain deficiency
 Complex regional pain syndrome
 Conduct disorder
-
 Conductive deafness malformed external ear
 Conductive hearing loss
 Condyloma acuminatum
@@ -1836,7 +1710,6 @@ Cone dystrophy
 Cone rod dystrophy amelogenesis imperfecta
 Cone-rod dystrophy
 Congenital absence of the uterus and vagina
-
 Congenital adrenal hyperplasia
 Congenital adrenal hyperplasia due to 11β-hydroxylase deficiency
 Congenital adrenal hyperplasia due to 17 alpha-hydroxylase deficiency
@@ -1855,7 +1728,6 @@ Congenital benign spinal muscular atrophy dominant
 Congenital brain disorder
 Congenital bronchobiliary fistula
 Congenital cardiovascular disorder
-
 Congenital cardiovascular malformations
 Congenital cardiovascular shunt
 Congenital central hypoventilation syndrome
@@ -1877,7 +1749,6 @@ Congenital gastrointestinal disorder
 Congenital generalized fibromatosis
 Congenital giant megaureter
 Congenital heart block
-
 Congenital heart disease ptosis hypodontia craniostosis
 Congenital heart disease radio ulnar synostosis mental retardation
 Congenital heart disorder
@@ -1898,7 +1769,6 @@ Congenital kidney disorder
 Congenital limb deficiency
 Congenital lobar emphysema
 Congenital megacolon
-
 Congenital megaloureter
 Congenital mesoblastic nephroma
 Congenital microvillous atrophy
@@ -1921,17 +1791,14 @@ Congenital stenosis of cervical medullary canal
 Congenital sucrose isomaltose malabsorption
 Congenital syphilis
 Congenital toxoplasmosis
-
 Congenital unilateral pulmonary hypoplasia
 Congenital vagal hyperreflexivity
 Congenital varicella syndrome
 Congestive heart failure
 Conjunctivitis ligneous
-
 Conjunctivitis with pseudomembrane
 Conjunctivitis
 Connective tissue dysplasia Spellacy type
-
 Connexin 26 anomaly
 Conn's syndrome
 Conotruncal heart malformations
@@ -1940,11 +1807,9 @@ Constitutional growth delay
 Constrictive bronchiolitis
 Contact dermatitis
 Contact dermatitis, allergic
-
 Contact dermatitis, irritant
 Contact dermatitis, photocontact
 Continuous muscle fiber activity hereditary
-
 Continuous spike-wave during slow sleep syndrome
 Contractural arachnodactyly
 Contractures ectodermal dysplasia cleft lip palate
@@ -1954,17 +1819,14 @@ Conversion disorder
 Convulsions benign familial neonatal dominant form
 Convulsions benign familial neonatal
 Cooks syndrome
-
 Cooley's anemia
 Copper deficiency familial benign
 Copper transport disease
 Coproporhyria
 Cor biloculare
-
 Cor pulmonale
 Cor triatriatum
 Cormier–Rustin–Munnich syndrome
-
 Corneal anesthesia deafness mental retardation
 Corneal cerebellar syndrome
 Corneal crystals myopathy neuropathy
@@ -1979,7 +1841,6 @@ Coronary artery aneurysm
 Coronary heart disease
 Coronavirus disease 2019
 Corpus callosum agenesis
-
 Corpus callosum dysgenesis
 Corsello–Opitz syndrome
 Cortada–Koussef–Matsumoto syndrome
@@ -1990,7 +1851,6 @@ Cortical dysplasia
 Cortical hyperostosis syndactyly
 Corticobasal degeneration
 Costello syndrome
-
 Costochondritis (otherwise Costal chondritis)
 Costocoracoid ligament congenitally short
 Cote–Adamopoulos–Pantelakis syndrome
@@ -2002,15 +1862,12 @@ Cowden's disease
 Cowpox
 Coxoauricular syndrome
 Cramer–Niederdellmann syndrome
-
 Cramp
 Cramp fasciculation syndrome
 Crandall syndrome
-
 Crane–Heise syndrome
 Cranio osteoarthropathy
 Cranioacrofacial syndrome
-
 Craniodiaphyseal dysplasia
 Craniodigital syndrome mental retardation
 Cranioectodermal dysplasia
@@ -2028,7 +1885,6 @@ Craniometaphyseal dysplasia dominant type
 Craniometaphyseal dysplasia recessive type
 Craniomicromelic syndrome
 Craniostenosis cataract
-
 Craniostenosis with congenital heart disease mental retardation
 Craniostenosis
 Craniosynostosis alopecia brain defect
@@ -2051,7 +1907,6 @@ Craniosynostosis
 Craniotelencephalic dysplasia
 Crawfurd syndrome
 Creatine deficiency
-
 Creeping disease
 CREST syndrome (Calcinosis Raynaud's Esophagus Sclerodactyly Telangiectasia)
 Cretinism athyreotic
@@ -2073,7 +1928,6 @@ Crouzon syndrome
 Crouzonodermoskeletal syndrome
 Crow–Fukase syndrome
 Cryoglobulinemia
-
 Cryophobia
 Cryptococcosis
 Cryptogenic organized pneumopathy
@@ -2085,7 +1939,6 @@ Cryptorchidism arachnodactyly mental retardation
 Cryroglobulinemia
 Crystal deposit disease
 Culler–Jones syndrome
-
 Curly hair ankyloblepharon nail dysplasia syndrome
 Currarino triad
 Curry–Hall syndrome
@@ -2096,7 +1949,6 @@ Cushing syndrome, familial
 Cushing's symphalangism
 Cushing's syndrome
 Cutaneous anthrax
-
 Cutaneous larva migrans
 Cutaneous lupus erythematosus
 Cutaneous photosensitivity colitis lethal
@@ -2106,7 +1958,6 @@ Cutis Gyrata syndrome of Beare and Stevenson
 Cutis gyratum acanthosis nigricans craniosynostosis
 Cutis laxa
 Cutis laxa, recessive
-
 Cutis laxa corneal clouding mental retardation
 Cutis laxa osteoporosis
 Cutis laxa with joint laxity and retarded development
@@ -2114,13 +1965,11 @@ Cutis laxa, dominant type
 Cutis laxa, recessive type 1
 Cutis laxa, recessive type 2
 Cutis marmorata telangiectatica congenita
-
 Cutis verticis gyrata mental deficiency
 Cutis verticis gyrata thyroid aplasia mental retardation
 Cutis verticis gyrata
 Cutler Bass Romshe syndrome
 Cyanide poisoning
-
 Cyclic neutropenia
 Cyclic vomiting syndrome
 Cyclosporosis
@@ -2147,7 +1996,6 @@ Czeizel–Losonci syndrome
 Czeizel syndrome
 D ercole syndrome
 Daentl Towsend Siegel syndrome
-
 Dahlberg Borer Newcomer syndrome
 Daish–Hardman–Lamont syndrome
 Dandy–Walker facial hemangioma
@@ -2162,13 +2010,11 @@ Davenport–Donlan syndrome
 DAVID syndrome
 Davis–Lafer syndrome
 De Barsy syndrome
-
 De Hauwere–Leroy–Adriaenssens syndrome
 DeSanctis–Cacchione syndrome
 Deaf blind hypopigmentation
 Deafness
 Deafness conductive ptosis skeletal anomalies
-
 Deafness conductive stapedial ear malformation facial palsy
 Deafness congenital onychodystrophy recessive
 Deafness craniofacial syndrome
@@ -2190,7 +2036,6 @@ Deafness progressive cataract autosomal dominant
 Deafness skeletal dysplasia lip granuloma
 Deafness symphalangism
 Deafness vitiligo achalasia
-
 Deafness white hair contractures papillomas
 Deafness X-linked, DFN3
 Deafness, autosomal dominant nonsyndromic sensorineural
@@ -2199,7 +2044,6 @@ Deafness, neurosensory nonsyndromic recessive, DFN
 Deafness, X linked, DFN
 Deal–Barratt–Dillon syndrome
 Deciduous skin
-
 Decompensated phoria
 Decompression sickness
 Deep vein thrombosis
@@ -2224,7 +2068,6 @@ Delleman–Oorthuys syndrome
 Delta-1-pyrroline-5-carboxylate dehydrogenase deficiency
 Delta-sarcoglycanopathy
 Dementia
-
 Dementia, alcohol
 Dementia progressive lipomembranous polycysta
 Dementia, familial British
@@ -2254,7 +2097,6 @@ Depersonalization derealization disorder
 Depression (clinical)
 Depressive personality disorder
 Der(22)t(8;22)(q24.1;q11.1) syndrome
-
 Dercum's disease aka Adiposis dolorosa
 Der Kaloustian–Jarudi–Khoury syndrome
 Der Kaloustian–Mcintosh–Silver syndrome
@@ -2285,25 +2127,20 @@ Devic syndrome
 Devriendt–Legius–Fryns syndrome
 Devriendt–Vandenberghe–Fryns syndrome
 Dexamethasone sensitive hypertension
-
 Dextrocardia with situs inversus
 Dextrocardia
 Dextrocardia-bronchiectasis-sinusitis
 D-glycerate dehydrogenase deficiency
-
 D-Glyceric acidemia
 Diabetes hypogonadism deafness mental retardation
-
 Diabetes insipidus
 Diabetes insipidus, diabetes mellitus, optic atrophy
-
 Diabetes insipidus, nephrogenic type 1
 Diabetes insipidus, nephrogenic type 2
 Diabetes insipidus, nephrogenic type 3
 Diabetes insipidus, nephrogenic, dominant type
 Diabetes insipidus, nephrogenic, recessive type
 Diabetes mellitus
-
 Diabetes mellitus type 1
 Diabetes mellitus type 2
 Diabetes persistent Müllerian ducts
@@ -2314,7 +2151,6 @@ Diabetic nephropathy
 Diabetic neuropathy
 Diamond–Blackfan anemia
 Diaphragmatic agenesia
-
 Diaphragmatic agenesis radial aplasia omphalocele
 Diaphragmatic defect limb deficiency skull defect
 Diaphragmatic hernia abnormal face limb
@@ -2326,7 +2162,6 @@ Diarrhea polyendocrinopathy infections X linked
 Diastematomyelia
 Diastrophic dysplasia
 Dibasic aminoaciduria 2
-
 Dibasic aminoaciduria type 1
 Dicarboxylicaminoaciduria
 Die Smulders–Droog–Van Dijk syndrome
@@ -2351,7 +2186,6 @@ Dimitri–Sturge–Weber syndrome
 Dincsoy–Salih–Patel syndrome
 Dinno–Shearer–Weisskopf syndrome
 Diomedi–Bernardi–Placidi syndrome
-
 Dionisi–Vici–Sabetta–Gambarara syndrome
 Diphallia
 Diphallus rachischisis imperforate anus
@@ -2361,7 +2195,6 @@ Diplopia
 Diplopia, binocular
 Diplopia, monocular
 Disaccharide intolerance iii
-
 Discoid lupus erythematosus
 Disinhibited attachment disorder
 Dislocation of the hip dysmorphism
@@ -2384,7 +2217,6 @@ Distomatosis
 Diverticulitis
 Diverticulosis
 Dk phocomelia syndrome
-
 D-minus hemolytic uremic syndrome
 Dobrow syndrome
 Dominant cleft palate
@@ -2405,7 +2237,6 @@ Down syndrome
 Doxorubicin-induced cardiomyopathy
 Doyne honeycomb retinal dystrophy
 D-plus hemolytic uremic syndrome
-
 Drachtman–Weinblatt–Sitarz syndrome
 Dracunculiasis
 Duane anomaly mental retardation
@@ -2427,7 +2258,6 @@ Dupuytren's contracture
 Dust-induced lung disease
 Dwarfism
 Dwarfism bluish sclerae
-
 Dwarfism deafness retinitis pigmentosa
 Dwarfism lethal type advanced bone age
 Dwarfism mental retardation eye abnormality
@@ -2438,10 +2268,8 @@ Dwarfism tall vertebrae
 Dwarfism thanatophoric
 Dwarfism thin bones multiple fractures
 Dyggve–Melchior–Clausen syndrome
-
 Dykes–Markes–Harper syndrome
 Dysautonomia
-
 Dysbarism
 Dyscalculia
 Dyschondrosteosis nephritis
@@ -2450,11 +2278,9 @@ Dysencephalia splachnocystica or Meckel–Gruber
 Dysequilibrium syndrome
 Dyserythropoietic anemia, congenital
 Dyserythropoietic anemia, congenital type 1
-
 Dyserythropoietic anemia, congenital type 2
 Dyserythropoietic anemia, congenital type 3
 Dysexecutive syndrome
-
 Dysferlinopathy
 Dysfibrinogenemia, familial
 Dysfibrinogenemia, acquired
@@ -2467,7 +2293,6 @@ Dyskeratosis follicularis
 Dyskinesia, drug induced
 Dyskinesia
 Dysmorphism abnormal vocalization mental retardation
-
 Dysmorphism cleft palate loose skin
 Dysmorphophobia
 Dysmyelination
@@ -2488,7 +2313,6 @@ Dysraphism cleft lip palate limb reduction defects
 Dyssegmental dysplasia glaucoma
 Dyssegmental dysplasia Silverman–Handmaker type
 Dysthymia
-
 Dystonia musculorum deformans
 Dystonia musculorum deformans type 1
 Dystonia musculorum deformans type 2
@@ -2500,7 +2324,6 @@ Dystrophinopathy
 Ebola virus disease
 Echovirus infection
 Ectodermal dysplasia absent dermatoglyphics
-
 Ectodermal dysplasia adrenal cyst
 Ectodermal dysplasia alopecia preaxial polydactyly
 Ectodermal dysplasia anhidrotic
@@ -2522,14 +2345,12 @@ Ectodermal dysplasia, hypohidrotic, autosomal recessive
 Ectodermal dysplasia
 Ectodermic dysplasia anhidrotic cleft lip
 Ectopia cordis
-
 Ectopia lentis
 Ectopia pupillae
 Ectopic coarctation
 Ectopic ossification familial type
 Ectopic pregnancy
 Ectrodactyly cardiopathy dysmorphism
-
 Ectrodactyly cleft palate syndrome
 Ectrodactyly diaphragmatic hernia corpus callosum
 Ectrodactyly dominant form
@@ -2540,7 +2361,6 @@ Ectrodactyly–ectodermal dysplasia–cleft syndrome
 Ectropion inferior cleft lip and or palate
 Eczema
 Edinburgh malformation syndrome
-
 Edwards–Patton–Dilly syndrome
 Edwards syndrome
 Eec syndrome without cleft lip palate
@@ -2549,14 +2369,12 @@ Eem syndrome
 Egg hypersensitivity
 Egg shaped pupils
 Ehlers–Danlos syndrome
-
 Ehrlichiosis
 Eijkman's syndrome
 Eiken syndrome
 Eisenmenger syndrome
 Ekbom syndrome
 Elattoproteus in context of NF
-
 Elective mutism
 Ectrodactyly–ectodermal dysplasia–cleft syndrome
 Electron transfer flavoprotein, deficiency of
@@ -2577,7 +2395,6 @@ Emphysema
 Emphysema-penoscrotal web-deafness-mental retardation
 Empty sella syndrome
 Enamel hypoplasia cataract hydrocephaly
-
 Encephalitis
 Encephalitis lethargica
 Encephalocraniocutaneous lipomatosis
@@ -2617,7 +2434,6 @@ Enchondromatosis dwarfism deafness
 Enchondromatosis dwarfism calfness
 Encopresis
 Endocardial fibroelastosis
-
 Endocarditis, infective
 Endocarditis
 Endocrinopathy
@@ -2639,12 +2455,10 @@ Enteropathica
 Enterovirus antenatal infection
 Entomophthoramycosis
 Enuresis
-
 Envenomization by bothrops lanceolatus
 Envenomization by the Martinique lancehead viper
 Environment associated hypertension
 Eosinophilia
-
 Eosinophilia–myalgia syndrome
 Eosinophilic cryptitis
 Eosinophilic cystitis
@@ -2657,18 +2471,14 @@ Eosinophilic myocarditis
 Eosinophilic synovitis
 Eosophobia
 Ependymoblastoma
-
 Ependymoma
 Epicondylitis
 Epidemic encephalitis
-
 Epidemic encephalomyelitis
 Epidermal nevus vitamin D resistant rickets
 Epidermodysplasia verruciformis
-
 Epidermoid carcinoma
 Epidermolysa bullosa simplex and limb girdle muscular dystrophy
-
 Epidermolysis bullosa acquisita
 Epidermolysis bullosa dystrophica, Bart type
 Epidermolysis bullosa dystrophica, dominant type
@@ -2690,7 +2500,6 @@ Epidermolytic hyperkeratosis
 Epidermolytic palmoplantar keratoderma Vorner type
 Epididymitis
 Epilepsia partialis continua
-
 Epilepsy
 Epilepsy benign neonatal familial
 Epilepsy benign neonatal familial 1
@@ -2716,16 +2525,13 @@ Epiphyseal dysplasia multiple
 Epiphyseal stippling syndrome osteoclastic hyperplasia
 Epiphysealis hemimelica dysplasia
 Epithelial-myoepithelial carcinoma
-
 Epitheliopathy (APMPPE)
 Epitheliopathy, acute posterior multifocal placoid
 EPP (erythropoietic protoporphyria)
-
 Epstein-Barr virus mononucleosis
 Epstein syndrome
 Equinophobia
 Erb–Duchenne palsy
-
 Erdheim disease
 Erdheim–Chester disease
 Ergophobia
@@ -2750,7 +2556,6 @@ Erythroplakia
 Erythroplasia of Queyrat
 Erythropoietic protoporphyria
 Escher–Hirt syndrome
-
 Escherichia coli infection
 Esophageal atresia associated anomalies
 Esophageal atresia coloboma talipes
@@ -2772,13 +2577,11 @@ Esthesioneuroblastoma
 Ethylmalonic aciduria
 Ethylmalonic adipic aciduria
 Euhidrotic ectodermal dysplasia
-
 Eumycetoma
 Eunuchoidism familial
 Evan's syndrome
 Ewing's sarcoma
 Exencephaly
-
 Exercise induced anaphylaxis
 Exfoliative dermatitis
 Exner syndrome
@@ -2807,7 +2610,6 @@ Eye defects arachnodactyly cardiopathy
 Eyebrows duplication syndactyly
 Fabry's disease
 Faces syndrome
-
 Facial asymmetry temporal seizures
 Facial clefting corpus callosum agenesis
 Facial cleft
@@ -2824,7 +2626,6 @@ Faciocardiorenal syndrome
 Faciooculoacousticorenal syndrome
 Facioscapulohumeral muscular dystrophy
 Factor II deficiency
-
 Factor V deficiency
 Factor V Leiden mutation
 Factor VII deficiency
@@ -2835,11 +2636,9 @@ Factor XI deficiency, congenital
 Factor XIII deficiency, congenital
 Factor XIII deficiency
 Fahr's disease
-
 Fairbank disease
 Fallot tetralogy
 Familial ALS
-
 Familial ALS with dementia
 Familial adenomatous polyposis
 Familial amyloid polyneuropathy
@@ -2863,7 +2662,6 @@ Familial hypopituitarism
 Familial hypothyroidism
 Familial intestinal polyatresia syndrome
 Familial Mediterranean fever
-
 Familial multiple lipomatosis
 Familial multiple trichodiscomas
 Familial myelofibrosis
@@ -2882,7 +2680,6 @@ Familial ventricular tachycardia
 Familial visceral myopathy
 Familial wilms tumor 2
 Fan death
-
 Fanconi anemia type 1
 Fanconi anemia type 2
 Fanconi anemia type 3
@@ -2904,7 +2701,6 @@ Faulk–Epstein–Jones syndrome
 Faye–Petersen–Ward–Carey syndrome
 Fazio–Londe syndrome
 Fealty syndrome
-
 Febrile seizure
 Fechtner syndrome
 Feigenbaum–Bergeron–Richardson syndrome
@@ -2922,7 +2718,6 @@ Ferlini–Ragno–Calzolari syndrome
 Fernhoff–Blackston–Oakley syndrome
 Ferrocalcinosis cerebro vascular
 Fetal acitretin syndrome
-
 Fetal akinesia syndrome X linked
 Fetal alcohol syndrome
 Fetal aminopterin syndrome
@@ -2948,7 +2743,6 @@ Fetal thalidomide syndrome
 Fetal warfarin syndrome
 FG syndrome
 Fiber type disproportion, congenital
-
 Fibrinogen deficiency, congenital
 Fibrochondrogenesis
 Fibrolipomatosis
@@ -2974,7 +2768,6 @@ Fifth disease
 Filariasis
 Filippi syndrome
 Fine–Lubinsky syndrome
-
 Fingerprints absence syndactyly milia
 Finnish lethal neonatal metabolic syndrome
 Finnish type amyloidosis
@@ -2988,7 +2781,6 @@ Fitzsimmons–Walson–Mellor syndrome
 Fitzsimmons–Guilbert syndrome
 Fitzsimmons–McLachlan–Gilbert syndrome
 Flavimonas oryzihabitans
-
 Flesh eating bacteria
 Floaters
 Floating limb syndrome
@@ -2998,7 +2790,6 @@ Flotch syndrome
 Fluorosis 
 Flynn–Aird syndrome
 Focal agyria pachygyria
-
 Focal alopecia congenital megalencephaly
 Focal dermal hypoplasia
 Focal dystonia
@@ -3075,14 +2866,12 @@ Fructose-1-phosphate aldolase deficiency, heredita
 Fructosemia, hereditary
 Fructosuria
 Frydman–Cohen–Ashenazi syndrome
-
 Frydman–Cohen–Karmon syndrome
 Fryer syndrome
 Fryns–Fabry–Remans syndrome
 Fryns–Hofkens–Fabry syndrome
 Fryns–Smeets–Thiry syndrome
 Fucosidosis type 1
-
 Fucosidosis
 Fugue state
 Fuhrmann–Rieger–De Sousa syndrome
@@ -3097,7 +2886,6 @@ Furukawa–Takagi–Nakao syndrome
 Furunculous myiasis
 Fused mandibular incisors
 Galactorrhea
-
 Galactocoele
 Galactokinase deficiency
 Galactorrhea hyperprolactinemia
@@ -3120,7 +2908,6 @@ Ganser syndrome
 GAPO syndrome
 Garchichiliosis
 Garcia–Torres–Guarner syndrome
-
 Gardner–Morrisson–Abbot syndrome
 Gardner–Silengo–Wachtel syndrome
 Gardner–Diamond syndrome
@@ -3139,14 +2926,12 @@ Gastrointestinal autonomic nerve tumor
 Gastrointestinal neoplasm
 Gaucher disease
 Gaucher disease type 1
-
 Gaucher disease type 2
 Gaucher disease type 3
 Gaucher ichthyosis restrictive dermopathy
 Gaucher-like disease
 Gay–Feinmesser–Cohen syndrome
 Geen Sandford Davison syndrome
-
 Gelatinous ascites
 Geleophysic dwarfism
 Gelineau disease
@@ -3154,7 +2939,6 @@ Geliphobia
 Gemignani syndrome
 Gemss syndrome
 Gender dysphoria
-
 Genée-Wiedemann syndrome
 Generalized anxiety disorder (GAD)
 Generalized malformations in neuronal migration
@@ -3180,14 +2964,11 @@ Gerodermia osteodysplastica
 Gershinibaruch–Leibo syndrome
 Gerstmann syndrome
 Gestational diabetes mellitus
-
 Gestational pemphigoid
 Gestational trophoblastic disease
 Ghosal syndrome
-
 Ghose–Sachdev–Kumar syndrome
 Gianotti-Crosti syndrome
-
 Giant axonal neuropathy
 Giant cell arteritis
 Giant cell myocarditis
@@ -3214,7 +2995,6 @@ Gyrate atrophy of the choroid and retina
 Gitelman syndrome
 Gittings syndrome
 Glanzmann thrombasthenia
-
 Glass–Chapman–Hockley syndrome
 Glaucoma
 Glaucoma ecopia microspherophakia stiff joints short stature
@@ -3231,7 +3011,6 @@ Glioblastoma
 Glioma
 Gliosarcoma
 Globel disaccharide intolerance
-
 Glomerulonephritis sparse hair telangiectases
 Glomerulonephritis
 Glomerulosclerosis
@@ -3241,7 +3020,6 @@ Glossopalatine ankylosis micrognathia ear anomalies
 Glossopharyngeal neuralgia
 Glossophobia
 Glucagonoma
-
 Glucocorticoid deficiency, familial
 Glucocorticoid resistance
 Glucocorticoid sensitive hypertension
@@ -3258,11 +3036,9 @@ Glutaricaciduria II
 Glutaryl-CoA dehydrogenase deficiency
 Glutathione synthetase deficiency
 Glyceraldehyde-3-phosphate dehydrogenase deficiency
-
 Glycine synthase deficiency
 Glycogen storage disease
 Glycogen storage disease type 1B
-
 Glycogen storage disease type 1C
 Glycogen storage disease type 1D
 Glycogen storage disease type 6, due to phosphorylation
@@ -3275,7 +3051,6 @@ Glycogen storage disease type VII
 Glycogen storage disease type VIII
 Glycogenosis
 Glycogenosis type II
-
 Glycogenosis type III
 Glycogenosis type IV
 Glycogenosis type V
@@ -3285,11 +3060,9 @@ Glycogenosis type VIII
 Glycogenosis, type 0
 Glycosuria
 GM2 gangliosidosis, 0 variant
-
 GM2-gangliosidosis, B, B1, AB variant
 GMS syndrome
 Goitre
-
 Goldberg–Bull syndrome
 Goldberg syndrome
 Goldblatt–Wallis syndrome
@@ -3305,17 +3078,14 @@ Gombo syndrome
 Gomez and López-Hernández syndrome
 Gonadal dysgenesis
 Gonadal dysgenesis mixed
-
 Gonadal dysgenesis Turner type
 Gonadal dysgenesis XY type associated anomalies
 Gonadal dysgenesis, XX type
 Gonadal dysgenesis, XY female type
 Goniodysgenesis mental retardation short stature
 Gonococcal conjunctivitis
-
 Gonzales Del Angel syndrome
 Goodman camptodactyly
-
 Goodpasture pneumorenal syndrome
 Goodpasture's syndrome
 Gordon hyperkaliemia-hypertension syndrome
@@ -3331,7 +3101,6 @@ Gougerot–Sjogren syndrome
 Gout
 Gouty nephropathy, familial
 Graft versus host disease
-
 Graham–Boyle–Troxell syndrome
 Grand–Kaine–Fulling syndrome
 Grant syndrome
@@ -3351,7 +3120,6 @@ Greig cephalopolysyndactyly syndrome GCPS
 Griscelli disease
 Grix–Blankenship–Peterson syndrome
 Groll–Hirschowitz syndrome
-
 Grosse syndrome
 Grover's disease
 Growth deficiency brachydactyly unusual facies
@@ -3363,7 +3131,6 @@ Growth retardation hydrocephaly lung hypoplasia
 Growth retardation mental retardation phalangeal hypoplasia
 Grubben–Decock–Borghgraef syndrome
 GTP cyclohydrolase deficiency
-
 Guanidinoacetate methyltransferase deficiency
 Guérin–Stern syndrome
 Guibaud–Vainsel syndrome
@@ -3379,7 +3146,6 @@ Gynecomastia
 Gyrate atrophy of the retina
 Gyrate atrophy
 Hageman factor deficiency
-
 Hagemoser–Weinstein–Bresnick syndrome
 Hailey–Hailey disease
 Hair defect with photosensitivity and mental retardation
@@ -3401,7 +3167,6 @@ Hamanishi–Ueba–Tsuji syndrome
 Hamano–Tsukamoto syndrome
 Hamartoma sebaceus of Jadassohn
 Hand and foot deformity flat facies
-
 Hand–foot–uterus syndrome
 Hand wringing Rett syndrome
 Hand, foot and mouth disease
@@ -3420,7 +3185,6 @@ Haspeslagh–Fryns–Muelenaere syndrome
 Hay–Wells syndrome recessive type
 Hay–Wells syndrome
 Headache, cluster
-
 Hearing disorder
 Hearing impairment
 Hearing loss
@@ -3442,13 +3206,11 @@ Hecht–Scott syndrome
 Heckenlively syndrome
 Heide syndrome
 Heliophobia
-
 HELLP syndrome
 Helmerhorst–Heaton–Crossen syndrome
 Helminthiasis
 HEM dysplasia
 Hemangioblastoma
-
 Hemangioendothelioma
 Hemangioma thrombocytopenia syndrome
 Hemangioma, capillary infantile
@@ -3469,7 +3231,6 @@ Hemimegalencephaly
 Hemiplegia
 Hemiplegic migraine, familial
 Hemochromatosis
-
 Hemochromatosis type 1
 Hemochromatosis type 2
 Hemochromatosis type 3
@@ -3494,13 +3255,11 @@ Hemorrhagiparous thrombocytic dystrophy
 Hemosiderosis
 Hemothorax
 Hennekam–Beemer syndrome
-
 Hennekam–Koss–de Geest syndrome
 Hennekam syndrome
 Hennekam–Van der Horst syndrome
 Henoch–Schönlein purpura
 Hepadnovirus D
-
 Heparane sulfamidase deficiency
 Heparin-induced thrombopenia
 Hepatic cystic hamartoma
@@ -3522,7 +3281,6 @@ Hepatorenal syndrome
 Hepatorenal tyrosinemia
 Herpes
 Hereditary amyloidosis
-
 Hereditary angioedema
 Hereditary ataxia
 Hereditary breast–ovarian cancer syndrome
@@ -3544,7 +3302,6 @@ Hereditary macrothrombocytopenia
 Hereditary methemoglobinemia, recessive
 Hereditary myopathy with intranuclear filamentous
 Hereditary nodular heterotopia
-
 Hereditary non-spherocytic hemolytic anemia
 Hereditary pancreatitis
 Hereditary paroxysmal cerebral ataxia
@@ -3561,7 +3318,6 @@ Hereditary spherocytosis
 Hereditary type 1 neuropathy
 Hereditary type 2 neuropathy
 Hermansky–Pudlak syndrome
-
 Hermaphroditism
 Hernandez–Aguire–Negrete syndrome
 Herpangina
@@ -3581,7 +3337,6 @@ Herrmann–Opitz craniosynostosis
 Hers' disease
 Hersh–Podruch–Weisskopk syndrome
 Heterophobia
-
 Heterotaxia (generic term)
 Heterotaxia autosomal dominant type
 Heterotaxy with polysplenia or asplenia
@@ -3589,7 +3344,6 @@ Heterotaxy, visceral, X-linked
 Hexosaminidases A and B deficiency
 HHH syndrome
 Hibernian fever, familial
-
 Hiccups
 Hidradenitis suppurativa familial
 Hidradenitis suppurativa
@@ -3607,7 +3361,6 @@ Hip luxation
 Hip subluxation
 Hipo syndrome
 Hirschsprung disease
-
 Hirschsprung disease ganglioneuroblastoma
 Hirschsprung disease polydactyly heart disease
 Hirschsprung disease type 2
@@ -3629,11 +3382,9 @@ Histrionic personality disorder
 Hittner–Hirsch–Kreh syndrome
 HIV
 Hm syndrome
-
 HMG-CoA lyase deficiency
 HMG CoA synthetase deficiency
 Hodgkin lymphoma
-
 Hodgkin's disease
 Hoepffner–Dreyer–Reimers syndrome
 Hollow visceral myopathy
@@ -3651,7 +3402,6 @@ Holoprosencephaly
 Holt–Oram syndrome
 Holzgreve–Wagner–Rehder syndrome
 Homocarnosinase deficiency
-
 Homocarnosinosis
 Homocystinuria due to cystathionine beta-synthase
 Homocystinuria due to defect in methylation (cbl g)
@@ -3676,7 +3426,6 @@ Hoyeraal–Hreidarsson syndrome
 Hoyeraal syndrome
 HSV-2 infection
 Human ewingii ehrlichiosis
-
 Human granulocytic ehrlichiosis
 Human monocytic ehrlichiosis
 Human parvovirus B19 infection
@@ -3699,15 +3448,12 @@ Hutchinson–Gilford–Progeria syndrome
 Hutchinson incisors
 Hutteroth–Spranger syndrome
 Hyalinosis systemic short stature
-
 Hyaloideoretinal degeneration of wagner
 Hydantoin antenatal infection
-
 Hydatidiform mole
 Hydatidosis
 Hyde–Forster–Mccarthy–Berry syndrome
 Hydranencephaly
-
 Hydrocephalus - Arnold Chiari - allied disorders
 Hydrocephalus autosomal recessive
 Hydrocephalus costovertebral dysplasia Sprengel anomaly
@@ -3730,13 +3476,10 @@ Hydrops fetalis
 Hydroxycarboxylic aciduria
 Hydroxymethylglutaric aciduria
 Hygroma cervical
-
 Hymenolepiasis
 Hyper IgE
-
 Hyper IgM syndrome
 Hyperadrenalism
-
 Hyperaldosteronism familial type 2
 Hyperaldosteronism, familial type 1
 Hyperaldosteronism
@@ -3747,7 +3490,6 @@ Hyperbilirubinemia type 1
 Hyperbilirubinemia type 2
 Hyperbilirubinemia
 Hypercalcemia, familial benign type 1
-
 Hypercalcemia, familial benign type 2
 Hypercalcemia, familial benign type 3
 Hypercalcemia, familial benign
@@ -3773,7 +3515,6 @@ Hyperglycinemia, ketotic
 Hyperglycinemia, non-ketotic
 Hypergonadotropic ovarian failure, familial or sporadic
 Hyperhidrosis
-
 Hyperhomocysteinemia
 Hyper-IgD syndrome
 Hyperimidodipeptiduria
@@ -3795,7 +3536,6 @@ Hyperkeratosis palmoplantar localized acanthokeratolytic
 Hyperkeratosis palmoplantar localized epidermolytic
 Hyperkeratosis palmoplantar with palmar crease hyperkeratosis
 Hyperlipoproteinemia type I
-
 Hyperlipoproteinemia type II
 Hyperlipoproteinemia type III
 Hyperlipoproteinemia type IV
@@ -3813,7 +3553,6 @@ Hyperoxaluria type 1
 Hyperoxaluria type 2
 Hyperoxaluria
 Hyperparathyroidism
-
 Hyperparathyroidism, familial, primary
 Hyperparathyroidism, neonatal severe primary
 Hyperphalangism dysmorphy bronchomalacia
@@ -3832,13 +3571,11 @@ Hyperreflexia
 Hyper-reninism
 Hypersensitivity
 Hypersensitivity type I
-
 Hypersensitivity type II
 Hypersensitivity type III
 Hypersensitivity type IV
 Hypersomnolence
 Hypertelorism and tetralogy of Fallot
-
 Hypertelorism hypospadias syndrome
 Hypertension
 Hypertensive hyperkalemia, familial
@@ -3869,7 +3606,6 @@ Hypervitaminosis A
 Hypervitaminosis D
 Hypervitaminosis E
 Hypoactive sexual desire disorder
-
 Hypoadrenalism
 Hypoadrenocorticism hypoparathyroidism moniliasis
 Hypoaldosteronism
@@ -3889,7 +3625,6 @@ Hypodontia of incisors and premolars
 Hypodysfibrinogenemia
 Hypofibrinogenemia, familial
 Hypoglycemia with deficiency of glycogen synthetase in the liver
-
 Hypoglycemia
 Hypogonadism cardiomyopathy
 Hypogonadism hypogonadotropic due to mutations in GR hormone
@@ -3912,13 +3647,11 @@ Hypokalemic sensory overstimulation
 Hypoketonemic hypoglycemia
 Hypolipoproteinemia
 Hypomagnesemia primary
-
 Hypomandibular faciocranial dysostosis
 Hypomelanotic disorder
 Hypomelia Müllerian duct anomalies
 Hypomentia
 Hypoparathyroidism familial isolated
-
 Hypoparathyroidism nerve deafness nephrosis
 Hypoparathyroidism short stature mental retardation
 Hypoparathyroidism short stature
@@ -3941,7 +3674,6 @@ Hypoplastic thumbs hydranencephaly
 Hypoproconvertinemia
 Hypoprothrombinemia
 Hyporeninemic hypoaldosteronism
-
 Hyposmia nasal hypoplasia hypogonadism
 Hypospadias familial
 Hypospadias mental retardation Goldblatt type
@@ -3962,12 +3694,10 @@ Hypotropia
 Hypoxanthine guanine phosphoribosyltransferase deficiency
 Hypoxia
 I cell disease
-
 Inverted Gentile Disorder
 IBIDS syndrome
 ICF syndrome
 Ichthyoallyeinotoxism
-
 Ichthyophobia
 Ichthyosiform erythroderma corneal involvement deafness
 Ichthyosis alopecia eclabion ectropion mental retardation
@@ -3991,7 +3721,6 @@ Ichthyosis, keratosis follicularis spinulosa Decalvans
 Ichthyosis, lamellar recessive
 Ichthyosis, Netherton syndrome
 Idaho syndrome
-
 Idiopathic acute eosinophilic pneumonia
 Idiopathic adolescent scoliosis
 Idiopathic adult neutropenia
@@ -4013,7 +3742,6 @@ Idiopathic sclerosing mesenteritis
 Idiopathic thrombocytopenic purpura
 Iduronate 2-sulfatase deficiency
 IFAP syndrome
-
 IgA deficiency
 IgA nephropathy
 IgA vasculitis
@@ -4038,7 +3766,6 @@ Imperforate oropharynx costo vertebral anomalies
 Impetigo
 Inactive colon
 Inborn amino acid metabolism disorder
-
 Inborn branched chain aminoaciduria
 Inborn error of metabolism
 Inborn metabolic disorder
@@ -4052,7 +3779,6 @@ Incontinentia pigmenti achromians
 Indomethacin antenatal infection
 Induced delusional disorder
 Infant epilepsy with migrant focal crisis
-
 Infant respiratory distress syndrome
 Infantile apnea
 Infantile axonal neuropathy
@@ -4076,19 +3802,16 @@ Influenza
 Inguinal hernia
 Inhalant abuse
 Inhalant abuse, aliphatic hydrocarbons
-
 Inhalant abuse, aromatic hydrocarbons
 Inhalant abuse, ketones
 Inhalant abuse, haloalkanes
 Inhalant abuse, nitrites
 Congenital insensitivity to pain
-
 Instability mitotic non disjunction syndrome
 Insulinoma
 Insulin-resistance type B
 Insulin-resistant acanthosis nigricans, type A
 Intercellular cholesterol esterification disease
-
 Interferon gamma, receptor 1, deficiency
 Internal carotid agenesis
 Intraocular lymphoma
@@ -4111,7 +3834,6 @@ Intrauterine growth retardation mandibular malar hypoplasia
 Intrauterine infections
 Intrinsic factor, congenital deficiency of
 Iodine antenatal infection
-
 Iodine deficiency
 Iophobia
 Iridocyclitis
@@ -4134,7 +3856,6 @@ Isthmian coarctation
 Ivemark syndrome
 Ivic syndrome
 Jackson–Weiss syndrome
-
 Jacobsen syndrome
 Jadassohn–Lewandowsky syndrome
 Jaffer–Beighton syndrome
@@ -4153,7 +3874,6 @@ Jeune syndrome situs inversus
 Jeune syndrome
 Jeune asphyxiating thoracic dystrophy
 Job syndrome
-
 Johanson–Blizzard syndrome
 Johnson–Hall–Krous syndrome
 Johnson–Munson syndrome
@@ -4165,7 +3885,6 @@ Joseph disease
 Joubert syndrome bilateral chorioretinal coloboma
 Joubert syndrome
 Juberg–Hayward syndrome
-
 Juberg–Marsidi syndrome
 Judge–Misch–Wright syndrome
 Jumping Frenchmen of Maine
@@ -4183,7 +3902,6 @@ Juvenile rheumatoid arthritis
 Juvenile temporal arteritis
 Juliannite nephronophthisis
 Kabuki syndrome
-
 Kalam–Hafeez syndrome
 Kaler–Garrity–Stern syndrome
 Kallikrein hypertension
@@ -4205,13 +3923,11 @@ Kartagener syndrome
 Kashani–Strom–Utley syndrome
 Kasznica–Carlson–Coppedge syndrome
 Kathisophobia
-
 Katsantoni–Papadakou–Lagoyanni syndrome
 Katz syndrome
 Kaufman oculocerebrofacial syndrome
 Kawasaki syndrome
 Kearns–Sayre syndrome
-
 Keloids
 Kennedy disease
 Kennerknecht–Sorgo–Oberhoffer syndrome
@@ -4219,7 +3935,6 @@ Kennerknecht–Vogel syndrome
 Kenny–Caffey syndrome
 Kenny–Caffey syndrome, type 1
 Keratitis, hereditary
-
 Keratoacanthoma familial
 Keratoacanthoma
 Keratoconjunctivitis sicca
@@ -4242,11 +3957,9 @@ Keratosis palmoplantar-periodontopathy
 Keratosis pilaris
 Keratosis, seborrheic
 Kerion celsi
-
 Kernicterus
 Keutel syndrome
 Ki-1cell lymphoma
-
 KID syndrome
 Kifafa seizure disorder
 Kikuchi disease
@@ -4269,7 +3982,6 @@ Kniest-like dysplasia lethal
 Knobloch–Layer syndrome
 Knuckle pads, leuconychia and sensorineural deafness
 Kobberling–Dunnigan syndrome
-
 Kocher–Debré–Semelaigne syndrome
 Kohler disease
 Kohlschütter-Tönz syndrome
@@ -4294,7 +4006,6 @@ Kozlowski–Tsuruta–Taki syndrome
 Kozlowski–Warren–Fisher syndrome
 Kozlowski–Krajewska syndrome
 Krabbe leukodystrophy
-
 Krasnow–Qazi syndrome
 Krause–Kivlin syndrome
 Krauss–Herman–Holmes syndrome
@@ -4311,7 +4022,6 @@ Kyasanur forest disease
 Kyphosis
 Kyphosis brachyphalangy optic atrophy
 Labrador lung
-
 Labyrinthitis
 Lachiewicz–Sibley syndrome
 Lacrimo-auriculo-dento-digital syndrome
@@ -4330,7 +4040,6 @@ Lambert–Eaton syndrome
 Lamellar ichthyosis
 Lamellar recessive ichthyosis
 Landau–Kleffner syndrome
-
 Landouzy–Dejerine muscular dystrophy
 Landy–Donnai syndrome
 Langdon Down
@@ -4341,7 +4050,6 @@ Langerhans cell histiocytosis
 Laparoschisis
 Laplane–Fontaine–Lagardere syndrome
 Large B-cell diffuse lymphoma
-
 Laron-type dwarfism
 Larsen-like osseous dysplasia dwarfism
 Larsen-like syndrome lethal type
@@ -4366,17 +4074,14 @@ Lateral body wall defect
 Laterality defects dominant
 Lattice corneal dystrophy type 2
 Launois–Bensaude adenolipomatosis
-
 Laurence–Prosser–Rocker syndrome
 Laurence–Moon–Bardet–Biedl syndrome
 Laurin–Sandrow syndrome
 Laxova–Brown–Hogan syndrome
 LBWC - amniotic bands
-
 LBWD syndrome
 LCHAD deficiency
 Lead poisoning
-
 Leao Ribeiro Da Silva syndrome
 Learman syndrome
 Leber military aneurysm
@@ -4393,7 +4098,6 @@ Legionellosis
 syn: Legionnaires' disease
 Lehman syndrome
 Leichtman–Wood–Rohn syndrome
-
 Leifer–Lai–Buyse syndrome
 Leigh disease
 Leigh syndrome, French Canadian type
@@ -4417,13 +4121,11 @@ Leptospirosis
 Leri pleonosteosis
 Léri–Weill dyschondrosteosis
 Lesch–Nyhan syndrome
-
 Lethal chondrodysplasia Moerman type
 Lethal chondrodysplasia Seller type
 Lethal congenital contracture syndrome
 Letterer–Siwe disease
 Leucinosis
-
 Leukemia subleukemic
 Leukemia, B-Cell, chronic
 Leukemia, Myeloid
@@ -4446,15 +4148,12 @@ Levator syndrome
 Levic–Stefanovic–Nikolic syndrome
 Levine–Crichley syndrome
 Lewandowski–Kikolich syndrome
-
 Lewis–Pashayan syndrome
 Leydig cells hypoplasia
 LGCR
-
 LGS
 Lhermitte–Duclos disease
 Lichen myxedematosus
-
 Lichen planus follicularis
 Lichen planus
 Lichen sclerosus et atrophicus
@@ -4477,7 +4176,6 @@ Lindstrom syndrome
 Linear hamartoma syndrome
 Linear nevus syndrome
 Lip lit syndrome
-
 Lipid storage myopathy
 Lipidosis with triglyceride storage disease
 Lipoamide dehydrogenase deficiency
@@ -4501,11 +4199,9 @@ Lissencephaly
 Listeria infection
 Listeriosis
 Livedoid dermatitis
-
 Liver cirrhosis
 Liver neoplasms
 Lobar atrophy of brain
-
 Lobster hand
 Lobstein disease
 Localized epiphyseal dysplasia
@@ -4527,7 +4223,6 @@ Lopez–Hernandez syndrome
 Lou Gehrig's disease
 Louis–Bar syndrome
 Low birth weight dwarfism dysgammaglobulinemia
-
 Lowe–Kohn–Cohen syndrome
 Lowe oculocerebrorenal syndrome
 Lowe syndrome
@@ -4539,10 +4234,8 @@ Lowry syndrome
 Lowry–Wood syndrome
 Lowry–Yong syndrome
 LSA
-
 L-transposition and ccTGA
 Lubani Al Saleh Teebi syndrome
-
 Lubinsky syndrome
 Lucey–Driscoll syndrome
 Lucky–Gelehrter syndrome
@@ -4563,12 +4256,10 @@ Luteinizing hormone releasing hormone, deficiency of with ataxia
 Lutz–Richner–Landolt syndrome
 Lutz–Lewandowsky epidermodysplasia verruciformis
 Lyell's syndrome
-
 Lygophobia
 Lyme disease
 Lymph node neoplasm
 Lymphadenopathy, angioimmunoblastic with dysproteinemia
-
 Lymphangiectasies lymphoedema type Hennekam type
 Lymphangiectasis
 Lymphangioleiomyomatosis
@@ -4584,7 +4275,6 @@ Lymphedema, congenital
 Lymphedema
 Lymphedema–distichiasis syndrome
 Lymphoblastic lymphoma
-
 Lymphocytes reduced or absent
 Lymphocytic colitis
 Lymphocytic infiltrate of Jessner
@@ -4602,7 +4292,6 @@ Lymphomatoid Papulosis (LyP)
 Lymphomatous thyroiditis
 Lymphosarcoma
 Lynch–Lee–Murday syndrome
-
 Lynch–Bushby syndrome
 Lyngstadaas syndrome
 LyP (lymphomatoid papulosis)
@@ -4613,10 +4302,8 @@ Lysosomal beta-mannosidase deficiency
 Lysosomal glycogen storage disease with normal acid maltase activity
 Lysosomal storage disease
 Mac Dermot Patton Williams syndrome
-
 Mac Dermot Winter syndrome
 Macias–Flores–Garcia–Cruz–Rivera syndrome
-
 Mackay–Shek–Carr syndrome
 Macleod–Fraser syndrome
 Macrocephaly cutis marmorata telangiectatica
@@ -4639,7 +4326,6 @@ Macrosomia microphthalmia cleft palate
 Macrothrombocytopenia progressive deafness
 Macrothrombocytopenia with leukocyte inclusions
 Macular corneal dystrophy
-
 Macular degeneration
 Macular degeneration juvenile
 Macular degeneration, age-related
@@ -4647,7 +4333,6 @@ Macular degeneration, polymorphic
 Macular dystrophy, vitelliform
 Macules hereditary congenital hypopigmented and hyperpigmented
 Mad cow disease
-
 Madelung's disease
 Madokoro–Ohdo–Sonoda syndrome
 Maffucci syndrome
@@ -4657,7 +4342,6 @@ Magnesium wasting renal
 Major depressive disorder
 Mal de debarquement
 Malakoplakia
-
 Malaria
 Male pseudohermaphroditism due to 17-beta-hydroxysteroid dehydrogenase deficiency
 Male pseudohermaphroditism due to 5-alpha-reductase 2 deficiency
@@ -4669,24 +4353,20 @@ Malignant germ cell tumor
 Malignant hyperthermia arthrogryposis torticollis
 Malignant hyperthermia
 Malignant hyperthermia susceptibility type 1
-
 Malignant hyperthermia susceptibility type 2
 Malignant hyperthermia susceptibility type 3
 Malignant hyperthermia susceptibility type 4
 Malignant hyperthermia susceptibility type 5
 Malignant hyperthermia susceptibility type 6
 Malignant mesenchymal tumor
-
 Malignant mixed Müllerian tumor
 Malignant paroxysmal ventricular tachycardia
 Mallory–Weiss syndrome
 Malonic aciduria
-
 Malonyl-CoA decarboxylase deficiency
 Malouf syndrome
 Malpuech facial clefting syndrome
 Mandibuloacral dysplasia
-
 Mandibulofacial dysostosis deafness postaxial polydactyly
 Mandibulofacial dysostosis-microcephaly syndrome
 Manic Depression, Bipolar
@@ -4696,7 +4376,6 @@ Manouvrier syndrome
 Mansonelliasis
 Mantle cell lymphoma
 Marashi–Gorlin syndrome
-
 Marburg fever
 Marchiafava–Bignami disease
 Marchiafava–Micheli disease
@@ -4716,7 +4395,6 @@ Marfanoid hypermobility
 Marfanoid mental retardation syndrome autosomal
 Marginal glioneuronal heterotopia
 Marie type ataxia
-
 Marie–Unna congenital hypotrichosis
 Marinesco–Sjögren like syndrome
 Marinesco–Sjögren syndrome
@@ -4739,7 +4417,6 @@ Martinez–Monasterio–Pinheiro syndrome
 Martsolf–Reed–Hunter syndrome
 Martsolf syndrome
 MASA syndrome
-
 Mass psychogenic illness
 MASS syndrome
 Massa–Casaer–Ceulemans syndrome
@@ -4763,7 +4440,6 @@ Maxillonasal dysplasia, Binder type
 Mayer–Rokitanski–Kuster syndrome
 May–Hegglin anomaly
 McAlister–Crane syndrome
-
 McArdle disease
 McCallum–Macadam–Johnston syndrome
 McCune–Albright syndrome
@@ -4776,7 +4452,6 @@ McLain–Debakian syndrome
 McPherson–Clemens syndrome
 McPherson–Robertson–Cammarano syndrome
 Meacham–Winn–Culler syndrome
-
 Meadows syndrome, names for:
 Munchausen syndrome by proxy
 Peripartum cardiomyopathy
@@ -4795,7 +4470,6 @@ Medullary cystic disease
 Medullary thyroid carcinoma
 Medulloblastoma
 Megacystis microcolon intestinal hypoperistalsis syndrome
-
 Megaduodenum
 Mega-epiphyseal dwarfism
 Megalencephalic leukodystrophy
@@ -4812,7 +4486,6 @@ Meigel disease
 Meinecke–Pepper syndrome
 Meinecke syndrome
 Melanoma type 1
-
 Melanoma type 2
 Melanoma, familial
 Melanoma, malignant
@@ -4827,7 +4500,6 @@ Melnick–Needles osteodysplasty
 Melnick–Needles syndrome
 Membranoproliferative glomerulonephritis (type II)
 Mendelian susceptibility to atypical mycobacteria
-
 Menetrier's disease
 Mengel–Konigsmark syndrome
 Ménière's disease
@@ -4842,11 +4514,9 @@ Meningoencephalocele
 Meningoencephalocele-arthrogryposis-hypoplastic thumb
 Meningomyelocele
 Mental deficiency-epilepsy-endocrine disorders
-
 Mental mixed retardation deafness clubbed digits
 Mental retardation
 Mental retardation anophthalmia craniosynostosis
-
 Mental retardation arachnodactyly hypotonia telangiectasia
 Mental retardation athetosis microphthalmia
 Mental retardation blepharophimosis obesity web neck
@@ -4869,7 +4539,6 @@ Mental retardation multiple nevi
 Mental retardation myopathy short stature endocrine defect
 Mental retardation nasal hypoplasia obesity genital hypoplasia
 Mental retardation nasal papillomata
-
 Mental retardation osteosclerosis
 Mental retardation progressive spasticity
 Mental retardation psychosis macroorchidism
@@ -4890,7 +4559,6 @@ Mental retardation skeletal dysplasia abducens palsy
 Mental retardation Smith–Fineman–Myers type
 Mental retardation spasticity ectrodactyly
 Mental retardation unusual facies Ampola type
-
 Mental retardation unusual facies Davis–Lafer type
 Mental retardation unusual facies talipes hand anomalies
 Mental retardation unusual facies
@@ -4909,7 +4577,6 @@ Mental retardation, X linked, nonspecific
 Mental retardation, X-linked 14
 Mental retardation-polydactyly-uncombable hair
 Mercury poisoning (Mercurialism)
-
 Meretoja syndrome
 Merkle tumors
 Merlob–Grunebaum–Reisner syndrome
@@ -4929,7 +4596,6 @@ Mesomelic dysplasia Thai type
 Mesomelic syndrome Pfeiffer type
 Mesothelioma
 Metabolic acidosis
-
 Metabolic disorder
 Metabolic syndrome X
 Metacarpals 4 and 5 fusion
@@ -4947,7 +4613,6 @@ Metatarsus adductus
 Metatropic dwarfism
 Metatropic dysplasia
 Methimazole antenatal infection
-
 Methionine adenosyltransferase deficiency
 Methyl mercury antenatal infection
 Methylcobalamin deficiency cbl G type
@@ -4961,27 +4626,22 @@ Methylmalonicaciduria with homocystinuria, cbl F
 Methylmalonicaciduria, vitamin B12 unresponsive, mut-0
 Methylmalonyl-Coenzyme A mutase deficiency
 Mevalonate kinase deficiency
-
 Mevalonicaciduria
 Meyenburg–Altherr–Uehlinger syndrome
 Mibies syndrome
 Michelin tire baby syndrome
-
 Michels Caskey syndrome
 Michels syndrome
 Mickleson syndrome
 Micrencephaly corpus callosum agenesis
-
 Micrencephaly olivopontocerebellar hypoplasia
 Micro syndrome
 Microbrachycephaly ptosis cleft lip
 Microcephalic osteodysplastic primordial dwarfism
-
 Microcephalic primordial dwarfism Toriello type
 Microcephalic primordial dwarfism
 Microcephaly
 Microcephaly albinism digital anomalies syndrome
-
 Microcephaly autosomal dominant
 Microcephaly brachydactyly kyphoscoliosis
 Microcephaly brain defect spasticity hypernatremia
@@ -5001,7 +4661,6 @@ Microcephaly intracranial calcification
 Microcephaly lymphoedema chorioretinal dysplasia
 Microcephaly lymphoedema syndrome
 Microcephaly mental retardation retinopathy
-
 Microcephaly mental retardation spasticity epilepsy
 Microcephaly mesobrachyphalangy tracheoesophageal fistula syndrome
 Microcephaly microcornea syndrome Seemanova type
@@ -5018,11 +4677,9 @@ Microcephaly with spastic q­riplegia
 Microcephaly, holoprosencephaly, and intrauterine growth retardation
 Microcephaly, primary autosomal recessive
 Microcoria, congenital
-
 Microcornea correctopia macular hypoplasia
 Microcornea glaucoma absent frontal sinuses
 Microdontia hypodontia short stature
-
 Microencephaly
 Microgastria limb reduction defect
 Microgastria short stature diabetes
@@ -5047,7 +4704,6 @@ Microtia, meatal atresia and conductive deafness
 Microvillus inclusion disease
 Miculicz syndrome
 MIDAS syndrome
-
 Midline cleft of lower lip
 Midline defects autosomal type
 Midline defects recessive type
@@ -5071,7 +4727,6 @@ Mirhosseini–Holmes–Walton syndrome
 Mirror hands feet nasal defects
 Mirror polydactyly segmentation and limbs defects
 Mitochondrial cytopathy (generic term)
-
 Mitochondrial diseases of nuclear origin
 Mitochondrial diseases, clinically undefinite
 Mitochondrial disease
@@ -5092,13 +4747,11 @@ Mixed Müllerian tumor
 Mixed receptive-expressive language disorder
 Mixed sclerosing bone dystrophy
 MLS syndrome
-
 MMEP syndrome
 MMT syndrome
 MN1
 MNGIE syndrome
 Möbius syndrome
-
 MODY syndrome
 Möbius axonal neuropathy hypogonadism
 Moerman Van den berghe Fryns syndrome
@@ -5111,7 +4764,6 @@ Moloney syndrome
 Molybdenum cofactor deficiency
 MOMO syndrome
 Mondini dysplasia
-
 Mondor's disease
 Monge's disease
 Monilethrix
@@ -5127,7 +4779,6 @@ Montefiore syndrome
 Moore–Federman syndrome
 Moore–Smith–Weaver syndrome
 Morel's ear
-
 Moreno–Zachai–Kaufman syndrome
 Morgani–Turner–Albright syndrome
 Morillo–Cucci–Passarge syndrome
@@ -5148,7 +4799,6 @@ Mount–Reback syndrome
 Mousa Al din Al Nassar syndrome
 Moyamoya disease
 MPO deficiency
-
 MPS III-A
 MPS III-B
 MPS III-C
@@ -5158,7 +4808,6 @@ MRKH Syndrome (Müllerian agenesis)
 MSBD syndrome
 MTHFR deficiency
 Mucha–Habermann disease
-
 Muckle–Wells syndrome
 Mucoepithelial dysplasia
 Mucolipidosis type 1
@@ -5181,7 +4830,6 @@ Mucormycosis
 Mucosulfatidosis
 Muenke syndrome
 Mulibrey nanism
-
 Müller–Barth–Menger syndrome
 Müllerian agenesis
 Müllerian aplasia
@@ -5190,7 +4838,6 @@ Müllerian derivatives, persistent
 Müllerian duct abnormalities galactosemia
 Mulliez–Roux–Loterman syndrome
 Multicentric osteolysis nephropathy
-
 Multicentric reticulohistiocytosis
 Multifocal heterotopia
 Multifocal motor neuropathy
@@ -5198,7 +4845,6 @@ Multifocal ventricular premature beats
 Multi-infarct dementia
 Multinodular goiter cystic kidney polydactyly
 Multiple acyl-CoA deficiency
-
 Multiple carboxylase deficiency, biotin responsive
 Multiple carboxylase deficiency, late onset
 Multiple carboxylase deficiency, propionic acidemia
@@ -5216,7 +4862,6 @@ Multiple organ failure
 Multiple pterygium syndrome lethal type
 Multiple pterygium syndrome
 Multiple sclerosis ichthyosis factor VIII deficiency
-
 Multiple sclerosis
 Multiple subcutaneous angiolipomas
 Multiple sulfatase deficiency
@@ -5224,7 +4869,6 @@ Multiple synostoses syndrome 1
 Multiple system atrophy
 Multiple vertebral anomalies unusual facies
 Mumps
-
 Münchausen syndrome
 Münchausen syndrome by proxy
 Muscle-eye-brain syndrome
@@ -5246,7 +4890,6 @@ Muscular fibrosis multifocal obstructed vessels
 Muscular phosphorylase kinase deficiency
 Mutations in estradiol receptor
 Myalgia eosinophilia associated with tryptophan
-
 Myalgic encephalomyelitis
 Myasthenia gravis congenital
 Myasthenia gravis
@@ -5258,7 +4901,6 @@ Mycosis fungoides, familial
 Mycosis fungoides
 Mycositis fungoides
 Myelinopathy
-
 Myelitis
 Myelocerebellar disorder
 Myelodysplasia
@@ -5274,7 +4916,6 @@ Myhre–School syndrome
 Myhre syndrome
 Myiasis
 Myoadenylate deaminase deficiency
-
 Myocarditis
 Myocardium disorder
 Myoclonic dystonia
@@ -5295,7 +4936,6 @@ Myoglobinuria
 Myokymia
 Myoneurogastrointestinal encephalopathy syndrome
 Myopathy and diabetes mellitus
-
 Myopathy cataract hypogonadism
 Myopathy congenital multicore with external ophthalmoplegia
 Myopathy growth and mental retardation hypospadias
@@ -5317,7 +4957,6 @@ Myopia
 Myopia, infantile severe
 Myopia, severe
 Myorhythmia
-
 Myositis ossificans post-traumatic
 Myositis ossificans progressiva
 Myositis ossificans
@@ -5327,13 +4966,11 @@ Myotonia atrophica
 Myotonia mental retardation skeletal anomalies
 Myotubular myopathy
 Myxedema
-
 Myxoid liposarcoma
 Myxoma-spotty pigmentation-endocrine overactivity
 Myxomatous peritonitis
 Myxozoa
 N acetyltransferase deficiency
-
 N syndrome
 N-Acetylglutamate synthase deficiency
 N-acetyl-alpha-D-galactosaminidase
@@ -5355,20 +4992,17 @@ Narcissistic personality disorder
 Narcolepsy
 Narcolepsy-Cataplexy
 Narrow oral fissure short stature cone shaped epiphyses
-
 Nasodigitoacoustic syndrome
 Nasopalpebral lipoma coloboma syndrome
 Nasopharyngeal carcinoma
 Nasopharyngeal teratoma Dandy–Walker diaphragmatic hernia
 Nasopharyngitis
 Natal teeth intestinal pseudoobstruction patent ductus
-
 Nathalie syndrome
 Native American myopathy
 Navajo poikiloderma
 Naxos disease
 Necrotizing encephalopathy, infantile subacute
-
 Necrotizing fasciitis
 Negative rheumatoid factor polyarthritis
 Neisseria meningitidis
@@ -5389,7 +5023,6 @@ Neonatal herpes
 Neonatal ovarian cyst
 Neonatal transient jaundice
 Nephroblastomatosis, fetal ascites, macrosomia and Wilms' tumor
-
 Nephrocalcinosis
 Nephrogenic diabetes insipidus
 Nephrolithiasis type 2
@@ -5408,10 +5041,8 @@ Nesidioblastosis of pancreas
 Netherton syndrome ichthyosis
 Neu Laxova syndrome
 Neuhauser–Daly–Magnelli syndrome
-
 Neuhauser–Eichner–Opitz syndrome
 Neural crest tumor
-
 Neural tube defect, folate-sensitive
 Neural tube defects X linked
 Neuraminidase beta-galactosidase deficiency
@@ -5420,7 +5051,6 @@ Neurasthenia
 Neurilemmomatosis
 Neuritis with brachial predilection
 Neuroacanthocytosis
-
 Neuroaxonal dystrophy renal tubular acidosis
 Neuroaxonal dystrophy, late infantile
 Neuroblastoma
@@ -5437,17 +5067,14 @@ Neurofibrillary tangles
 Neurofibroma
 Neurofibromatosis
 Neurofibromatosis type 2
-
 Neurofibromatosis type 3
 Neurofibromatosis type 6
 Neurofibromatosis, familial intestinal
 Neurofibromatosis, Type IV, of Riccardi
 Neurofibromatosis-Noonan syndrome
 Neurofibrosarcoma
-
 Neurogenic hypertension
 Neuroleptic malignant syndrome
-
 Neuroma biliary tract
 Neuromyotonia
 Neuronal ceroid lipofuscinosis
@@ -5467,36 +5094,29 @@ Neuropathy, hereditary sensory, type II
 Neurosyphilis
 Neurotoxicity syndromes
 Neutral lipid storage myopathy
-
 Neutropenia intermittent
 Neutropenia monocytopenia deafness
 Neutropenia, severe chronic
 Nevi flammei, familial multiple
-
 Nevo syndrome
 Nevoid basal cell carcinoma syndrome
 Nevus of ota retinitis pigmentosa
 Nevus sebaceus of Jadassohn
 Nezelof syndrome
 Nicolaides–Baraitser syndrome
-
 Nicotine withdrawal
 Niemann–Pick disease
 Niemann–Pick C1 disease
-
 Niemann–Pick C2 disease
 Niemann–Pick disease, type C
 Niemann-Pick disease type D
 Night blindness
 Night blindness skeletal anomalies unusual facies
-
 Night blindness, congenital stationary
 Nijmegen breakage syndrome
-
 Nivelon–Nivelon–Mabille syndrome
 NMDA receptor antagonist neurotoxicity (NAN)
 Noble–Bass–Sherman syndrome
-
 Nocardiosis
 Noise-induced hearing loss
 Noma
@@ -5521,21 +5141,17 @@ Norrie disease
 Northern epilepsy syndrome
 Norum disease
 Nose polyposis, familial
-
 Notalgia paresthetica
 Nova syndrome
 Novak syndrome
 Nuchal bleb, familial
-
 Nut allergy
 Nyctophobia
 Nystagmus
 Nystagmus, central
-
 Nystagmus, peripheral
 Nystagmus with congenital zonular cataract
 O Doherty syndrome
-
 O Donnell Pappas syndrome
 Obesophobia
 Obsessive–compulsive disorder (OCD)
@@ -5543,7 +5159,6 @@ Obsessive–compulsive personality disorder
 Obstructive asymmetric septal hypertrophy
 Obstructive sleep apnea
 Occipital horn syndrome
-
 Occlusive infantile arteriopathy
 Occult spinal dysraphism
 Occupational asthma
@@ -5559,7 +5174,6 @@ Ochronosis, hereditary
 Ochronosis
 Ockelbo disease
 Ocular albinism
-
 Ocular coloboma-imperforate anus
 Ocular convergence spasm
 Ocular histoplasmosis
@@ -5567,7 +5181,6 @@ Ocular melanoma
 Ocular motility disorders
 Ocular toxoplasmosis
 Oculo-auriculo-vertebral spectrum
-
 Oculo cerebral dysplasia
 Oculo cerebro acral syndrome
 Oculo cerebro osseous syndrome
@@ -5578,7 +5191,6 @@ Oculo skeletal renal syndrome
 Oculo tricho anal syndrome
 Oculo tricho dysplasia
 Oculoauriculofrontonasal syndrome
-
 Oculo-auriculo-vertebral dysplasia
 Oculocerebral hypopigmentation syndrome Cross type
 Oculocerebral hypopigmentation syndrome type Preus
@@ -5601,7 +5213,6 @@ Oculodentoosseous dysplasia recessive
 Oculodigitoesophagoduodenal syndrome
 Oculo-gastrointestinal muscular dystrophy
 Oculomaxillofacial dysostosis
-
 Oculomaxillofacial dysplasia with oblique facial clefts
 Oculomelic amyoplasia
 Oculomotor nerve palsy
@@ -5609,7 +5220,6 @@ Oculopalatoskeletal syndrome
 Oculopharyngeal muscular dystrophy
 Oculorenocerebellar syndrome
 Odonto onycho dysplasia with alopecia
-
 Odontoma
 Odontomicronychial dysplasia
 Odontoonychodermal dysplasia
@@ -5623,7 +5233,6 @@ Ohdo–Madokoro–Sonoda syndrome
 Oikophobia
 Okamuto–Satomura syndrome
 Olfactophobia
-
 Oligodactyly
 Oligodactyly tetramelia postaxial
 Oligomeganephronic renal hypoplasia
@@ -5640,7 +5249,6 @@ Ollier disease
 Olmsted syndrome
 Olney's lesions
 Omenn syndrome
-
 Omodysplasia type 1
 Omodysplasia type 2
 Omphalocele cleft palate syndrome lethal
@@ -5662,7 +5270,6 @@ Onychonychia hypoplastic distal phalanges
 Onychophosis
 Onychotrichodysplasia and neutropenia
 Opioid dependence
-
 Opioid-induced hyperalgesia
 Ophthalmic icthyosis
 Ophthalmo acromelic syndrome
@@ -5679,7 +5286,6 @@ Opportunistic infections
 Oppositional defiant disorder
 Opsismodysplasia
 Optic atrophy ophthalmoplegia ptosis deafness myopia
-
 Optic atrophy polyneuropathy deafness
 Optic atrophy, autosomal dominant
 Optic atrophy, idiopathic, autosomal recessive
@@ -5692,7 +5298,6 @@ Optic neuritis
 Optic pathway glioma
 Opticoacoustic nerve atrophy dementia
 Oral facial digital syndrome type 3
-
 Oral facial digital syndrome type 4
 Oral facial digital syndrome
 Oral facial dyskinesia
@@ -5715,7 +5320,6 @@ Ornithine transcarbamylase deficiency, hyperammonemia due to
 Ornithinemia
 Ornithosis
 Oro acral syndrome
-
 Orofaciodigital syndrome Gabrielli type
 Orofaciodigital syndrome Shashi type
 Orofaciodigital syndrome Thurston type
@@ -5727,14 +5331,12 @@ Orotidylic decarboxylase deficiency
 Orstavik Lindemann Solberg syndrome
 Orthostatic intolerance
 Osebold–Remondini syndrome
-
 Osgood–Schlatter disease
 OSLAM syndrome
 Osmed syndrome
 Ossicular malformations, familial
 Osteitis deformans
 Osteoarthritis
-
 Osteoarthropathy of fingers familial
 Osteochondritis deformans juvenile
 Osteochondritis dissecans
@@ -5756,7 +5358,6 @@ Osteolysis syndrome recessive
 Osteomalacia
 Osteomyelitis
 Osteonecrosis
-
 Osteopathia condensans disseminata with osteopoikilosis
 Osteopathia striata cranial sclerosis
 Osteopathia striata pigmentary dermopathy white forelock
@@ -5779,7 +5380,6 @@ Osteosclerosis
 Osteocytes
 Ostertag type amyloidosis
 Ota–Appaura syndrome
-
 Ota–Kawamura–Ito syndrome
 Oto-palato-digital syndrome type I and II
 Otodental syndrome
@@ -5804,7 +5404,6 @@ Overhydrated hereditary stomatocytosis
 Overwhelming post-splenectomy infection (OPSI)
 Oxalosis
 Pachydermoperiostosis
-
 Pachygyria
 Pachyonychia congenita Jackson–Lawler type
 Pacman dysplasia
@@ -5827,7 +5426,6 @@ Palmoplantar Keratoderma
 Palmoplantar porokeratosis of Mantoux
 Palsy cerebral
 Panayiotopoulos syndrome
-
 Pancreas agenesis
 Pancreas divisum
 Pancreatic adenoma
@@ -5848,7 +5446,6 @@ Panophobia
 Panostotic fibrous dysplasia
 Panthophobia
 Papilledema
-
 Papillon–Lefèvre syndrome
 Papillitis of the lingual papillae
 Papillitis of the optic nerve
@@ -5856,7 +5453,6 @@ Papilloma of choroid plexus
 Papular mucinosis
 Papular urticaria
 Paracoccidioidomycosis
-
 Paraganglioma
 Parainfluenza virus type 3 antenatal infection
 Paramyotonia congenita of von Eulenburg
@@ -5879,7 +5475,6 @@ PARC syndrome
 Parenchymatous cortical degeneration of cerebellum
 Paris-Trousseau thrombopenia
 Parkes Weber syndrome
-
 Parkinson's disease
 Parkinson dementia Steele type
 Parkinsonism early onset mental retardation
@@ -5903,7 +5498,6 @@ Parturiphobia
 Paruresis
 Parvovirus antenatal infection
 Pascuel–Castroviejo syndrome
-
 Pashayan syndrome
 Passive-aggressive personality disorder
 Patau syndrome
@@ -5916,10 +5510,8 @@ Patterson–Lowry syndrome
 Patterson pseudoleprechaunism syndrome
 Patterson–Stevenson syndrome
 Pauciarticular chronic arthritis
-
 Pavone–Fiumara–Rizzo syndrome
 Peanut hypersensitivity
-
 Pearson's marrow/pancreas syndrome
 Pediatric T-cell leukemia
 Pediculosis
@@ -5942,7 +5534,6 @@ Pemphigus vulgaris, familial
 Pemphigus vulgaris
 Pemphigus
 Pena–Shokeir syndrome
-
 Pendred syndrome
 Penile agenesis
 Penoscrotal transposition
@@ -5956,7 +5547,6 @@ PEPCK deficiency, mitochondrial
 Peptidic growth factors deficiency
 Perceptual disorder
 Periarteritis nodosa
-
 Pericardial constriction with growth failure
 Pericardial defect diaphragmatic hernia
 Pericardium absent mental retardation short stature
@@ -5981,7 +5571,6 @@ Peritonitis
 Periventricular laminar heterotopia
 Periventricular leukomalacia
 Perlman syndrome
-
 Pernicious anemia
 Perniola–Krajewska–Carnevale syndrome
 Perniosis
@@ -5993,7 +5582,6 @@ Persistent sexual arousal syndrome
 Persistent truncus arteriosus
 Pertussis
 Pes planus
-
 Peters anomaly with cataract
 Peters anomaly
 Peters congenital glaucoma
@@ -6002,7 +5590,6 @@ Petty–Laxova–Wiedemann syndrome
 Peutz–Jeghers syndrome
 Peyronie disease
 Pfeiffer cardiocranial syndrome
-
 Pfeiffer–Hirschfelder–Rott syndrome
 Pfeiffer–Kapferer syndrome
 Pfeiffer–Mayer syndrome
@@ -6013,7 +5600,6 @@ Pfeiffer syndrome
 Pfeiffer–Tietze–Welte syndrome
 Pfeiffer type acrocephalosyndactyly
 PHACE association
-
 Phacomatosis fourth
 Phacomatosis pigmentokeratotica
 Phacomatosis pigmentovascularis
@@ -6033,7 +5619,6 @@ Pheochromocytoma as part of NF
 Pheochromocytoma
 Philadelphia-negative chronic myeloid leukemia
 Phocomelia contractures absent thumb
-
 Phocomelia ectrodactyly deafness sinus arrhythmia
 Phocomelia Schinzel type
 Phocomelia syndrome
@@ -6055,11 +5640,9 @@ Photoaugliaphobia
 Photosensitive epilepsy
 Phthiriophobia
 Physical urticaria
-
 Phytanic acid oxidase deficiency
 Phytophotodermatitis
 PIBI(D)S syndrome
-
 Pica
 Picardi–Lassueur–Little syndrome
 Pick disease
@@ -6075,7 +5658,6 @@ Pigment dispersion syndrome
 Pigmented villonodular synovitis
 Pignata guarino syndrome
 Pili canulati
-
 Pili multigemini
 Pili torti developmental delay neurological abnormalities
 Pili torti nerve deafness
@@ -6099,7 +5681,6 @@ Pityriasis lichenoides et varioliformis acuta
 Pityriasis rubra pilaris
 Piussan–Lenaerts–Mathieu syndrome
 Placenta disorder
-
 Placenta neoplasm
 Placental abruption
 Plagiocephaly X linked mental retardation
@@ -6129,7 +5710,6 @@ Pneumonia, eosinophilic
 Pneumonoultramicroscopicsilicovolcanoconiosis
 Pneumothorax
 Podder-Tolmie syndrome
-
 POEMS syndrome
 Poedimus kyleopecia mental retardation
 Poikiloderma congenital with bullae Weary type
@@ -6140,11 +5720,9 @@ Poikilodermatomyositis mental retardation
 Poikilodermia alopecia retrognathism cleft palate
 Pointer syndrome
 Poland syndrome
-
 Poliomyelitis (Polio)
 Poliosophobia
 Polyarteritis nodosa
-
 Polyarteritis
 Polyarthritis, systemic
 Polyarthritis
@@ -6162,7 +5740,6 @@ Polycystic ovarian syndrome
 Polycystic ovaries urethral sphincter dysfunction
 Polycythemia vera
 Polydactyly alopecia seborrheic dermatitis
-
 Polydactyly cleft lip palate psychomotor retardation
 Polydactyly myopia syndrome
 Polydactyly postaxial dental and vertebral
@@ -6185,7 +5762,6 @@ Polyneuropathy mental retardation acromicria prema
 Polyomavirus Infections
 Polyostotic fibrous dysplasia
 Polyposis, hamartomatous intestinal
-
 Polyposis skin pigmentation alopecia fingernail changes
 Polysyndactyly cardiac malformation
 Polysyndactyly microcephaly ptosis
@@ -6195,7 +5771,6 @@ Polysyndactyly trigonocephaly agenesis of corpus callosum
 Polysyndactyly type 4
 Polysyndactyly type Haas
 Pompe's disease
-
 Poncet–Spiegler's cylindroma
 Pontoneocerebellar Hypoplasia
 Popliteal pterygium syndrome lethal type
@@ -6219,7 +5794,6 @@ Portal thrombosis
 Portal vein thrombosis
 Portuguese type amyloidosis
 Positive rheumatoid factor polyarthritis
-
 Post-polio syndrome
 Post Traumatic Stress disorder (PTSD)
 Postaxial polydactyly mental retardation
@@ -6242,7 +5816,6 @@ Powell–Chandra–Saal syndrome
 Powell–Venencie–Gordon syndrome
 Poxviridae disease
 Prader–Willi syndrome
-
 Prata–Liberal–Goncalves syndrome
 Preaxial deficiency postaxial polydactyly hypospadia
 Preaxial polydactyly colobomata mental retardation
@@ -6265,7 +5838,6 @@ Prenatal infections
 Presbycusis
 Presbyopia
 Prieto–Badia–Mulas syndrome
-
 Prieur–Griscelli syndrome
 Primary agammaglobulinemia
 Primary aldosteronism
@@ -6291,13 +5863,11 @@ Primerose syndrome
 Primordial microcephalic dwarfism Crachami type
 Prinzmetal's variant angina
 Procarcinoma
-
 Processing disorder
 Proconvertin deficiency, congenital
 Procrastination
 Proctitis
 Progeria short stature pigmented nevi
-
 Progeria variant syndrome Ruvalcaba type
 Progeria
 Progeroid syndrome De Barsy type
@@ -6318,7 +5888,6 @@ Progressive supranuclear palsy atypical
 Progressive supranuclear palsy
 Progressive systemic sclerosis
 Prolactinoma, familial
-
 Proliferating trichilemmal cyst
 Prolidase deficiency
 Prolymphocytic leukemia
@@ -6341,16 +5910,13 @@ Protoporphyria, erythropoietic
 Protoporphyria
 Proud–Levine–Carpenter syndrome
 Proximal myotonic dystrophy
-
 Proximal myotonic myopathy
 Proximal spinal muscular atrophy
 Proximal tubulopathy diabetes mellitus cerebellar ataxia
 Prune belly syndrome
-
 Prurigo nodularis
 Psellismophobia
 Pseudoachondroplasia
-
 Pseudoachondroplastic dysplasia 1
 Pseudoachondroplastic dysplasia
 Pseudoadrenoleukodystrophy
@@ -6376,7 +5942,6 @@ Pseudomonas stutzeri infection
 Pseudomongolism
 Pseudomyxoma peritonei
 Pseudoobstruction idiopathic intestinal
-
 Pseudopapilledema
 Pseudopapilledema blepharophimosis hand anomalies
 Pseudopelade of Brocq
@@ -6391,7 +5956,6 @@ Pseudoxanthoma elasticum, recessive form
 Pseudoxanthoma elasticum
 Pseudo-Zellweger syndrome
 Psittacosis
-
 Psoriasis
 Psoriatic arthritis
 Psoriatic rheumatism
@@ -6399,7 +5963,6 @@ Psychogenic polydipsia
 Psychophysiologic disorders
 Psychosis
 Pterygia mental retardation facial dysmorphism
-
 Pterygium colli
 Pterygium colli mental retardation digital anomalies
 Pterygium of the eye
@@ -6413,10 +5976,8 @@ Ptosis coloboma trigonocephaly
 Ptosis strabismus diastasis
 Ptosis strabismus ectopic pupils
 Pubic lice
-
 Puerperal fever
 Pulmonar arterioveinous aneurysm
-
 Pulmonary agenesis
 Pulmonary alveolar proteinosis, congenital
 Pulmonary alveolar proteinosis
@@ -6445,7 +6006,6 @@ Pulmonary venous return anomaly
 Pulmonaryatresia intact ventricular septum
 Pulmonic stenosis with Café au lait spot
 Punctate acrokeratoderma freckle like pigmentation
-
 Punctate inner choroidopathy
 Pure red cell aplasia
 Puretic syndrome
@@ -6455,7 +6015,6 @@ Purpura, thrombotic thrombocytopenic
 Purpura
 Purtilo syndrome
 Pyaemia
-
 Pycnodysostosis
 Pyknoachondrogenesis
 Pyle disease
@@ -6474,7 +6033,6 @@ Pyruvate kinase deficiency, liver type
 Pyruvate kinase deficiency, muscle type
 Pyruvate kinase deficiency
 Q fever
-
 Qazi–Markouizos syndrome
 Quadrantanopia
 Quadriceps sparing myopathy
@@ -6488,7 +6046,6 @@ Quinism
 Quinquaud's decalvans folliculitis
 Quinsy
 Rabies
-
 Rabson–Mendenhall syndrome
 Radial defect Robin sequence
 Radial hypoplasia, triphalangeal thumbs and hypospadias
@@ -6512,7 +6069,6 @@ Radio-ulnar synostosis type 2
 Radius absent anogenital anomalies
 Raine syndrome
 Rambam Hasharon syndrome
-
 Rambaud–Galian syndrome
 Ramer–Ladda syndrome
 Ramon syndrome
@@ -6528,14 +6084,11 @@ Ray–Peterson–Scott syndrome
 Raynaud's disease/phenomenon
 Rayner–Lampert–Rennert syndrome
 Reactive airway disease
-
 Reactive arthritis
 Reactive attachment disorder (RAD)
 Reactive attachment disorder of early childhood
-
 Reactive attachment disorder of infancy
 Reactive hypoglycemia
-
 Reardon–Hall–Slaney syndrome
 Reardon–Wilson–Cavanagh syndrome
 Rectal neoplasm
@@ -6553,10 +6106,8 @@ Refsum disease
 Reginato–Shiapachasse syndrome
 Regional enteritis
 Reifenstein syndrome
-
 Reinhardt–Pfeiffer syndrome
 Renal adysplasia dominant type
-
 Renal agenesis meningomyelocele Müllerian defect
 Renal agenesis, bilateral
 Renal agenesis
@@ -6575,7 +6126,6 @@ Renal failure
 Renal genital middle ear anomalies
 Renal glycosuria
 Renal hepatic pancreatic dysplasia Dandy Walker cyst
-
 Renal hypoplasia
 Renal hypertension
 Renal osteodystrophy
@@ -6589,11 +6139,9 @@ Renal tubular acidosis, distal
 Renal tubular acidosis
 Renal tubular transport disorders inborn
 Renier–Gabreels–Jasper syndrome
-
 Renoanogenital syndrome
 Renoprival hypertension
 Reperfusion injury
-
 Repetitive strain injury (RSI)
 Resistance to LH (luteinizing hormone)
 Resistance to thyroid stimulating hormone
@@ -6603,18 +6151,15 @@ Respiratory distress syndrome, adult
 Respiratory distress syndrome, infant
 Restless legs syndrome
 Reticuloendotheliosis
-
 Retina disorder
 Retinal degeneration
 Retinal dysplasia X linked
 Retinal telangiectasia hypogammaglobulinemia
 Retinitis pigmentosa
 Retinitis pigmentosa-deafness
-
 Retinis pigmentosa deafness hypogenitalism
 Retinitis pigmentosa mental retardation deafness
 Retinoblastoma
-
 Retinohepatoendocrinologic syndrome
 Retinopathy anemia CNS anomalies
 Retinopathy aplastic anemia neurological abnormalities
@@ -6623,35 +6168,28 @@ Retinopathy, arteriosclerotic
 Retinopathy, diabetic
 Retinoschisis
 Retinoschisis, juvenile
-
 Retinoschisis, X-linked
 Retrograde amnesia
-
 Retrolental fibroplasia
 Retroperitoneal fibrosis
 Retroperitoneal liposarcoma
 Rett like syndrome
-
 Rett syndrome
 Revesz syndrome
-
 Reye's syndrome
 Reynolds–Neri–Hermann syndrome
 Reynolds syndrome
 Rh disease
-
 Rhabditida infections
 Rhabdoid tumor
 Rhabdomyolysis
 Rhabdomyomatous dysplasia cardiopathy genital anomalies
 Rhabdomyosarcoma
 Rhabdomyosarcoma 1
-
 Rhabdomyosarcoma 2
 Rhabdomyosarcoma, alveolar
 Rhabdomyosarcoma, embryonal
 Rheumatic fever
-
 Rheumatism
 Rheumatoid arthritis
 Rheumatoid purpura
@@ -6663,19 +6201,16 @@ Rhizomelic syndrome
 Rhypophobia
 Rhytiphobia
 Ribbing disease
-
 Richards–Rundle syndrome
 Richieri–Costa–Colletto–Otto syndrome
 Richieri–Costa–Da Silva syndrome
 Richieri–Costa–Gorlin syndrome
 Richieri–Costa–Guion–Almeida syndrome
 Richieri–Costa–Guion–Almeida acrofacial dysostosis
-
 Richieri–Costa–Guion–Almeida–Cohen syndrome
 Richieri–Costa–Guion–Almeida dwarfism
 Richieri–Costa–Guion–Almeida–Rodini syndrome
 Richieri–Costa–Montagnoli syndrome
-
 Richieri–Costa–Orquizas syndrome
 Richieri–Costa–Silveira–Pereira syndrome
 Richter syndrome
@@ -6690,12 +6225,10 @@ Right ventricle hypoplasia
 Rigid mask like face deafness polydactyly
 Rigid spine syndrome
 Riley–Day syndrome
-
 Ringed hair disease
 Ringworm
 Rivera–Perez–Salas syndrome
 Roberts syndrome
-
 Robin sequence and oligodactyly
 Robinow–Sorauf syndrome
 Robinow syndrome
@@ -6722,7 +6255,6 @@ Rowley–Rosenberg syndrome
 Roy–Maroteaux–Kremp syndrome
 Rozin–Hertz–Goodman syndrome
 Rubella virus antenatal infection
-
 Rubella, congenital
 Rubella
 Rubeola
@@ -6739,7 +6271,6 @@ Ruvalcaba–Myhre syndrome
 Ruvalcaba–Myhre–Smith syndrome (BRR)
 Ruzicka Goerz Anton syndrome
 Saal Bulas syndrome
-
 Saal Greenstein syndrome
 Sabinas brittle hair syndrome
 Saccharopinuria
@@ -6763,7 +6294,6 @@ Salmonellosis (Salmonella infections)
 Salti–Salem syndrome
 Salice Disease
 Sammartino–Decreccio syndrome
-
 Samson–Gardner syndrome
 Samson–Viljoen syndrome
 Sanderson–Fraser syndrome
@@ -6787,7 +6317,6 @@ Say–Carpenter–syndrome
 Say–Field–Coldwell syndrome
 Say–Meyer syndrome
 Scabies
-
 Scab Face
 SCAD deficiency
 Scalp defects postaxial polydactyly
@@ -6797,7 +6326,6 @@ Scapuloperoneal myopathy
 SCARF syndrome
 Scarlet fever
 Schaap–Taylor–Baraitser syndrome
-
 Schaefer–Stein–Oshman syndrome
 Schamberg's disease pigmentation disorder
 Schamberg's disease
@@ -6817,14 +6345,12 @@ Schizoid personality disorder
 Schizophrenia
 Schizophrenia, genetic types
 Schizophrenia intellectual disability deafness retinitis
-
 Schizophreniform disorder
 Schizotypal personality disorder
 Schlegelberger–Grote syndrome
 Schmidt syndrome
 Schmitt Gillenwater Kelly syndrome
 Schneckenbecken dysplasia
-
 Schofer–Beetz–Bohl syndrome
 Scholte–Begeer–Van Essen syndrome
 Schraderman's disease
@@ -6838,7 +6364,6 @@ Schwartz–Jampel syndrome
 Schwartz–lelek syndrome
 Schweitzer–Kemink–Malcolm syndrome
 Sciatica
-
 Scimitar syndrome
 Scleredema
 Scleroatonic myopathy
@@ -6857,12 +6382,10 @@ Scott syndrome
 Scrapie
 Scurvy
 Scoliosis
-
 Scoliosis as part of NF
 Scoliosis with unilateral unsegmented bar
 Scotoma
 Sea-blue histiocytosis
-
 Seafood poisoning
 Seasonal affective disorder
 Seaver–Cassidy syndrome
@@ -6881,7 +6404,6 @@ Segmental vertebral anomalies
 Seizures benign familial neonatal recessive form
 Seizures mental retardation hair dysplasia
 Selective mutism
-
 Selenium poisoning
 Self-defeating personality disorder
 Selig–Benacerraf–Greene syndrome
@@ -6907,7 +6429,6 @@ Septooptic dysplasia digital anomalies
 Septo-optic dysplasia
 Sequeiros–Sack syndrome
 Seres–Santamaria–Arimany–Muniz syndrome
-
 Serum sickness
 Serious digitalis intoxication
 Setleis syndrome
@@ -6920,7 +6441,6 @@ Sexually transmitted disease
 Sézary syndrome
 Sézary's lymphoma
 Shapiro syndrome
-
 Shared psychotic disorder
 Sharma–Kapoor–Ramji syndrome
 Sharp syndrome
@@ -6928,19 +6448,15 @@ Shaver's disease
 Sheehan syndrome
 Shellfish poisoning
 Shellfish poisoning, amnesic (ASP)
-
 Shellfish poisoning, diarrheal (DSP)
 Shellfish poisoning, neurotoxic (NSP)
 Shellfish poisoning, paralytic (PSP)
 Shigellosis
-
 Shingles
 Shith–Filkins syndrome
 Shock
-
 Shokeir syndrome
 Short bowel syndrome
-
 Short broad great toe macrocranium
 Short-chain acyl-CoA dehydrogenase deficiency
 Short limb dwarf lethal Colavita–Kozlowski type
@@ -6953,13 +6469,11 @@ Short QT syndrome
 Short rib syndrome Beemer type
 Short rib-polydactyly syndrome
 Short rib-polydactyly syndrome, Beermer type
-
 Short rib-polydactyly syndrome, Majewski type
 Short rib-polydactyly syndrome, Saldino-Noonan type
 Short rib-polydactyly syndrome, Verma-Naumoff type
 Short ribs craniosynostosis polysyndactyly
 Short stature abnormal skin pigmentation mental retardation
-
 Short stature Brussels type
 Short stature contractures hypotonia
 Short stature cranial hyperostosis hepatomegaly
@@ -6982,17 +6496,14 @@ Short stature wormian bones dextrocardia
 Short syndrome
 Short tarsus absence of lower eyelashes
 Shoulder and thorax deformity congenital heart disease
-
 Shoulder girdle defect mental retardation familial
 Shprintzen–Golberg craniosynostosis
-
 Shprintzen syndrome
 Shwachman syndrome
 Shwachman–Bodian–Diamond syndrome
 Shwartzman phenomenon
 Shy–Drager syndrome
 Sialadenitis
-
 Sialidosis type 1 and 3
 Sialidosis
 Sialuria, French type
@@ -7011,7 +6522,6 @@ Simian B virus infection
 Simosa–Penchaszadeh–Bustos syndrome
 Simpson–Golabi–Behmel syndrome
 Singh–Chhaparwal–Dhanda syndrome
-
 Single upper central incisor
 Single ventricular heart
 Singleton Merten syndrome
@@ -7028,7 +6538,6 @@ Situs inversus viscerum-cardiopathy
 Situs inversus, X linked
 Sixth nerve palsy
 Sjögren–Larsson syndrome
-
 Sjögren's syndrome
 Skandaitis
 Skeletal dysplasia brachydactyly
@@ -7054,7 +6563,6 @@ Smith–Martin–Dodd syndrome
 Smith–Magenis syndrome
 Sneddon's syndrome
 Sociophobia
-
 Soft-tissue sarcoma
 Sohval–Soffer syndrome
 Somatization disorder
@@ -7069,15 +6577,12 @@ Sotos syndrome
 Southwestern Athabaskan genetic diseases
 Sparse hair ptosis mental retardation
 Spasmodic dysphonia
-
 Spasmodic torticollis
 Spastic angina with healthy coronary artery
-
 Spastic ataxia Charlevoix–Saguenay type
 Spastic diplegia infantile type
 Spastic dysphonia
 Spastic paraparesis deafness
-
 Spastic paraparesis, infantile
 Spastic paraparesis
 Spastic paraplegia epilepsy mental retardation
@@ -7101,7 +6606,6 @@ Spasticity mental retardation
 Spasticity multiple exostoses
 Spatic paraparesis vitiligo premature graying
 Specific phobia
-
 Spellacy gibbs watts syndrome
 Spermatogenesis arrest
 Spherocytosis
@@ -7109,7 +6613,6 @@ Spherophakia brachymorphia syndrome
 Sphingolipidosis
 Spielmeyer–Vogt disease
 Spina bifida
-
 Spina bifida hypospadias
 Spinal and bulbar muscular atrophy
 Spinal atrophy ophthalmoplegia pyramidal syndrome
@@ -7127,17 +6630,14 @@ Spinal muscular atrophy with respiratory distress type 1
 Spinal shock
 Spine rigid cardiomyopathy
 Spinocerebellar ataxia (multiple types)
-
 Spinocerebellar ataxia amyotrophy deafness
 Spinocerebellar ataxia dysmorphism
 Spinocerebellar atrophy type 3
 Spinocerebellar degeneration corneal dystrophy
 Spinocerebellar degenerescence book type
 Spirochetes disease
-
 Spirurida infections
 Spleen neoplasm
-
 Splenic agenesis syndrome
 Splenic flexure syndrome
 Splenogonadal fusion limb defects micrognatia
@@ -7151,12 +6651,10 @@ Split hand urinary anomalies spina bifida
 Split-hand deformity
 Sponastrime dysplasia
 Spondylarthritis
-
 Spondylarthropathies
 Spondylarthropathy
 Spondylitis
 Spondylo camptodactyly syndrome
-
 Spondylo costal dysostosis dandy walker
 Spondylocarpotarsal synostosis
 Spondylocostal dysplasia dominant
@@ -7179,23 +6677,18 @@ Spondylometaphyseal dysplasia, X-linked
 Spondylometaphyseal dysplasia
 Spondyloperipheral dysplasia short ulna
 Spongiform encephalopathy
-
 Spongy degeneration of central nervous system
 Spontaneous periodic hypothermia
 Spontaneous pneumothorax familial type
 Sporotrichosis
-
 Spotted fever
 Spranger schinzel yers syndrome
-
 Sprengel deformity
 Squamous cell carcinoma
-
 SSADH (succinic semialdehyde dehydrogenase deficiency)
 SSPE (subacute sclerosing panencephalitis)
 St. Anthony's fire
 Stalker chitayat syndrome
-
 Stampe sorensen syndrome
 Staphylococcal infection
 Staphylococcus aureus infection
@@ -7216,11 +6709,9 @@ Steroid dehydrogenase deficiency dental anomalies
 Stevens–Johnson syndrome
 Stickler syndrome
 Stickler syndrome, type 1
-
 Stickler syndrome, type 2
 Stickler syndrome, type 3
 Stiff person syndrome
-
 Stiff skin syndrome
 Still's disease
 Stimmler syndrome
@@ -7237,7 +6728,6 @@ Stomatitis
 Storage pool platelet disease
 Stormorken–Sjaastad–Langslet syndrome
 Strabismus
-
 Stratton–Garcia–Young syndrome
 Stratton–Parker syndrome
 Streeter's dysplasia (Amniotic band syndrome)
@@ -7256,7 +6746,6 @@ Stuve–Wiedemann dysplasia
 Stye
 Stupidity
 Subacute cerebellar degeneration
-
 Subacute sclerosing leucoencephalitis
 Subacute sclerosing panencephalitis
 Subaortic stenosis short stature syndrome
@@ -7280,7 +6769,6 @@ Sulfite and xanthine oxydase deficiency
 Sulfite oxidase deficiency
 Summitt syndrome
 Superior mesenteric artery syndrome
-
 Superior oblique myokymia
 Super mesozoic-dysentery complex
 Supranuclear ocular palsy
@@ -7291,7 +6779,6 @@ Sutherland–Haan syndrome
 Sutton disease II
 Sutton disease II
 Sweeley–Klionsky disease
-
 Sweet syndrome
 Swimmer's ear
 Swyer–James–McLeod syndrome
@@ -7299,7 +6786,6 @@ Swyer syndrome
 Sweatalitus disease
 Swine influenza (H1F1)
 Sybert–Smith syndrome
-
 Sydenham's chorea
 Symmetrical thalamic calcifications
 Symphalangism brachydactyly craniosynostosis
@@ -7311,7 +6797,6 @@ Symphalangism short stature accessory testis
 Symphalangism with multiple anomalies of hands and feet
 Symphalangism, distal, with microdontia, dental pulp stones, and narrowed zygomatic arch
 Syncamptodactyly scoliosis
-
 Syncopal paroxysmal tachycardia
 Syncopal tachyarythmia
 Syncope
@@ -7332,7 +6817,6 @@ Synesthesia
 Syngnathia cleft palate
 Syngnathia multiple anomalies
 Synostosis of talus and calcaneus short stature
-
 Synovial cancer
 Synovial osteochondromatosis
 Synovial sarcoma
@@ -7342,7 +6826,6 @@ Synovitis granulomatous uveitis cranial neuropathi
 Synovitis
 Synpolydactyly
 Syphilis embryopathy
-
 Syphilis
 Syringobulbia
 Syringocystadenoma papilliferum
@@ -7357,7 +6840,6 @@ Systemic mastocytosis
 Systemic necrotizing angeitis
 Systemic sclerosis
 Tachycardia
-
 Taeniasis
 Takayasu arteritis
 Talipes equinovarus
@@ -7378,7 +6860,6 @@ Taybi syndrome
 Tay–Sachs disease
 T-cell lymphoma
 Teebi–Kaurah syndrome
-
 Teebi–Naguib–Alawadi syndrome
 Teebi–Shaltout syndrome
 Teebi syndrome
@@ -7397,7 +6878,6 @@ Temporomandibular joint dysfunction (TMJ)
 Temtamy–Shalash syndrome
 TEN
 Ter Haar–Hamel–Hendricks syndrome
-
 Ter Haar syndrome
 Teratocarcinosarcoma
 Teratoma
@@ -7415,7 +6895,6 @@ Tetrasomy 9p
 Tetrasomy 15qter syndrome
 Tetrasomy X
 Thakker–Donnai syndrome
-
 Thalamic degeneration symmetrical infantile
 Thalamic degenerescence infantile
 Thalamic syndrome
@@ -7434,7 +6913,6 @@ Thin ribs tubular bones dysmorphism
 Thiolase deficiency
 Thiopurine S methyltranferase deficiency
 Thomas–Jewett–Raines syndrome
-
 Thomas syndrome
 Thombocytopenia X linked
 Thompson–Baraitser syndrome
@@ -7448,7 +6926,6 @@ Thoracolaryngopelvic dysplasia
 Thoracopelvic dysostosis
 Thost–Unna palmoplantar keratoderma
 Thrombasthenia
-
 Thrombocytopathy asplenia miosis
 Thrombocytopathy
 Thrombocytopenia cerebellar hypoplasia short stature
@@ -7468,7 +6945,6 @@ Thumb deformity, alopecia, pigmentation anomaly
 Thumb deformity
 Thumb stiff brachydactyly mental retardation
 Thymic carcinoma
-
 Thymic epithelial tumor
 Thymic renal anal lung dysplasia
 Thymoma
@@ -7482,7 +6958,6 @@ Thyroid carcinoma, papillary (TPC)
 Thyroid hormone plasma membrane transport defect
 Thyroid, renal and digital anomalies
 Tibia absent polydactyly arachnoid cyst
-
 Tibiae bowed radial anomalies osteopenia fracture
 Tibial aplasia ectrodactyly hydrocephalus
 Tibial aplasia ectrodactyly
@@ -7495,7 +6970,6 @@ Tinnitus
 T-Lymphocytopenia
 TNF receptor associated periodic syndrome (TRAPS)
 Todd's paralysis
-
 Todd's syndrome
 Togaviridae disease
 Tollner–Horst–Manzke syndrome
@@ -7520,7 +6994,6 @@ Torulopsis
 Tosti–Misciali–Barbareschi syndrome
 Total hypotrichosis, Mari type
 Touraine–Solente–Golé syndrome
-
 Tourette syndrome
 Townes–Brocks syndrome
 Toxic conjunctivitis
@@ -7530,7 +7003,6 @@ Toxopachyoteose diaphysaire tibio peroniere
 Toxoplasmosis
 Toxoplasmosis, congenital
 Tracheal agenesis
-
 Tracheobronchomalacia
 Tracheobronchomegaly
 Tracheobronchopathia osteoplastica
@@ -7550,14 +7022,12 @@ Transverse limb deficiency hemangioma
 Transverse myelitis
 TRAPS
 Treacher Collins syndrome
-
 Treft–Sanborn–Carey syndrome
 Tremor hereditary essential
 Treponema infection
 Trevor disease
 Triatrial heart
 Trichinellosis
-
 Trichinosis
 Tricho–dento–osseous syndrome type 1
 Tricho odonto onycho dermal syndrome
@@ -7588,7 +7058,6 @@ Tricuspid atresia
 Tricuspid dysplasia
 Tricyclic antidepressant overdose
 Trigeminal neuralgia
-
 Trigger finger
 Trigonocephaly
 Trigonocephaly bifid nose acral anomalies
@@ -7609,7 +7078,6 @@ Triplo X Syndrome
 Triploid Syndrome
 Triploidy
 Trismus pseudocamptodactyly syndrome
-
 Trisomy 1 mosaicism
 Trisomy 11 mosaicism
 Trisomy 12 mosaicism
@@ -7619,7 +7087,6 @@ Trisomy 3 mosaicism
 Trisomy 6
 Trisomy
 Trochlear dysplasia
-
 Trophoblastic Neoplasms (gestational trophoblastic disease)
 Trophoblastic tumor
 Tropical spastic paraparesis
@@ -7630,21 +7097,17 @@ Trypanophobia
 Trypanosomiasis, East African
 Trypanosomiasis, West African
 Tsao–Ellingson syndrome
-
 Tsukahara–Azuno–Kajii syndrome
 Tsukahara–Kajii syndrome
 Tsukuhara syndrome
 Tuberculosis, pulmonary
-
 Tuberculosis
 Tuberculous meningitis
 Tuberculous uveitis
 Tuberous Sclerosis
 Tuberous Sclerosis, type 1
-
 Tuberous Sclerosis, type 2
 Tucker syndrome
-
 Tuffli–Laxova syndrome
 Tufted angioma
 Tularemia
@@ -7658,12 +7121,10 @@ Turner's syndrome
 Tutuncuoglu syndrome
 Twin-to-twin transfusion syndrome
 Typhoid
-
 Typhus
 Tyrosinemia
 Tyrosine-oxidase temporary deficiency
 UDP-galactose-4-epimerase deficiency
-
 Uhl anomaly
 Ulbright–Hodes syndrome
 Ulcerative colitis
@@ -7688,7 +7149,6 @@ Upington disease
 Upper limb defect eye and ear abnormalities
 Upton–Young syndrome
 Urachal cancer
-
 Urachal cyst
 Urbach–Wiethe disease
 Urban–Rogers–Meyer syndrome
@@ -7707,7 +7167,6 @@ Urticaria pigmentosa
 Urticaria
 Urticaria-deafness-amyloidosis
 Usher syndrome, type 1C
-
 Usher syndrome, type 1D
 Usher syndrome, type 1E
 Usher syndrome, type 2A
@@ -7721,3 +7180,316 @@ Uveal diseases
 Uveitis, anterior
 Uveitis, posterior
 Uveitis
+Vaccinophobia
+VACTERL association
+VACTERL association with hydrocephaly, X linked
+VACTERL hydrocephaly
+Vacuolar myopathy
+Vagabond's disease
+Vaginismus
+Vaginiosis (bacterial, cytologic)
+Vagneur–Triolle–Ripert syndrome
+Valinemia
+Valproic acid antenatal infection
+Valvular dysplasia of the child
+Van Allen–Myhre syndrome
+Van Bogaert–Hozay syndrome
+Van De Berghe–Dequeker syndrome
+Van Den Bosch syndrome
+Van Den Ende–Brunner syndrome
+Van der Woude syndrome
+Van der Woude syndrome 2
+Van Goethem syndrome
+Van Maldergem–Wetzburger–Verloes syndrome
+Van Regemorter–Pierquin–Vamos syndrome
+Vancomycin-resistant Enterococcus (Vancomycin-resistant enterococcal bacteremia)
+Varadi–Papp syndrome
+Varicella virus antenatal infection
+Varicella zoster
+Variegate porphyria
+Vas deferens, congenital bilateral aplasia of
+Vascular disruption sequence
+Vascular helix of umbilical cord
+Vascular malformations of the brain
+Vascular malposition
+Vascular purpura
+Vasculitis
+Vasculitis hypersensitivity
+Vasculitis, cutaneous necrotizing
+Vasopressin-resistant diabetes insipidus
+Vasovagal syncope
+Vasquez–Hurst–Sotos syndrome
+VATER association
+Vein of Galen aneurysmal malformationss (VGAM)
+Vein of Galen aneurysmal dilatation (VGAD)
+Velocardiofacial syndrome
+Velofacioskeletal syndrome
+Velopharyngeal incompetence
+Venencie Powell Winkelmann syndrome
+Ventricular extrasystoles perodactyly Robin sequence
+Ventricular familial preexcitation syndrome
+Ventricular fibrillation, idiopathic
+Ventricular septal defect
+Ventriculo-arterial discordance, isolated
+Ventruto Digirolamo Festa syndrome
+Verloes–Bourguignon syndrome
+Verloes–David syndrome
+Verloes–Gillerot–Fryns syndrome
+Verloes–Van Maldergem–Marneffe syndrome
+Verloove–Vanhorick–Brubakk syndrome
+Verminiphobia
+Vernal keratoconjunctivitis
+Verrucous nevus acanthokeratolytic
+Verrucous nevus
+Vertebral body fusion overgrowth
+Vertebral fusion posterior lumbosacral blepharoptosis
+Vertical talus
+Vestibulocochlear dysfunction progressive familial
+Viljoen–Kallis–Voges syndrome
+Viljoen–Smart syndrome
+Viljoen–Winship syndrome
+Vipoma
+Viral hemorrhagic fever
+Virilism
+Virilizing ovarian tumor
+Virus associated hemophagocytic syndrome
+Visceral myopathy familial external ophthalmoplegia
+Visceral steatosis
+Viscero-atrial heterotaxia
+Visna Maedi complex
+Vitamin A embryopathy
+Vitamin B6 deficiency
+Vitamin B12 deficiency
+Vitamin B12 responsive methylmalonic acidemia, cbl A
+Vitamin B12 responsive methylmalonicaciduria
+Vitamin D resistant rickets
+Vitamin E deficiency
+Vitamin E familial isolated, deficiency of
+Vitiligo mental retardation facial dysmorphism uremia
+Vitiligo psychomotor retardation cleft palate facial dysmorphism
+Vitiligo
+Vitreoretinal degeneration
+Vitreoretinochoroidopathy dominant
+VKH
+VLCAD deficiency
+Vocal cord dysfunction familial
+Von Gierke disease
+Von Hippel–Lindau disease
+Von Recklinghausen disease
+Von Voss–Cherstvoy syndrome
+Von Willebrand disease
+Vulvodynia
+Vulvovaginitis
+W syndrome
+Waaler–Aarskog syndrome
+Waardenburg anophthalmia syndrome
+Waardenburg syndrome
+Waardenburg syndrome type 1
+Waardenburg syndrome type 2
+Waardenburg syndrome type 2A
+Waardenburg syndrome type 2B
+Waardenburg syndrome type 3
+Waardenburg syndrome, type 4
+Waardenburg type Pierpont
+Wagner's disease
+Wagner–Stickler syndrome
+WAGR syndrome
+Walbaum–Titran–Durieux–Crepin syndrome
+Waldenström's macroglobulinemia
+Waldmann disease
+Walker–Dyson syndrome
+Wallerian degeneration
+Wallis–Zieff–Goldblatt syndrome
+Wandering spleen
+Warburg–Sjo–Fledelius syndrome; see Micro syndrome
+Warburg–Thomsen syndrome
+Warburton–Anyane–Yeboa syndrome
+Warfarin antenatal infection
+Warfarin necrosis
+Warkany syndrome
+Warman–Mulliken–Hayward syndrome
+Warm-reacting-antibody hemolytic anemia
+Warts
+Waterhouse–Friderichsen syndrome
+Watermelon stomach
+Watson syndrome
+Weaver–Johnson syndrome
+Weaver-like syndrome
+Weaver syndrome
+Weaver–Williams syndrome
+Weber–Parkes syndrome
+Weber–Sturge–Dimitri syndrome
+Weber–Christian disease
+Webster–Deming syndrome
+Wegener's granulomatosis (now known as granulomatosis with polyangiitis)
+Wegmann–Jones–Smith syndrome
+Weil syndrome
+Weinstein–Kliman–Scully syndrome
+Weismann–Netter–Stuhl syndrome
+Weissenbacher–Zweymuller syndrome
+Welander distal myopathy, Swedish type
+Weleber–Hecht–Bigley syndrome
+Wellesley–Carmen–French syndrome
+Wells–Jankovic syndrome
+Wells syndrome
+Werdnig–Hoffmann disease
+Werner's syndrome
+Wernicke–Korsakoff syndrome
+Wernicke's encephalopathy
+West Nile virus
+West syndrome
+Westerhof–Beemer–Cormane syndrome
+Western equine encephalitis
+Westphall disease
+Wheat hypersensitivity
+Whipple disease
+Whitaker syndrome
+White matter hypoplasia corpus callosum agenesia mental retardation
+White sponge nevus
+Whooping cough (Pertussis)
+Whyte–Murphy syndrome
+Wieacker syndrome
+Wiedemann–Grosse–Dibbern syndrome
+Wiedemann–Oldigs–Oppermann syndrome
+Wiedemann–Opitz syndrome
+Wiedemann–Rautenstrauch syndrome
+Wildervanck syndrome
+Wilkes–Stevenson syndrome
+Wilkie–Taylor–Scambler syndrome
+Willebrand disease, acquired
+Willebrand disease
+Willems–De vries syndrome
+Williams syndrome
+Wilms' tumor
+Wilms tumor and pseudohermaphroditism
+Wilms tumor radial bilateral aplasia
+Wilms tumor-aniridia syndrome
+Wilson's disease
+Wilson–Turner syndrome
+Winchester syndrome
+Winkelman–Bethge–Pfeiffer syndrome
+Winship–Viljoen–Leary syndrome
+Winter–Harding–Hyde syndrome
+Winter–Shortland–Temple syndrome
+Wisconsin syndrome
+Wiskott–Aldrich syndrome
+Witkop syndrome
+Wohlwill–Andrade syndrome
+Wolcott–Rallison syndrome
+Wolff–Parkinson–White syndrome
+Wolf–Hirschhorn syndrome
+Wolfram syndrome
+Wolman disease
+Woodhouse–Sakati syndrome
+Woods–Black–Norbury syndrome
+Woods–Leversha–Rogers syndrome
+Wooly hair syndrome
+Woolly hair autosomal recessive
+Woolly hair hypotrichosis everted lower lip outstanding ears
+Woolly hair palmoplantar keratoderma cardiac anomalies
+Woolly hair, congenital
+Worster-Drought syndrome, various syndromes identified by Dr. Worster-Drought
+Worster-Drought syndrome associated with cerebral palsy
+Worster-Drought syndrome, also known as familial British dementia
+Worth syndrome
+Wright–Dick syndrome
+Wrinkly skin syndrome
+Writer's cramp
+Wt limb blood syndrome
+Wyburn–Mason's syndrome
+X, disease
+X chromosome, duplication Xq13 1 q21 1
+X chromosome, monosomy Xp22 pter
+X chromosome, monosomy Xq28
+X chromosome, trisomy Xp3
+X chromosome, trisomy Xpter Xq13
+X chromosome, trisomy Xq
+X chromosome, trisomy Xq25
+X fragile site folic acid type
+Xanthic urolithiasis
+Xanthine oxydase deficiency
+Xanthinuria
+Xanthomatosis cerebrotendinous
+Xerocytosis, hereditary
+Xeroderma
+Xeroderma pigmentosum
+Xeroderma pigmentosum, type 1
+Xeroderma pigmentosum, type 2
+Xeroderma pigmentosum, type 3
+Xeroderma pigmentosum, type 5
+Xeroderma pigmentosum, type 6
+Xeroderma pigmentosum, type 7
+Xeroderma pigmentosum, variant type
+Xeroderma talipes enamel defects
+Xerophthalmia
+Xerostomia
+Xk aprosencephaly
+X-linked adrenal hypoplasia congenita
+X-linked adrenoleukodystrophy
+X-linked agammaglobulinemia
+X-linked alpha thalassemia mental retardation syndrome (ATR-X)
+X-linked dominance
+X-linked ichthyosis
+X-linked juvenile retinoschisis
+X-linked lymphoproliferative syndrome
+X-linked mental retardation
+X-linked mental retardation and macroorchidism
+X-linked mental retardation associated with marXq2
+X-linked mental retardation Brooks type
+X-linked mental retardation craniofacial abnormal microcephaly club
+X-linked mental retardation De silva type
+X-linked mental retardation Hamel type
+X-linked mental retardation type Gustavson
+X-linked mental retardation type Martinez
+X-linked mental retardation type Raynaud
+X-linked mental retardation type Schutz
+X-linked mental retardation type Snyder
+X-linked mental retardation type Wittner
+X-linked mental retardation-hypotonia
+X-linked severe combined immunodeficiency
+X-linked trait
+XX male syndrome
+XY Female
+XY gonadal agenesis syndrome
+XYY syndrome
+XXXX syndrome
+XXXXX syndrome
+Y chromosome deletions
+Yaws
+Yeast infection
+Yellow fever
+Yellow nail syndrome
+Yemenite deaf-blind hypopigmentation syndrome
+Yersinia pestis infection
+Yersiniosis
+Yersinia entercolitica infection
+Yersinia pseudotuberculosis infection
+Yim–Ebbin syndrome
+Yolk sac tumor
+Yorifuji–Okuno syndrome
+Yoshimura–Takeshita syndrome
+Young–Hugues syndrome
+Young–Madders syndrome
+Young McKeever Squier syndrome
+Young Simpson syndrome
+Young syndrome
+Yunis–Varon syndrome
+Yusho disease
+Zadik–Barak–Levin syndrome
+ZAP70 deficiency
+Zamzam–Sheriff–Phillips syndrome
+Zechi-Ceide syndrome
+Zellweger syndrome
+Zenker's diverticulum
+Zieve's syndrome
+Zika Virus
+Zimmerman–Laband syndrome
+Zinc deficiency
+Zinc toxicity
+Zlotogora syndrome
+Zollinger–Ellison syndrome
+Zonular cataract and nystagmus
+Zori–Stalker–Williams syndrome
+Zunich–Kaye syndrome
+Zuska's disease
+Zygomycosis
