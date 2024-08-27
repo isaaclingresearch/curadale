@@ -1,4 +1,4 @@
-(in-package :palpul.apis)
+(in-package :patientedx.apis)
 
 (defun make-prompt (messages)
   "when given a list of messages, use it to create a system prompt"
@@ -113,11 +113,12 @@ you can include an image into the message by passing '(\"user\" . (content-type 
     (setf (gethash "content" h1) message)
     h1))
 
-(defun query-azure-ai (messages &key (model-keyparam :gpt-4o-mini) tuning-params (system-prompt *sexp-chat-prompt*))
+
+(defun query-azure-ai (messages &key (model-keyparam :gpt-4o) tuning-params (system-prompt *sexp-chat-prompt*))
   "query models served by azure openai service"
   (let* ((endpoint (trivia:match model-keyparam
-		     (:gpt-4o "https://ninxai-openai.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview")
-		     (:gpt-4o-mini "https://ninxai-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview")))
+				 (:gpt-4o "https://ninxai-openai.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview")
+				 (:gpt-4o-mini "https://ninxai-openai.openai.azure.com/openai/deployments/gpt-4o-mini/chat/completions?api-version=2023-03-15-preview")))
 	 (key (uiop:getenv "AZURE_OPENAI_KEY"))
 	 (json-data (make-openai-data messages tuning-params system-prompt)))
     (multiple-value-bind (response response-code response-headers request-uri flexi-response response-bool status-text)

@@ -1,4 +1,4 @@
-(in-package :palpul.nlp)
+(in-package :patientedx.nlp)
 
 (defparameter *stop-words*
  '("a" "an" "the" "and" "or" "but" "if" "then" "else" "when" "at" "by" "from" "for" "with" "about" "against" "between" "into" "through" "during" "before" "after" "above" "below" "to" "from" "up" "down" "in" "out" "on" "off" "over" "under" "again" "further" "then" "once" "here" "there" "all" "any" "both" "each" "few" "more" "most" "other" "some" "such" "no" "nor" "not" "only" "own" "same" "so" "than" "too" "very" "hi"))
