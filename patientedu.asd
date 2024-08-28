@@ -5,6 +5,7 @@
   :components ((:module "src"
 		:components ((:file "packages")
 			     (:file "patientedu.nlp")
+			     (:file "patientedu.sexp")
 			     (:file "patientedu.apis")
 			     (:file "patientedu.kvrocks")
 			     (:file "patientedu" :depends-on ("patientedu.apis" "patientedu.nlp"))))
