@@ -6,7 +6,7 @@
 
 Example of desired output: (:introduction \"Introduce the disease\" :cause \"Detailed disease cause\" :epidemiology \"Detailed disease epidemiology, qouting the latest statistics you have access too. Don't make numbers up.\" :risk-factors (\"Risk factor 1\" ...) :diagnosis (\"How disease is diagnosed 1\" ...) :pathophysiology \"A few details about how the process occurs\" :signs-and-symptoms (\"Sign 1\" ...) :complications (\"Complication with a brief explanation of how it comes about\" ...) :differential-diagnosis (\"Ddx 1\" ...) :alternative-names (\"Other name of disease 1\" ...) :prevention (\"Way 1\" ...) :living-with (\"Way 1\" ...))
 
-If you don't have any data about the disease: return nil (as in common lisp's nil).
+If you don't have any data about the disease: return nil (as in common lisp's nil). Do not make up any data as people's lives are at stake.
 " disease))
 
 (defun get-disease-details (disease)
