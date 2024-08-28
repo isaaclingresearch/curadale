@@ -22,6 +22,7 @@ when the model returns non plist data, repeat until it returns the correct data.
     ((list :error _) (get-disease-details disease))
     ((list data _ _ _)
      (let ((sexp-data (sexp:parse (nlp:remove-lisp-encapsulation data))))
-       (if (sexp:plistp sexp-data)
-	   (save-disease-data disease sexp-data)
-	   (get-disease-details disease))))))
+       (when sexp-data
+	 (if (sexp:plistp sexp-data)
+	     (save-disease-data disease sexp-data)
+	     (get-disease-details disease)))))))
