@@ -54,6 +54,7 @@ the data is saved in the following process
 	 (one-string (format nil "~a ~a ~a ~a ~{~a ~} ~{~a ~} ~a ~{~a ~} ~{~a ~} ~{~a ~} ~{~a ~} ~{~a ~}" disease intro cause epidemiology risk-factors differential-diagnoses pathophysiology signs-and-symptoms complications alternative-names prevention living-with))
 	 (tokens (nlp:tokenize one-string)))
     ;; save the data
+    (redis:red-hset id "name" disease)
     (redis:red-hset id "introduction" intro)
     (redis:red-hset id "cause" cause)
     (redis:red-hset id "epidemiology" epidemiology)
