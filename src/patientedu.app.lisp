@@ -44,7 +44,7 @@
   (hunchentoot:redirect (hunchentoot:request-uri request)
                         :protocol :https :port *patientedu-wss-port*))
 
-(defvar *patientedu-wss-acceptor* (make-instance 'ws-routes-ssl-acceptor :port *patientedu-wss-port*
+(defvar *patientedu-wss-acceptor* (make-instance 'ws-routes-ssl-acceptor :port *patientedu-https-port*
 								     :ssl-certificate-file *patientedu-ssl-cert*
 								     :ssl-privatekey-file *patientedu-ssl-key*
 								     :document-root (truename "~/common-lisp/patientedu/priv/")
@@ -133,8 +133,6 @@
 											     (setf (getprop *input* 'value) suggestion)
 											     (clear-suggestions))))
 					 (chain suggestions-container (append-child suggestion-div))))))))))
-
-
 (defroute index-page ("/" :method :get :decorators ()) ()
   (with-html-output-to-string (*standard-output*)
     (:html
@@ -147,34 +145,39 @@
       ;; Include CSS with background colors, borders, shadows, and mobile adjustments
       (:style
        (str (cl-css:css
-             '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)") ;; Added gradient background
+             '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)")
                (".container" :text-align "center" :width "90%" :max-width "600px" :display "flex" :flex-direction "column" :align-items "center" :justify-content "center" :flex "1")
-               (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px") ;; Blue background for header/logo
-               (".search-form" :margin-top "20px" :display "flex" :flex-direction "column" :align-items "center")
-               (".search-input" :width "calc(100% - 40px)" :padding "10px" :font-size "16px" :border "1px solid #ccc" :border-radius "4px" :margin-bottom "5px" :box-shadow "0 2px 5px rgba(0,0,0,0.1)") ;; Added shadow to input
-               (".search-button" :padding "10px 20px" :font-size "16px" :color "white" :background-color "#28a745" :border "none" :border-radius "4px" :cursor "pointer" :box-shadow "0 2px 5px rgba(0,0,0,0.2)") ;; Green button with shadow
-               (".search-button:hover" :background-color "#218838" :transform "scale(1.05)" :transition "transform 0.2s") ;; Button animation
-               (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white") ;; Blue footer background
+               (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
+               (".search-form" :margin-top "20px" :display "flex" :flex-direction "column" :align-items "center" :position "relative")
+               (".search-input" :width "calc(100% - 40px)" :padding "10px" :font-size "16px" :border "1px solid #ccc" :border-radius "4px" :margin-bottom "5px" :box-shadow "0 2px 5px rgba(0,0,0,0.1)")
+               (".autocomplete-suggestions" :border "1px solid #ccc" :max-height "150px" :overflow-y "auto" :position "absolute" :background-color "white" :z-index "1000" :width "calc(100% - 40px)" :left "0" :box-shadow "0 2px 5px rgba(0,0,0,0.1)" :margin-left 19)
+               (".autocomplete-suggestion" :padding "10px" :cursor "pointer" :border-bottom "1px solid #ddd")
+               (".autocomplete-suggestion:hover" :background-color "#f0f0f0")
+               (".search-button" :padding "10px 20px" :font-size "16px" :color "white" :background-color "#28a745" :border "none" :border-radius "4px" :cursor "pointer" :box-shadow "0 2px 5px rgba(0,0,0,0.2)" :margin-top "5px")
+               (".search-button:hover" :background-color "#218838" :transform "scale(1.05)" :transition "transform 0.2s")
+               (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white")
                (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
                (".footer a:hover" :text-decoration "underline")
                ;; Mobile adjustments
-               ("@media (max-width: 600px)" 
+               ("@media (max-width: 600px)"
                 (".logo" :font-size "30px")
                 (".search-input" :width "90%")
-                (".search-button" :width "90%"))
-	       (".autocomplete-suggestions" :border "1px solid #ccc" :max-height "150px" :overflow-y "auto" :position "absolute" :background-color "white" :z-index "1000" :width "calc(100% - 20px)")
-	       (".autocomplete-suggestion" :padding "10px" :cursor "pointer")
-	       (".autocomplete-suggestion:hover" :background-color "#f0f0f0"))))) ;; Responsive styling
-      (:body
-       (:div :class "container"
-	     (:div :class "logo" "PatientEdu")
-	     (:div :class "search-form"
-		   (:form :action "/search" :method "get"
-			  (:input :type "text" :name "query" :id "autocomplete-input" :placeholder "Search..." :class "search-input" :autocomplete "off")
-			  (:div :id "suggestions" :class "autocomplete-suggestions")
-			  (:button :type "submit" :class "search-button" "Search"))))
-             (:script (str (ws-js-code)))
-       ;; Footer Section
-       (:div :class "footer"
-	     (:a :href "/about" "About")
-	     (:a :href "/privacy" "Privacy Policy")))))))
+                (".search-button" :width "90%")
+                (".autocomplete-suggestions" :width "90%")))))) ;; Responsive adjustments
+     (:body
+      (:div :class "container"
+       (:div :class "logo" "PatientEdu")
+       (:div :class "search-form"
+        (:form :action "/search" :method "get"
+         (:input :type "text" :name "query" :id "autocomplete-input" :placeholder "Search..." :class "search-input" :autocomplete "off")
+         ;; Move the suggestions div directly below the input field
+         (:div :id "suggestions" :class "autocomplete-suggestions")
+         (:button :type "submit" :class "search-button" "Search"))))
+      (:script (str (ws-js-code)))
+      ;; Footer Section
+      (:div :class "footer"
+       (:a :href "/about" "About")
+       (:a :href "/privacy" "Privacy Policy")))))))
+
+
+

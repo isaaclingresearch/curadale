@@ -1,3 +1,8 @@
+(in-package :redis)
+
+(def-cmd ZUNION (&rest keys) :multi
+  "Return the union between the Zsets stored at key1, key2, ..., keyN.")
+
 (in-package :patientedu)
 
 (defun start-kvrocks ()
@@ -105,4 +110,12 @@ merge them and remove duplicates, return the resultant list"
 
 (defun get-autocomplete (fragment)
   "given a fragment of a word, find the autocomplete for it."
-  (redis:red-zrange (format nil "{auto-complete}:~a" fragment) 0 10))
+  (let ((tokens (str:split " " fragment)))
+    (if (= 1 (length tokens))
+	(redis:red-zrange (format nil "{auto-complete}:~a" fragment) 0 10)
+	(let ((matches (handler-case (eval `(redis:red-zunion ,@(mapcar (lambda (e) (format nil "{auto-complete}:~a" e)) tokens)))
+			 (error (err) (declare (ignore err))))))
+	  (if (and matches (> 10 (length matches)))
+	      (subseq matches 0 10)
+	      matches)))))
+

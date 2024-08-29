@@ -869,3 +869,5 @@ URI ~s contains illegal character ~s at position ~d." :FMT-ARGUMENTS ("/static/c
 25: ("foreign function: call_into_lisp_")
 26: ("foreign function: funcall1")
 
+[2024-08-29 15:20:54 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E0000DB0) (SSL_get_error: 1). ERR_print_errors(): C0F63FFD577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
