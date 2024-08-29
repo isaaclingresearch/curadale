@@ -77,9 +77,9 @@ finally save the tokens from both to the autocomplete sets"
   (let* ((disease-tokens (nlp:tokenize disease))
 	 (all-tokens (remove-duplicates `(,@disease-tokens ,@tokens))))
     (dolist (token tokens)
-      (redis:red-sadd (format nil "{disease-index}:~a" token) id))
+      (redis:red-sadd (format nil "{index}:disease:~a" token) id))
     (dolist (token disease-tokens)
-      (redis:red-sadd (format nil "{disease-title-index}:~a" token) id))
+      (redis:red-sadd (format nil "{index}:disease-title:~a" token) id))
     (create-autocomplete all-tokens)))
 
 (defun create-autocomplete (tokens)
@@ -100,9 +100,8 @@ forexample: tokens is saved in tok, toke, token, tokens"
   "given word, find any keys in disease title and disease indexes corresponding to it. 
 since data is going to be stored in different slots, sunion will not work
 merge them and remove duplicates, return the resultant list"
-  (let* ((title-keys (redis:red-smembers (format nil "{disease-title-index}:~a" word)))
-	 (index-keys (redis:red-smembers (format nil "{disease-index}:~a" word))))
-    (remove-duplicates (nconc title-keys index-keys) :test #'string=)))
+  (redis:red-sunion (format nil "{index}:disease:~a" word)
+		    (format nil "{index}:disease-title:~a" word)))
 
 (defun get-autocomplete (fragment)
   "given a fragment of a word, find the autocomplete for it."
