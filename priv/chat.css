@@ -1,0 +1,322 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* font-family: 'Helvetica Neue', Arial, sans-serif;*/
+}
+
+/* Ribbon Container */
+.ribbon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4A90E2;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.ribbon-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add space between the logo and the brand name */
+}
+
+.brand-ribbon {
+    color: #fff;
+    font-size: 1.5rem; /* Changed from 24px */
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.button-container-left {
+    display: none; /* Hide by default */
+    flex-direction: column; /* Arrange buttons in a column */
+    align-items: flex-start;
+    background-color: #4A90E2;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-container-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.button {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 1rem; /* Changed from 16px */
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-right: 10px; /* Add space between buttons */
+    transition: background-color 0.3s;
+}
+
+.new-chat-btn {
+    background-color: #1E90FF; /* DodgerBlue */
+}
+
+.new-chat-btn:hover {
+    background-color: #1C86EE;
+}
+
+.profile-btn {
+    background-color: #00BFFF; /* DeepSkyBlue */
+}
+
+.profile-btn:hover {
+    background-color: #00A5DB;
+}
+
+.logout-btn {
+    background-color: #4169E1; /* RoyalBlue */
+}
+
+.logout-btn:hover {
+    background-color: #3B5EC6;
+}
+
+.icon {
+    display: block; /* Show menu icon */
+    font-size: 1.5rem;
+    color: white;
+}
+
+.menu a {
+    display: block;
+    margin: 5px 0;
+}
+
+/* Chat Container */
+.chat-container {
+		 display: flex;
+		 flex-direction: column;
+		 width: 100%;
+		 max-width: 700px;
+		 height: calc(100vh - 70px); /* Adjust height to account for ribbon */
+		 margin: 20px auto;
+		 border: 1px solid #ccc;
+		 border-radius: 10px;
+		 overflow: hidden;
+		 background-color: #fff;
+		 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		 }
+
+/* Chat Header */
+.chat-header {
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: #fff;
+    text-align: center;
+    font-size: 1.125rem; /* Changed from 18px */
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Chat Messages */
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding-bottom: 100px; /* Add padding to the bottom */
+}
+
+.message {
+    max-width: 70%;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    clear: both;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.received {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+}
+
+.sent {
+    background-color: #4CAF50;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.message ul, .message ol {
+    padding-left: 20px; /* Add padding to include lists */
+}
+
+.message li {
+    margin-bottom: 5px; /* Add margin for list items */
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 0 10px;
+    outline: none;
+    resize: none; /* Prevent manual resizing */
+    overflow: hidden;
+    min-height: 40px; /* Adjust as needed */
+    max-height: 150px; /* Limit max height */
+    font-size: 1rem; /* Changed from 14px */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.chat-input button:hover {
+    background-color: #357ABD;
+}
+
+@media (max-width: 600px) {
+    .ribbon-container {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .ribbon-left {
+        flex: 1;
+        align-items: center;
+    }
+
+    .button-container-left {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #4A90E2;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .button-container-right {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .icon {
+        display: block; /* Show menu icon */
+    }
+
+    .chat-container {
+        height: calc(100vh - 60px); /* Adjust height to account for ribbon */
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .chat-header {
+        font-size: 1rem; /* Decrease font size for small screens */
+    }
+
+    .chat-messages {
+        padding: 10px;
+        padding-bottom: 120px; /* Add padding to the bottom to account for the chat input */
+    }
+
+    .message {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .chat-input {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .chat-input textarea {
+        padding: 10px;
+    }
+
+    .chat-input button {
+        padding: 10px 15px;
+    }
+}
+
+/* spinner css */
+.spinner-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* Hide the spinner by default */
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* typewriter effect */
+#typewriter-text {
+    border-right: .1em solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 15em;
+    animation: typing 3s steps(30, end), blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 15em }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #000; }
+}
+
+
+code { background-color: green; color: white;
+     }

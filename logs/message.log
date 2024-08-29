@@ -1,0 +1,871 @@
+[2024-08-29 10:23:28 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X757C24000C30) (SSL_get_error: 1). ERR_print_errors(): C0F69F3D7C750000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 11:08:34 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X757C24006010) (SSL_get_error: 1). ERR_print_errors(): C0F69F3D7C750000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 11:12:39 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X757C24002F30) (SSL_get_error: 1). ERR_print_errors(): C0F69F3D7C750000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 11:15:14 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X757C24006010) (SSL_get_error: 1). ERR_print_errors(): C0F69F3D7C750000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 11:17:19 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X757C24006010) (SSL_get_error: 1). ERR_print_errors(): C0F69F3D7C750000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 11:19:49 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X757C2C1338A0) (SSL_get_error: 1). ERR_print_errors(): C0F63F3D7C750000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 11:26:43 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X757C2C1338A0) (SSL_get_error: 1). ERR_print_errors(): C0F63F3D7C750000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 11:28:49 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X757C24006010) (SSL_get_error: 1). ERR_print_errors(): C0F69F3D7C750000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 11:29:11 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X757C2C1338A0) (SSL_get_error: 1). ERR_print_errors(): C0F63F3D7C750000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 14:10:59 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X757C2C1338A0) (SSL_get_error: 1). ERR_print_errors(): C0F63F3D7C750000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 14:12:09 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X757C40006C90) (SSL_get_error: 1). ERR_print_errors(): C0F69F3D7C750000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 14:32:18 [ERROR]] The value
+                                "SOCKET = new WebSocket('/ws');
+SOCKET.onopen = function () {
+    __PS_MV_REG = [];
+    return console.log('connected to server');
+};
+SOCKET.onmessage = function (event) {
+    __PS_MV_REG = [];
+    return displaySuggestions(JSON.parse(event.data));
+};
+SOCKET.onclose = function () {
+    __PS_MV_REG = [];
+    return console.log('socket closed!');
+};
+SOCKET.onerror = function (err) {
+    __PS_MV_REG = [];
+    return console.log(err);
+};
+if ('undefined' === typeof INPUT) {
+    var INPUT = document.getElementById('autocompete-input');
+};
+INPUT.addEventListener('input', function () {
+    var query = this.value;
+    __PS_MV_REG = [];
+    return query.length > 0 ? SOCKET.send(JSON.stringify({ query : query })) : clearSuggestions();
+});
+function clearSuggestions() {
+    return document.getElementById('suggestions').innerHTML = '';
+};
+function displaySuggestions(suggestions) {
+    var suggestionsContainer = document.getElementById('suggestions');
+    suggestionsContainer.innerHtml = '';
+    __PS_MV_REG = [];
+    return suggestions.forEach(function (suggestion) {
+        var suggestionDiv = document.createElement('div');
+        suggestionDiv.className = 'autocomplete-suggestion';
+        suggestionDiv.textContent = suggestion;
+        suggestionDiv.addEventListener('click', function () {
+            INPUT.value = suggestion;
+            __PS_MV_REG = [];
+            return clearSuggestions();
+        });
+        return suggestionsContainer.appendChild(suggestionDiv);
+    });
+};"
+
+                              is not of type
+                                (SIMPLE-ARRAY CHARACTER (1505))
+                              from the function type declaration.
+Backtrace for: #<SB-THREAD:THREAD tid=99116 "hunchentoot-worker-127.0.0.1:40356" RUNNING {1006B50003}>
+0: (PATIENTEDU::INDEX-PAGE)
+1: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1003770283}>) [fast-method]
+2: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1003770283}>) [fast-method]
+3: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1003770283}>) [fast-method]
+4: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1003770283}>)
+5: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {100377DA7B}>)
+6: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1004EDA163}>) [fast-method]
+7: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1004EDA163}>) [fast-method]
+8: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1004EDA163}>) [fast-method]
+9: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1004EDA163}>) [fast-method]
+10: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+11: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+12: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+13: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+14: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+15: (SB-THREAD::RUN)
+16: ("foreign function: call_into_lisp_")
+17: ("foreign function: funcall1")
+
+[2024-08-29 14:32:18 [ERROR]] Parse error:URI "/static/css/500.css?v=%3C?=%20time()%20?%3E" contains illegal character #\? at position 25.
+Backtrace for: #<SB-THREAD:THREAD tid=99168 "hunchentoot-worker-127.0.0.1:51998" RUNNING {1000AF0E93}>
+0: (TRIVIAL-BACKTRACE:PRINT-BACKTRACE-TO-STREAM #<SB-IMPL::STRING-OUTPUT-STREAM {7A57FDFFDE63}>)
+1: (HUNCHENTOOT::GET-BACKTRACE)
+2: ((LAMBDA (COND) :IN HUNCHENTOOT:HANDLE-REQUEST) #<PURI:URI-PARSE-ERROR {1003765D63}>)
+3: (SB-KERNEL::%SIGNAL #<PURI:URI-PARSE-ERROR {1003765D63}>)
+4: (ERROR PURI:URI-PARSE-ERROR :FMT-CONTROL "~
+URI ~s contains illegal character ~s at position ~d." :FMT-ARGUMENTS ("/static/css/500.css?v=%3C?=%20time()%20?%3E" #\? 25))
+5: (PURI::.PARSE-ERROR #<unavailable argument> #<unavailable &REST argument>)
+6: ((FLET PURI::READ-TOKEN :IN PURI::PARSE-URI-STRING) :QUERY NIL)
+7: (PURI::PARSE-URI-STRING "/static/css/500.css?v=%3C?=%20time()%20?%3E")
+8: (PURI:PARSE-URI #<unavailable argument> :CLASS PURI:URI)
+9: ((:METHOD ROUTES:MATCH (T STRING)) #<ROUTES:MAPPER {1006FF8463}> "/static/css/500.css?v=%3C?=%20time()%20?%3E" ((NIL))) [fast-method]
+10: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10037505A3}>) [fast-method]
+11: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10037505A3}>) [fast-method]
+12: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10037505A3}>) [fast-method]
+13: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10037505A3}>)
+14: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {100376585B}>)
+15: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1000AEA243}>) [fast-method]
+16: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1000AEA243}>) [fast-method]
+17: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1000AEA243}>) [fast-method]
+18: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1000AEA243}>) [fast-method]
+19: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+20: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+21: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+22: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+23: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+24: (SB-THREAD::RUN)
+25: ("foreign function: call_into_lisp_")
+26: ("foreign function: funcall1")
+
+[2024-08-29 14:32:32 [ERROR]] The value
+                                "SOCKET = new WebSocket('/ws');
+SOCKET.onopen = function () {
+    __PS_MV_REG = [];
+    return console.log('connected to server');
+};
+SOCKET.onmessage = function (event) {
+    __PS_MV_REG = [];
+    return displaySuggestions(JSON.parse(event.data));
+};
+SOCKET.onclose = function () {
+    __PS_MV_REG = [];
+    return console.log('socket closed!');
+};
+SOCKET.onerror = function (err) {
+    __PS_MV_REG = [];
+    return console.log(err);
+};
+if ('undefined' === typeof INPUT) {
+    var INPUT = document.getElementById('autocompete-input');
+};
+INPUT.addEventListener('input', function () {
+    var query = this.value;
+    __PS_MV_REG = [];
+    return query.length > 0 ? SOCKET.send(JSON.stringify({ query : query })) : clearSuggestions();
+});
+function clearSuggestions() {
+    return document.getElementById('suggestions').innerHTML = '';
+};
+function displaySuggestions(suggestions) {
+    var suggestionsContainer = document.getElementById('suggestions');
+    suggestionsContainer.innerHtml = '';
+    __PS_MV_REG = [];
+    return suggestions.forEach(function (suggestion) {
+        var suggestionDiv = document.createElement('div');
+        suggestionDiv.className = 'autocomplete-suggestion';
+        suggestionDiv.textContent = suggestion;
+        suggestionDiv.addEventListener('click', function () {
+            INPUT.value = suggestion;
+            __PS_MV_REG = [];
+            return clearSuggestions();
+        });
+        return suggestionsContainer.appendChild(suggestionDiv);
+    });
+};"
+
+                              is not of type
+                                (SIMPLE-ARRAY CHARACTER (1505))
+                              from the function type declaration.
+Backtrace for: #<SB-THREAD:THREAD tid=99206 "hunchentoot-worker-127.0.0.1:45650" RUNNING {1000AF1D53}>
+0: (PATIENTEDU::INDEX-PAGE)
+1: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1003870263}>) [fast-method]
+2: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1003870263}>) [fast-method]
+3: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1003870263}>) [fast-method]
+4: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1003870263}>)
+5: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {1003886BCB}>)
+6: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1000AEAAC3}>) [fast-method]
+7: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1000AEAAC3}>) [fast-method]
+8: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1000AEAAC3}>) [fast-method]
+9: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1000AEAAC3}>) [fast-method]
+10: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+11: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+12: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+13: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+14: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+15: (SB-THREAD::RUN)
+16: ("foreign function: call_into_lisp_")
+17: ("foreign function: funcall1")
+
+[2024-08-29 14:32:32 [ERROR]] Parse error:URI "/static/css/500.css?v=%3C?=%20time()%20?%3E" contains illegal character #\? at position 25.
+Backtrace for: #<SB-THREAD:THREAD tid=99207 "hunchentoot-worker-127.0.0.1:45658" RUNNING {1000AF24B3}>
+0: (TRIVIAL-BACKTRACE:PRINT-BACKTRACE-TO-STREAM #<SB-IMPL::STRING-OUTPUT-STREAM {7A57FD9FDE63}>)
+1: (HUNCHENTOOT::GET-BACKTRACE)
+2: ((LAMBDA (COND) :IN HUNCHENTOOT:HANDLE-REQUEST) #<PURI:URI-PARSE-ERROR {100388DD13}>)
+3: (SB-KERNEL::%SIGNAL #<PURI:URI-PARSE-ERROR {100388DD13}>)
+4: (ERROR PURI:URI-PARSE-ERROR :FMT-CONTROL "~
+URI ~s contains illegal character ~s at position ~d." :FMT-ARGUMENTS ("/static/css/500.css?v=%3C?=%20time()%20?%3E" #\? 25))
+5: (PURI::.PARSE-ERROR #<unavailable argument> #<unavailable &REST argument>)
+6: ((FLET PURI::READ-TOKEN :IN PURI::PARSE-URI-STRING) :QUERY NIL)
+7: (PURI::PARSE-URI-STRING "/static/css/500.css?v=%3C?=%20time()%20?%3E")
+8: (PURI:PARSE-URI #<unavailable argument> :CLASS PURI:URI)
+9: ((:METHOD ROUTES:MATCH (T STRING)) #<ROUTES:MAPPER {1006FF8463}> "/static/css/500.css?v=%3C?=%20time()%20?%3E" ((NIL))) [fast-method]
+10: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1003898263}>) [fast-method]
+11: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1003898263}>) [fast-method]
+12: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1003898263}>) [fast-method]
+13: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1003898263}>)
+14: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {100388D80B}>)
+15: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1000AEAE63}>) [fast-method]
+16: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1000AEAE63}>) [fast-method]
+17: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1000AEAE63}>) [fast-method]
+18: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1000AEAE63}>) [fast-method]
+19: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+20: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+21: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+22: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+23: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+24: (SB-THREAD::RUN)
+25: ("foreign function: call_into_lisp_")
+26: ("foreign function: funcall1")
+
+[2024-08-29 14:33:16 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57EC133420) (SSL_get_error: 1). ERR_print_errors(): C0F61F05587A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 14:34:44 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E8000B90) (SSL_get_error: 1). ERR_print_errors(): C0F69FFD577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 14:35:17 [ERROR]] The value
+                                "SOCKET = new WebSocket('/ws');
+SOCKET.onopen = function () {
+    __PS_MV_REG = [];
+    return console.log('connected to server');
+};
+SOCKET.onmessage = function (event) {
+    __PS_MV_REG = [];
+    return displaySuggestions(JSON.parse(event.data));
+};
+SOCKET.onclose = function () {
+    __PS_MV_REG = [];
+    return console.log('socket closed!');
+};
+SOCKET.onerror = function (err) {
+    __PS_MV_REG = [];
+    return console.log(err);
+};
+if ('undefined' === typeof INPUT) {
+    var INPUT = document.getElementById('autocompete-input');
+};
+console.log(INPUT);
+INPUT.addEventListener('input', function () {
+    var query = this.value;
+    __PS_MV_REG = [];
+    return query.length > 0 ? SOCKET.send(JSON.stringify({ query : query })) : clearSuggestions();
+});
+function clearSuggestions() {
+    return document.getElementById('suggestions').innerHTML = '';
+};
+function displaySuggestions(suggestions) {
+    var suggestionsContainer = document.getElementById('suggestions');
+    suggestionsContainer.innerHtml = '';
+    __PS_MV_REG = [];
+    return suggestions.forEach(function (suggestion) {
+        var suggestionDiv = document.createElement('div');
+        suggestionDiv.className = 'autocomplete-suggestion';
+        suggestionDiv.textContent = suggestion;
+        suggestionDiv.addEventListener('click', function () {
+            INPUT.value = suggestion;
+            __PS_MV_REG = [];
+            return clearSuggestions();
+        });
+        return suggestionsContainer.appendChild(suggestionDiv);
+    });
+};"
+
+                              is not of type
+                                (SIMPLE-ARRAY CHARACTER (1491))
+                              from the function type declaration.
+Backtrace for: #<SB-THREAD:THREAD tid=99579 "hunchentoot-worker-127.0.0.1:43370" RUNNING {1000AA9593}>
+0: (PATIENTEDU::INDEX-PAGE)
+1: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10042C8263}>) [fast-method]
+2: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10042C8263}>) [fast-method]
+3: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10042C8263}>) [fast-method]
+4: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10042C8263}>)
+5: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {10042BECBB}>)
+6: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002240A93}>) [fast-method]
+7: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002240A93}>) [fast-method]
+8: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002240A93}>) [fast-method]
+9: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1002240A93}>) [fast-method]
+10: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+11: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+12: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+13: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+14: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+15: (SB-THREAD::RUN)
+16: ("foreign function: call_into_lisp_")
+17: ("foreign function: funcall1")
+
+[2024-08-29 14:35:17 [ERROR]] Parse error:URI "/static/css/500.css?v=%3C?=%20time()%20?%3E" contains illegal character #\? at position 25.
+Backtrace for: #<SB-THREAD:THREAD tid=99580 "hunchentoot-worker-127.0.0.1:43384" RUNNING {1000AA9CF3}>
+0: (TRIVIAL-BACKTRACE:PRINT-BACKTRACE-TO-STREAM #<SB-IMPL::STRING-OUTPUT-STREAM {7A57FD3FDE63}>)
+1: (HUNCHENTOOT::GET-BACKTRACE)
+2: ((LAMBDA (COND) :IN HUNCHENTOOT:HANDLE-REQUEST) #<PURI:URI-PARSE-ERROR {10042DDD63}>)
+3: (SB-KERNEL::%SIGNAL #<PURI:URI-PARSE-ERROR {10042DDD63}>)
+4: (ERROR PURI:URI-PARSE-ERROR :FMT-CONTROL "~
+URI ~s contains illegal character ~s at position ~d." :FMT-ARGUMENTS ("/static/css/500.css?v=%3C?=%20time()%20?%3E" #\? 25))
+5: (PURI::.PARSE-ERROR #<unavailable argument> #<unavailable &REST argument>)
+6: ((FLET PURI::READ-TOKEN :IN PURI::PARSE-URI-STRING) :QUERY NIL)
+7: (PURI::PARSE-URI-STRING "/static/css/500.css?v=%3C?=%20time()%20?%3E")
+8: (PURI:PARSE-URI #<unavailable argument> :CLASS PURI:URI)
+9: ((:METHOD ROUTES:MATCH (T STRING)) #<ROUTES:MAPPER {1000FFB373}> "/static/css/500.css?v=%3C?=%20time()%20?%3E" ((NIL))) [fast-method]
+10: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10042E8263}>) [fast-method]
+11: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10042E8263}>) [fast-method]
+12: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10042E8263}>) [fast-method]
+13: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10042E8263}>)
+14: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {10042DD85B}>)
+15: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002240D13}>) [fast-method]
+16: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002240D13}>) [fast-method]
+17: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002240D13}>) [fast-method]
+18: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1002240D13}>) [fast-method]
+19: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+20: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+21: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+22: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+23: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+24: (SB-THREAD::RUN)
+25: ("foreign function: call_into_lisp_")
+26: ("foreign function: funcall1")
+
+[2024-08-29 14:35:19 [ERROR]] The value
+                                "SOCKET = new WebSocket('/ws');
+SOCKET.onopen = function () {
+    __PS_MV_REG = [];
+    return console.log('connected to server');
+};
+SOCKET.onmessage = function (event) {
+    __PS_MV_REG = [];
+    return displaySuggestions(JSON.parse(event.data));
+};
+SOCKET.onclose = function () {
+    __PS_MV_REG = [];
+    return console.log('socket closed!');
+};
+SOCKET.onerror = function (err) {
+    __PS_MV_REG = [];
+    return console.log(err);
+};
+if ('undefined' === typeof INPUT) {
+    var INPUT = document.getElementById('autocompete-input');
+};
+console.log(INPUT);
+INPUT.addEventListener('input', function () {
+    var query = this.value;
+    __PS_MV_REG = [];
+    return query.length > 0 ? SOCKET.send(JSON.stringify({ query : query })) : clearSuggestions();
+});
+function clearSuggestions() {
+    return document.getElementById('suggestions').innerHTML = '';
+};
+function displaySuggestions(suggestions) {
+    var suggestionsContainer = document.getElementById('suggestions');
+    suggestionsContainer.innerHtml = '';
+    __PS_MV_REG = [];
+    return suggestions.forEach(function (suggestion) {
+        var suggestionDiv = document.createElement('div');
+        suggestionDiv.className = 'autocomplete-suggestion';
+        suggestionDiv.textContent = suggestion;
+        suggestionDiv.addEventListener('click', function () {
+            INPUT.value = suggestion;
+            __PS_MV_REG = [];
+            return clearSuggestions();
+        });
+        return suggestionsContainer.appendChild(suggestionDiv);
+    });
+};"
+
+                              is not of type
+                                (SIMPLE-ARRAY CHARACTER (1491))
+                              from the function type declaration.
+Backtrace for: #<SB-THREAD:THREAD tid=99608 "hunchentoot-worker-127.0.0.1:43388" RUNNING {1000AAA453}>
+0: (PATIENTEDU::INDEX-PAGE)
+1: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {100437FA83}>) [fast-method]
+2: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {100437FA83}>) [fast-method]
+3: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {100437FA83}>) [fast-method]
+4: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {100437FA83}>)
+5: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {10043C387B}>)
+6: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002240F63}>) [fast-method]
+7: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002240F63}>) [fast-method]
+8: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002240F63}>) [fast-method]
+9: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1002240F63}>) [fast-method]
+10: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+11: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+12: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+13: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+14: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+15: (SB-THREAD::RUN)
+16: ("foreign function: call_into_lisp_")
+17: ("foreign function: funcall1")
+
+[2024-08-29 14:35:19 [ERROR]] Parse error:URI "/static/css/500.css?v=%3C?=%20time()%20?%3E" contains illegal character #\? at position 25.
+Backtrace for: #<SB-THREAD:THREAD tid=99609 "hunchentoot-worker-127.0.0.1:43398" RUNNING {1000AAABB3}>
+0: (TRIVIAL-BACKTRACE:PRINT-BACKTRACE-TO-STREAM #<SB-IMPL::STRING-OUTPUT-STREAM {7A57FD9FDE63}>)
+1: (HUNCHENTOOT::GET-BACKTRACE)
+2: ((LAMBDA (COND) :IN HUNCHENTOOT:HANDLE-REQUEST) #<PURI:URI-PARSE-ERROR {10043BDC83}>)
+3: (SB-KERNEL::%SIGNAL #<PURI:URI-PARSE-ERROR {10043BDC83}>)
+4: (ERROR PURI:URI-PARSE-ERROR :FMT-CONTROL "~
+URI ~s contains illegal character ~s at position ~d." :FMT-ARGUMENTS ("/static/css/500.css?v=%3C?=%20time()%20?%3E" #\? 25))
+5: (PURI::.PARSE-ERROR #<unavailable argument> #<unavailable &REST argument>)
+6: ((FLET PURI::READ-TOKEN :IN PURI::PARSE-URI-STRING) :QUERY NIL)
+7: (PURI::PARSE-URI-STRING "/static/css/500.css?v=%3C?=%20time()%20?%3E")
+8: (PURI:PARSE-URI #<unavailable argument> :CLASS PURI:URI)
+9: ((:METHOD ROUTES:MATCH (T STRING)) #<ROUTES:MAPPER {1000FFB373}> "/static/css/500.css?v=%3C?=%20time()%20?%3E" ((NIL))) [fast-method]
+10: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10043A8263}>) [fast-method]
+11: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10043A8263}>) [fast-method]
+12: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10043A8263}>) [fast-method]
+13: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10043A8263}>)
+14: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {10043BD77B}>)
+15: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002241273}>) [fast-method]
+16: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002241273}>) [fast-method]
+17: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002241273}>) [fast-method]
+18: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1002241273}>) [fast-method]
+19: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+20: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+21: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+22: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+23: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+24: (SB-THREAD::RUN)
+25: ("foreign function: call_into_lisp_")
+26: ("foreign function: funcall1")
+
+[2024-08-29 14:36:39 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E0000B90) (SSL_get_error: 1). ERR_print_errors(): C0F63FFD577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 14:38:06 [ERROR]] The value
+                                "SOCKET = new WebSocket('/ws');
+SOCKET.onopen = function () {
+    __PS_MV_REG = [];
+    return console.log('connected to server');
+};
+SOCKET.onmessage = function (event) {
+    __PS_MV_REG = [];
+    return displaySuggestions(JSON.parse(event.data));
+};
+SOCKET.onclose = function () {
+    __PS_MV_REG = [];
+    return console.log('socket closed!');
+};
+SOCKET.onerror = function (err) {
+    __PS_MV_REG = [];
+    return console.log(err);
+};
+var INPUT = document.getElementById('autocompete-input');
+INPUT.addEventListener('input', function () {
+    var query = this.value;
+    __PS_MV_REG = [];
+    return query.length > 0 ? SOCKET.send(JSON.stringify({ query : query })) : clearSuggestions();
+});
+function clearSuggestions() {
+    return document.getElementById('suggestions').innerHTML = '';
+};
+function displaySuggestions(suggestions) {
+    var suggestionsContainer = document.getElementById('suggestions');
+    suggestionsContainer.innerHtml = '';
+    __PS_MV_REG = [];
+    return suggestions.forEach(function (suggestion) {
+        var suggestionDiv = document.createElement('div');
+        suggestionDiv.className = 'autocomplete-suggestion';
+        suggestionDiv.textContent = suggestion;
+        suggestionDiv.addEventListener('click', function () {
+            INPUT.value = suggestion;
+            __PS_MV_REG = [];
+            return clearSuggestions();
+        });
+        return suggestionsContainer.appendChild(suggestionDiv);
+    });
+};"
+
+                              is not of type
+                                (SIMPLE-ARRAY CHARACTER (1491))
+                              from the function type declaration.
+Backtrace for: #<SB-THREAD:THREAD tid=99706 "hunchentoot-worker-127.0.0.1:43032" RUNNING {1000AADF43}>
+0: (PATIENTEDU::INDEX-PAGE)
+1: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10045CE4D3}>) [fast-method]
+2: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10045CE4D3}>) [fast-method]
+3: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10045CE4D3}>) [fast-method]
+4: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10045CE4D3}>)
+5: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {10045EEBDB}>)
+6: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002242273}>) [fast-method]
+7: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002242273}>) [fast-method]
+8: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002242273}>) [fast-method]
+9: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1002242273}>) [fast-method]
+10: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+11: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+12: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+13: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+14: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+15: (SB-THREAD::RUN)
+16: ("foreign function: call_into_lisp_")
+17: ("foreign function: funcall1")
+
+[2024-08-29 14:38:06 [ERROR]] Parse error:URI "/static/css/500.css?v=%3C?=%20time()%20?%3E" contains illegal character #\? at position 25.
+Backtrace for: #<SB-THREAD:THREAD tid=99741 "hunchentoot-worker-127.0.0.1:60754" RUNNING {1000AAEE03}>
+0: (TRIVIAL-BACKTRACE:PRINT-BACKTRACE-TO-STREAM #<SB-IMPL::STRING-OUTPUT-STREAM {7A57FD3FDE63}>)
+1: (HUNCHENTOOT::GET-BACKTRACE)
+2: ((LAMBDA (COND) :IN HUNCHENTOOT:HANDLE-REQUEST) #<PURI:URI-PARSE-ERROR {1004955C83}>)
+3: (SB-KERNEL::%SIGNAL #<PURI:URI-PARSE-ERROR {1004955C83}>)
+4: (ERROR PURI:URI-PARSE-ERROR :FMT-CONTROL "~
+URI ~s contains illegal character ~s at position ~d." :FMT-ARGUMENTS ("/static/css/500.css?v=%3C?=%20time()%20?%3E" #\? 25))
+5: (PURI::.PARSE-ERROR #<unavailable argument> #<unavailable &REST argument>)
+6: ((FLET PURI::READ-TOKEN :IN PURI::PARSE-URI-STRING) :QUERY NIL)
+7: (PURI::PARSE-URI-STRING "/static/css/500.css?v=%3C?=%20time()%20?%3E")
+8: (PURI:PARSE-URI #<unavailable argument> :CLASS PURI:URI)
+9: ((:METHOD ROUTES:MATCH (T STRING)) #<ROUTES:MAPPER {1000FFB373}> "/static/css/500.css?v=%3C?=%20time()%20?%3E" ((NIL))) [fast-method]
+10: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004940263}>) [fast-method]
+11: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004940263}>) [fast-method]
+12: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004940263}>) [fast-method]
+13: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004940263}>)
+14: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {100495577B}>)
+15: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002242773}>) [fast-method]
+16: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002242773}>) [fast-method]
+17: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002242773}>) [fast-method]
+18: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1002242773}>) [fast-method]
+19: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+20: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+21: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+22: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+23: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+24: (SB-THREAD::RUN)
+25: ("foreign function: call_into_lisp_")
+26: ("foreign function: funcall1")
+
+[2024-08-29 14:38:08 [ERROR]] The value
+                                "SOCKET = new WebSocket('/ws');
+SOCKET.onopen = function () {
+    __PS_MV_REG = [];
+    return console.log('connected to server');
+};
+SOCKET.onmessage = function (event) {
+    __PS_MV_REG = [];
+    return displaySuggestions(JSON.parse(event.data));
+};
+SOCKET.onclose = function () {
+    __PS_MV_REG = [];
+    return console.log('socket closed!');
+};
+SOCKET.onerror = function (err) {
+    __PS_MV_REG = [];
+    return console.log(err);
+};
+var INPUT = document.getElementById('autocompete-input');
+INPUT.addEventListener('input', function () {
+    var query = this.value;
+    __PS_MV_REG = [];
+    return query.length > 0 ? SOCKET.send(JSON.stringify({ query : query })) : clearSuggestions();
+});
+function clearSuggestions() {
+    return document.getElementById('suggestions').innerHTML = '';
+};
+function displaySuggestions(suggestions) {
+    var suggestionsContainer = document.getElementById('suggestions');
+    suggestionsContainer.innerHtml = '';
+    __PS_MV_REG = [];
+    return suggestions.forEach(function (suggestion) {
+        var suggestionDiv = document.createElement('div');
+        suggestionDiv.className = 'autocomplete-suggestion';
+        suggestionDiv.textContent = suggestion;
+        suggestionDiv.addEventListener('click', function () {
+            INPUT.value = suggestion;
+            __PS_MV_REG = [];
+            return clearSuggestions();
+        });
+        return suggestionsContainer.appendChild(suggestionDiv);
+    });
+};"
+
+                              is not of type
+                                (SIMPLE-ARRAY CHARACTER (1491))
+                              from the function type declaration.
+Backtrace for: #<SB-THREAD:THREAD tid=99770 "hunchentoot-worker-127.0.0.1:54500" RUNNING {1000AAF563}>
+0: (PATIENTEDU::INDEX-PAGE)
+1: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10049F00F3}>) [fast-method]
+2: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10049F00F3}>) [fast-method]
+3: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10049F00F3}>) [fast-method]
+4: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {10049F00F3}>)
+5: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {10049ED58B}>)
+6: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {10022429F3}>) [fast-method]
+7: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {10022429F3}>) [fast-method]
+8: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {10022429F3}>) [fast-method]
+9: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {10022429F3}>) [fast-method]
+10: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+11: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+12: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+13: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+14: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+15: (SB-THREAD::RUN)
+16: ("foreign function: call_into_lisp_")
+17: ("foreign function: funcall1")
+
+[2024-08-29 14:38:08 [ERROR]] Parse error:URI "/static/css/500.css?v=%3C?=%20time()%20?%3E" contains illegal character #\? at position 25.
+Backtrace for: #<SB-THREAD:THREAD tid=99771 "hunchentoot-worker-127.0.0.1:54508" RUNNING {1000AAFCC3}>
+0: (TRIVIAL-BACKTRACE:PRINT-BACKTRACE-TO-STREAM #<SB-IMPL::STRING-OUTPUT-STREAM {7A57FE5FDE63}>)
+1: (HUNCHENTOOT::GET-BACKTRACE)
+2: ((LAMBDA (COND) :IN HUNCHENTOOT:HANDLE-REQUEST) #<PURI:URI-PARSE-ERROR {1004A2A443}>)
+3: (SB-KERNEL::%SIGNAL #<PURI:URI-PARSE-ERROR {1004A2A443}>)
+4: (ERROR PURI:URI-PARSE-ERROR :FMT-CONTROL "~
+URI ~s contains illegal character ~s at position ~d." :FMT-ARGUMENTS ("/static/css/500.css?v=%3C?=%20time()%20?%3E" #\? 25))
+5: (PURI::.PARSE-ERROR #<unavailable argument> #<unavailable &REST argument>)
+6: ((FLET PURI::READ-TOKEN :IN PURI::PARSE-URI-STRING) :QUERY NIL)
+7: (PURI::PARSE-URI-STRING "/static/css/500.css?v=%3C?=%20time()%20?%3E")
+8: (PURI:PARSE-URI #<unavailable argument> :CLASS PURI:URI)
+9: ((:METHOD ROUTES:MATCH (T STRING)) #<ROUTES:MAPPER {1000FFB373}> "/static/css/500.css?v=%3C?=%20time()%20?%3E" ((NIL))) [fast-method]
+10: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004A07ED3}>) [fast-method]
+11: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004A07ED3}>) [fast-method]
+12: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004A07ED3}>) [fast-method]
+13: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004A07ED3}>)
+14: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {1004A29F3B}>)
+15: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002242DC3}>) [fast-method]
+16: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002242DC3}>) [fast-method]
+17: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002242DC3}>) [fast-method]
+18: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1002242DC3}>) [fast-method]
+19: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+20: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+21: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+22: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+23: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+24: (SB-THREAD::RUN)
+25: ("foreign function: call_into_lisp_")
+26: ("foreign function: funcall1")
+
+[2024-08-29 14:39:15 [ERROR]] The value
+                                "SOCKET = new WebSocket('/ws');
+SOCKET.onopen = function () {
+    __PS_MV_REG = [];
+    return console.log('connected to server');
+};
+SOCKET.onmessage = function (event) {
+    __PS_MV_REG = [];
+    return displaySuggestions(JSON.parse(event.data));
+};
+SOCKET.onclose = function () {
+    __PS_MV_REG = [];
+    return console.log('socket closed!');
+};
+SOCKET.onerror = function (err) {
+    __PS_MV_REG = [];
+    return console.log(err);
+};
+var INPUT = document.getElementById('autocompete-input');
+INPUT.addEventListener('input', function () {
+    var query = this.value;
+    __PS_MV_REG = [];
+    return query.length > 0 ? SOCKET.send(JSON.stringify({ query : query })) : clearSuggestions();
+});
+function clearSuggestions() {
+    return document.getElementById('suggestions').innerHTML = '';
+};
+function displaySuggestions(suggestions) {
+    var suggestionsContainer = document.getElementById('suggestions');
+    suggestionsContainer.innerHtml = '';
+    __PS_MV_REG = [];
+    return suggestions.forEach(function (suggestion) {
+        var suggestionDiv = document.createElement('div');
+        suggestionDiv.className = 'autocomplete-suggestion';
+        suggestionDiv.textContent = suggestion;
+        suggestionDiv.addEventListener('click', function () {
+            INPUT.value = suggestion;
+            __PS_MV_REG = [];
+            return clearSuggestions();
+        });
+        return suggestionsContainer.appendChild(suggestionDiv);
+    });
+};"
+
+                              is not of type
+                                (SIMPLE-ARRAY CHARACTER (1491))
+                              from the function type declaration.
+Backtrace for: #<SB-THREAD:THREAD tid=99790 "hunchentoot-worker-127.0.0.1:34168" RUNNING {1001415E73}>
+0: (PATIENTEDU::INDEX-PAGE)
+1: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {100418FFB3}>) [fast-method]
+2: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {100418FFB3}>) [fast-method]
+3: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {100418FFB3}>) [fast-method]
+4: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {100418FFB3}>)
+5: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {1004B5EBDB}>)
+6: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {10022432F3}>) [fast-method]
+7: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {10022432F3}>) [fast-method]
+8: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {10022432F3}>) [fast-method]
+9: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {10022432F3}>) [fast-method]
+10: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+11: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+12: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+13: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+14: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+15: (SB-THREAD::RUN)
+16: ("foreign function: call_into_lisp_")
+17: ("foreign function: funcall1")
+
+[2024-08-29 14:39:15 [ERROR]] Parse error:URI "/static/css/500.css?v=%3C?=%20time()%20?%3E" contains illegal character #\? at position 25.
+Backtrace for: #<SB-THREAD:THREAD tid=99826 "hunchentoot-worker-127.0.0.1:60188" RUNNING {1001416D33}>
+0: (TRIVIAL-BACKTRACE:PRINT-BACKTRACE-TO-STREAM #<SB-IMPL::STRING-OUTPUT-STREAM {7A57FD9FDE63}>)
+1: (HUNCHENTOOT::GET-BACKTRACE)
+2: ((LAMBDA (COND) :IN HUNCHENTOOT:HANDLE-REQUEST) #<PURI:URI-PARSE-ERROR {1004CB5C83}>)
+3: (SB-KERNEL::%SIGNAL #<PURI:URI-PARSE-ERROR {1004CB5C83}>)
+4: (ERROR PURI:URI-PARSE-ERROR :FMT-CONTROL "~
+URI ~s contains illegal character ~s at position ~d." :FMT-ARGUMENTS ("/static/css/500.css?v=%3C?=%20time()%20?%3E" #\? 25))
+5: (PURI::.PARSE-ERROR #<unavailable argument> #<unavailable &REST argument>)
+6: ((FLET PURI::READ-TOKEN :IN PURI::PARSE-URI-STRING) :QUERY NIL)
+7: (PURI::PARSE-URI-STRING "/static/css/500.css?v=%3C?=%20time()%20?%3E")
+8: (PURI:PARSE-URI #<unavailable argument> :CLASS PURI:URI)
+9: ((:METHOD ROUTES:MATCH (T STRING)) #<ROUTES:MAPPER {1000FFB373}> "/static/css/500.css?v=%3C?=%20time()%20?%3E" ((NIL))) [fast-method]
+10: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004CA0263}>) [fast-method]
+11: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004CA0263}>) [fast-method]
+12: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004CA0263}>) [fast-method]
+13: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004CA0263}>)
+14: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {1004CB577B}>)
+15: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {10022438E3}>) [fast-method]
+16: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {10022438E3}>) [fast-method]
+17: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {10022438E3}>) [fast-method]
+18: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {10022438E3}>) [fast-method]
+19: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+20: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+21: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+22: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+23: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+24: (SB-THREAD::RUN)
+25: ("foreign function: call_into_lisp_")
+26: ("foreign function: funcall1")
+
+[2024-08-29 14:39:16 [ERROR]] The value
+                                "SOCKET = new WebSocket('/ws');
+SOCKET.onopen = function () {
+    __PS_MV_REG = [];
+    return console.log('connected to server');
+};
+SOCKET.onmessage = function (event) {
+    __PS_MV_REG = [];
+    return displaySuggestions(JSON.parse(event.data));
+};
+SOCKET.onclose = function () {
+    __PS_MV_REG = [];
+    return console.log('socket closed!');
+};
+SOCKET.onerror = function (err) {
+    __PS_MV_REG = [];
+    return console.log(err);
+};
+var INPUT = document.getElementById('autocompete-input');
+INPUT.addEventListener('input', function () {
+    var query = this.value;
+    __PS_MV_REG = [];
+    return query.length > 0 ? SOCKET.send(JSON.stringify({ query : query })) : clearSuggestions();
+});
+function clearSuggestions() {
+    return document.getElementById('suggestions').innerHTML = '';
+};
+function displaySuggestions(suggestions) {
+    var suggestionsContainer = document.getElementById('suggestions');
+    suggestionsContainer.innerHtml = '';
+    __PS_MV_REG = [];
+    return suggestions.forEach(function (suggestion) {
+        var suggestionDiv = document.createElement('div');
+        suggestionDiv.className = 'autocomplete-suggestion';
+        suggestionDiv.textContent = suggestion;
+        suggestionDiv.addEventListener('click', function () {
+            INPUT.value = suggestion;
+            __PS_MV_REG = [];
+            return clearSuggestions();
+        });
+        return suggestionsContainer.appendChild(suggestionDiv);
+    });
+};"
+
+                              is not of type
+                                (SIMPLE-ARRAY CHARACTER (1491))
+                              from the function type declaration.
+Backtrace for: #<SB-THREAD:THREAD tid=99837 "hunchentoot-worker-127.0.0.1:60192" RUNNING {1001417493}>
+0: (PATIENTEDU::INDEX-PAGE)
+1: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004D301D3}>) [fast-method]
+2: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004D301D3}>) [fast-method]
+3: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004D301D3}>) [fast-method]
+4: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004D301D3}>)
+5: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {1004D2A87B}>)
+6: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002243B63}>) [fast-method]
+7: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002243B63}>) [fast-method]
+8: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002243B63}>) [fast-method]
+9: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1002243B63}>) [fast-method]
+10: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+11: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+12: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+13: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+14: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+15: (SB-THREAD::RUN)
+16: ("foreign function: call_into_lisp_")
+17: ("foreign function: funcall1")
+
+[2024-08-29 14:39:16 [ERROR]] Parse error:URI "/static/css/500.css?v=%3C?=%20time()%20?%3E" contains illegal character #\? at position 25.
+Backtrace for: #<SB-THREAD:THREAD tid=99838 "hunchentoot-worker-127.0.0.1:60204" RUNNING {1001417BF3}>
+0: (TRIVIAL-BACKTRACE:PRINT-BACKTRACE-TO-STREAM #<SB-IMPL::STRING-OUTPUT-STREAM {7A57FD3FDE63}>)
+1: (HUNCHENTOOT::GET-BACKTRACE)
+2: ((LAMBDA (COND) :IN HUNCHENTOOT:HANDLE-REQUEST) #<PURI:URI-PARSE-ERROR {1004D0DD13}>)
+3: (SB-KERNEL::%SIGNAL #<PURI:URI-PARSE-ERROR {1004D0DD13}>)
+4: (ERROR PURI:URI-PARSE-ERROR :FMT-CONTROL "~
+URI ~s contains illegal character ~s at position ~d." :FMT-ARGUMENTS ("/static/css/500.css?v=%3C?=%20time()%20?%3E" #\? 25))
+5: (PURI::.PARSE-ERROR #<unavailable argument> #<unavailable &REST argument>)
+6: ((FLET PURI::READ-TOKEN :IN PURI::PARSE-URI-STRING) :QUERY NIL)
+7: (PURI::PARSE-URI-STRING "/static/css/500.css?v=%3C?=%20time()%20?%3E")
+8: (PURI:PARSE-URI #<unavailable argument> :CLASS PURI:URI)
+9: ((:METHOD ROUTES:MATCH (T STRING)) #<ROUTES:MAPPER {1000FFB373}> "/static/css/500.css?v=%3C?=%20time()%20?%3E" ((NIL))) [fast-method]
+10: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004D18263}>) [fast-method]
+11: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004D18263}>) [fast-method]
+12: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004D18263}>) [fast-method]
+13: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1004D18263}>)
+14: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {1004D0D80B}>)
+15: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002243E73}>) [fast-method]
+16: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002243E73}>) [fast-method]
+17: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {1002243E73}>) [fast-method]
+18: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {1002243E73}>) [fast-method]
+19: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+20: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+21: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+22: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+23: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+24: (SB-THREAD::RUN)
+25: ("foreign function: call_into_lisp_")
+26: ("foreign function: funcall1")
+
+[2024-08-29 14:41:36 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E8000B90) (SSL_get_error: 1). ERR_print_errors(): C0F69FFD577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 14:44:44 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E8000B90) (SSL_get_error: 1). ERR_print_errors(): C0F69FFD577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 14:52:39 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E0000D70) (SSL_get_error: 1). ERR_print_errors(): C0F65FFE577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 14:57:09 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E8000B90) (SSL_get_error: 1). ERR_print_errors(): C0F69FFD577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 15:03:59 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E8000B90) (SSL_get_error: 1). ERR_print_errors(): C0F69FFD577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 15:10:29 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E0000DB0) (SSL_get_error: 1). ERR_print_errors(): C0F65FFE577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 15:14:34 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E0000DB0) (SSL_get_error: 1). ERR_print_errors(): C0F65FFE577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 15:17:19 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E8000B90) (SSL_get_error: 1). ERR_print_errors(): C0F69FFD577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 15:19:39 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E0000DB0) (SSL_get_error: 1). ERR_print_errors(): C0F65FFE577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+
+[2024-08-29 15:19:39 [ERROR]] Parse error:URI "/static/css/404.css?v=%3C?=%20time()%20?%3E" contains illegal character #\? at position 25.
+Backtrace for: #<SB-THREAD:THREAD tid=102726 "hunchentoot-worker-127.0.0.1:36752" RUNNING {10067BA703}>
+0: (TRIVIAL-BACKTRACE:PRINT-BACKTRACE-TO-STREAM #<SB-IMPL::STRING-OUTPUT-STREAM {7A57FE5FDE63}>)
+1: (HUNCHENTOOT::GET-BACKTRACE)
+2: ((LAMBDA (COND) :IN HUNCHENTOOT:HANDLE-REQUEST) #<PURI:URI-PARSE-ERROR {1006B3EDB3}>)
+3: (SB-KERNEL::%SIGNAL #<PURI:URI-PARSE-ERROR {1006B3EDB3}>)
+4: (ERROR PURI:URI-PARSE-ERROR :FMT-CONTROL "~
+URI ~s contains illegal character ~s at position ~d." :FMT-ARGUMENTS ("/static/css/404.css?v=%3C?=%20time()%20?%3E" #\? 25))
+5: (PURI::.PARSE-ERROR #<unavailable argument> #<unavailable &REST argument>)
+6: ((FLET PURI::READ-TOKEN :IN PURI::PARSE-URI-STRING) :QUERY NIL)
+7: (PURI::PARSE-URI-STRING "/static/css/404.css?v=%3C?=%20time()%20?%3E")
+8: (PURI:PARSE-URI #<unavailable argument> :CLASS PURI:URI)
+9: ((:METHOD ROUTES:MATCH (T STRING)) #<ROUTES:MAPPER {1000FFB373}> "/static/css/404.css?v=%3C?=%20time()%20?%3E" ((NIL))) [fast-method]
+10: ((:METHOD HUNCHENTOOT:ACCEPTOR-DISPATCH-REQUEST (EASY-ROUTES:EASY-ROUTES-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1006B48263}>) [fast-method]
+11: ((:METHOD HUNCHENTOOT:HANDLE-REQUEST (HUNCHENTOOT:ACCEPTOR HUNCHENTOOT:REQUEST)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1006B48263}>) [fast-method]
+12: ((:METHOD HUNCHENTOOT:PROCESS-REQUEST (T)) #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1006B48263}>) [fast-method]
+13: ((SB-PCL::EMF HUNCHENTOOT:PROCESS-REQUEST) #<unused argument> #<unused argument> #<HUNCHENSOCKET::WEBSOCKET-REQUEST {1006B48263}>)
+14: (HUNCHENTOOT::DO-WITH-ACCEPTOR-REQUEST-COUNT-INCREMENTED #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<FUNCTION (LAMBDA NIL :IN HUNCHENTOOT:PROCESS-CONNECTION) {1006B3E8AB}>)
+15: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {10067E7FB3}>) [fast-method]
+16: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENTOOT:ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {10067E7FB3}>) [fast-method]
+17: ((:METHOD HUNCHENTOOT:PROCESS-CONNECTION :AROUND (HUNCHENSOCKET:WEBSOCKET-ACCEPTOR T)) #<PATIENTEDU::WS-ROUTES-SSL-ACCEPTOR (host *, port 8443)> #<USOCKET:STREAM-USOCKET {10067E7FB3}>) [fast-method]
+18: ((:METHOD HUNCHENTOOT::HANDLE-INCOMING-CONNECTION% (HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER T)) #<HUNCHENTOOT:ONE-THREAD-PER-CONNECTION-TASKMASTER {10071C4FF3}> #<USOCKET:STREAM-USOCKET {10067E7FB3}>) [fast-method]
+19: ((LABELS BORDEAUX-THREADS::%BINDING-DEFAULT-SPECIALS-WRAPPER :IN BORDEAUX-THREADS::BINDING-DEFAULT-SPECIALS))
+20: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+21: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+22: ((FLET SB-UNIX::BODY :IN SB-THREAD::RUN))
+23: ((FLET "WITHOUT-INTERRUPTS-BODY-" :IN SB-THREAD::RUN))
+24: (SB-THREAD::RUN)
+25: ("foreign function: call_into_lisp_")
+26: ("foreign function: funcall1")
+

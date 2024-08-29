@@ -31,7 +31,7 @@
 	   *qwen-system-prompt*))
 
 (defpackage :patientedu
-  (:use :cl :redis :easy-routes :hunchentoot :cl-who :cl-css :cl-base64 :frugal-uuid :trivia :com.inuoe.jzon :parenscript :local-time)
+  (:use :cl :redis :easy-routes :hunchentoot :hunchensocket :cl-who :cl-css :cl-base64 :frugal-uuid :trivia :com.inuoe.jzon :parenscript :local-time)
   (:shadow easy-routes:redirect hunchentoot:reply parenscript:@ parenscript:stringify parenscript:% redis:close-connection cl-who:fmt redis:tell str:match)
   (:documentation "The main package of the patientedu application.")
   (:local-nicknames (:jzon :com.inuoe.jzon))
