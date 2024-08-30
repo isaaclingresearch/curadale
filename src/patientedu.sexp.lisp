@@ -2,8 +2,9 @@
 
 (defun parse (s-expression-string)
   "read an s-expression from a string"
-  (with-input-from-string (in s-expression-string)
-    (read in)))
+  (when s-expression-string
+    (with-input-from-string (in s-expression-string)
+      (read in))))
 
 (defun stringify (sexp)
   "Convert a Lisp S-expression to its string representation."

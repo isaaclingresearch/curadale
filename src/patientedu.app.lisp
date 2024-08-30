@@ -173,7 +173,7 @@
 	     (:div :class "logo" "PatientEdu")
 	     (:div :class "search-form"
 		   (:form :action "/search" :method "get"
-			  (:input :type "text" :name "query" :id "autocomplete-input" :placeholder "Search..." :class "search-input" :autocomplete "off")
+			  (:input :type "text" :name "query" :id "autocomplete-input" :placeholder "Search..." :class "search-input" :autocomplete "off" :required t)
 			  ;; Move the suggestions div directly below the input field
 			  (:div :id "suggestions" :class "autocomplete-suggestions")
 			  (:button :type "submit" :class "search-button" "Search"))))
@@ -210,7 +210,8 @@
 	       ;; Mobile adjustments
 	       ("@media (max-width: 600px)"
 		(".logo" :font-size "30px")
-		(".search-result a" :padding "12px")))))))
+		(".search-result a" :padding "10px")
+		(".search-result .description" :font-size "16px" :color "#666666")))))))
      (:body
       (:div :class "container"
 	    (:div :class "logo" "PatientEdu")
@@ -254,6 +255,7 @@
 	 (cause (disease-hget id "cause"))
 	 (epidemiology (disease-hget id "epidemiology"))
 	 (risk-factors (sexp:parse (disease-hget id "risk-factors")))
+	 (diagnosis (sexp:parse (disease-hget id "diagnosis")))
 	 (differential-diagnoses (sexp:parse (disease-hget id "differential-diagnoses")))
 	 (pathophysiology (disease-hget id "pathophysiology"))
 	 (signs-and-symptoms (sexp:parse (disease-hget id "signs-and-symptoms")))
@@ -274,21 +276,25 @@
 	;; Include CSS
 	(:style
 	 (str (cl-css:css
-	       '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)")
-  (".container" :text-align "left" :width "90%" :max-width "800px" :display "flex" :flex-direction "column" :align-items "flex-start" :justify-content "center" :flex "1")
-  (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
-  (".section" :margin-bottom "20px")
-  (".section h2" :font-size "24px" :color "#0044cc" :margin-bottom "10px" :border-bottom "2px solid #0044cc" :padding-bottom "5px")
-  (".section p" :font-size "16px" :line-height "1.6" :color "#333333")
-  (".section ul" :list-style-type "disc" :padding-left "20px")
-  (".section ul li" :font-size "16px" :line-height "1.6" :color "#333333")
-  (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white")
-  (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
-  (".footer a:hover" :text-decoration "underline")
-  ;; Mobile adjustments
-  ("@media (max-width: 600px)"
-   (".logo" :font-size "30px")))
-))))
+	       '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)" :font-size "18px")
+		 (".container" :text-align "left" :width "90%" :max-width "800px" :display "flex" :flex-direction "column" :align-items "flex-start" :justify-content "center" :flex "1")
+		 (".logo" :font-size "40px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
+		 (".section" :margin-bottom "20px")
+		 (".section h2" :font-size "26px" :color "#0044cc" :margin-bottom "10px" :border-bottom "2px solid #0044cc" :padding-bottom "5px")
+		 (".section p" :font-size "18px" :line-height "1.6" :color "#333333")
+		 (".section ul" :list-style-type "disc" :padding-left "20px")
+		 (".section ul li" :font-size "18px" :line-height "1.6" :color "#333333")
+		 (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white")
+		 (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
+		 (".footer a:hover" :text-decoration "underline")
+		 ;; Mobile adjustments
+		 ("@media (max-width: 600px)"
+		  (".logo" :font-size "34px")
+		  (".section h2" :font-size "22px")
+		  (".section p" :font-size "16px")
+		  (".section ul li" :font-size "16px")))
+
+	       ))))
        (:body
 	(:div :class "container"
               (:div :class "logo" "PatientEdu")
@@ -306,13 +312,18 @@
                     (:h2 "Risk Factors")
                     (:ul (dolist (r risk-factors)
 			   (htm (:ul (str r))))))
+	      (:div :class "section"
+                    (:h2 "Pathophysiology")
+                    (:p (str pathophysiology)))
+	      (:div :class "section"
+                    (:h2 "Diagnosis")
+                    (:ul (dolist (dd diagnosis)
+			   (htm (:ul (str dd))))))
               (:div :class "section"
                     (:h2 "Differential Diagnoses")
                     (:ul (dolist (dd differential-diagnoses)
 			   (htm (:ul (str dd))))))
-              (:div :class "section"
-                    (:h2 "Pathophysiology")
-                    (:p pathophysiology))
+              
               (:div :class "section"
                     (:h2 "Signs and Symptoms")
                     (:ul (dolist (ss signs-and-symptoms)
@@ -330,7 +341,7 @@
                     (:ul (dolist (p prevention)
 			   (htm (:ul (str p))))))
               (:div :class "section"
-                    (:h2 "Living With")
+                    (:h2 (str (format nil "Living with ~a" proper-name)))
                     (:ul (dolist (lw living-with)
 			   (htm (:ul (str lw))))))
 	      )

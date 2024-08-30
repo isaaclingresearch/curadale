@@ -54,6 +54,7 @@ as we will be presenting human readable urls to the readers."
 	 (cause (getf data :cause))
 	 (epidemiology (getf data :epidemiology))
 	 (risk-factors (getf data :risk-factors))
+	 (diagnosis (getf data :diagnosis))
 	 (differential-diagnoses (getf data :differential-diagnoses))
 	 (pathophysiology (getf data :pathophysiology))
 	 (signs-and-symptoms (getf data :signs-and-symptoms))
@@ -69,6 +70,7 @@ as we will be presenting human readable urls to the readers."
     (redis:red-hset id "cause" cause)
     (redis:red-hset id "epidemiology" epidemiology)
     (redis:red-hset id "risk-factors" risk-factors)
+    (redis:red-hset id "diagnosis" diagnosis)
     (redis:red-hset id "differential-diagnoses" differential-diagnoses)
     (redis:red-hset id "pathophysiology" pathophysiology)
     (redis:red-hset id "signs-and-symptoms" signs-and-symptoms)
@@ -115,7 +117,7 @@ you don't return the words that match, you return the disease whose data contain
 
 (defun save-to-autocomplete (disease token &key (pos 1))
   "given a word, start at length 1 then save the word fragments to autoincrement, we use sorted sets, such that we can track the words appearing most in the dataset."
-  (unless (> pos (1- (length token)))
+  (unless (> pos (length token))
     (let ((subtoken (str:substring 0 pos token)))
       (redis:red-zincrby (format nil "{auto-complete}:~a" subtoken) 1 disease))
     (save-to-autocomplete disease token :pos (1+ pos))))
