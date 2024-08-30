@@ -42,12 +42,14 @@
   "save data returned from the api, data must be a valid plist with keys :introduction :cause :epidemiology :risk-factors :differential-diagnoses :pathophysiology :signs-and-symptoms :complications :alternative-names :prevention and :living-with
 
 the data is saved in the following process
-1. A disease id (uuid v7) is saved as key and a hash as value with fields corresponding to the fields of data.
+1. A disease id (uuid v7) is saved as key and a hash as value with fields corresponding to the fields of data. use the proper name to comfirm that the disease with that name has not been saved otherwise use the same id to prevent data duplication.
 2. All the data is tokenised, normalised and tokens stored in reverse indexes for search.
 
-The urls will be based on the proper name"
-  (let* ((id (to-string (make-v7)))
-	 (proper-name (getf data :proper-name))
+The urls will be based on the proper name, you save a url with lowercase and no spaces to be able to trace the id from url later.
+as we will be presenting human readable urls to the readers."
+  (let* ((proper-name (getf data :proper-name disease))
+	 (id (or (get-id-from-url (make-url proper-name))
+		 (format nil "{disease}:~a" (to-string (make-v7)))))
 	 (intro (getf data :introduction))
 	 (cause (getf data :cause))
 	 (epidemiology (getf data :epidemiology))
@@ -74,8 +76,19 @@ The urls will be based on the proper name"
     (redis:red-hset id "alternative-names" alternative-names)
     (redis:red-hset id "prevention" prevention)
     (redis:red-hset id "living-with" living-with)
+    (redis:red-set (format nil "{url}:~a" (make-url proper-name)) id)
     (index-disease-data id proper-name tokens)
     id))
+
+(defun disease-hget (id field)
+  (redis:red-hget id field))
+
+(defun get-id-from-url (url)
+  (redis:red-get (format nil "{url}:~a" url)))
+
+|#
+at first it might seem like a duplication of data, maintaining an index for words and then their fragments, the fragments thing is for autocomplete. the word thing is for search. maps to ids which are then used to disease details.
+#|
 
 (defun index-disease-data (id disease tokens)
   "words in disease titles are indexed independently. then all the other tokens.

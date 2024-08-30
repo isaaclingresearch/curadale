@@ -42,19 +42,19 @@
 (defclass http-to-https-acceptor (hunchentoot:acceptor) ())
 (defmethod hunchentoot:acceptor-dispatch-request ((acceptor http-to-https-acceptor) request)
   (hunchentoot:redirect (hunchentoot:request-uri request)
-                        :protocol :https :port *patientedu-wss-port*))
+                        :protocol :https :port *patientedu-https-port*))
 
 (defvar *patientedu-wss-acceptor* (make-instance 'ws-routes-ssl-acceptor :port *patientedu-https-port*
-								     :ssl-certificate-file *patientedu-ssl-cert*
-								     :ssl-privatekey-file *patientedu-ssl-key*
-								     :document-root (truename "~/common-lisp/patientedu/priv/")
-								     :error-template-directory (truename "~/common-lisp/patientedu/priv/errors/")))
+									 :ssl-certificate-file *patientedu-ssl-cert*
+									 :ssl-privatekey-file *patientedu-ssl-key*
+									 :document-root (truename "~/common-lisp/patientedu/priv/")
+									 :error-template-directory (truename "~/common-lisp/patientedu/priv/errors/")))
 
 (defvar *patientedu-http-acceptor* (make-instance 'http-to-https-acceptor :port *patientedu-http-port*))
 
 ;; set logging to files
-;(setf (acceptor-message-log-destination *patientedu-wss-acceptor*) (truename "~/common-lisp/patientedu/logs/message.log"))
-;(setf (acceptor-access-log-destination *patientedu-wss-acceptor*) (truename "~/common-lisp/patientedu/logs/access.log"))
+					;(setf (acceptor-message-log-destination *patientedu-wss-acceptor*) (truename "~/common-lisp/patientedu/logs/message.log"))
+					;(setf (acceptor-access-log-destination *patientedu-wss-acceptor*) (truename "~/common-lisp/patientedu/logs/access.log"))
 ;; don't allow persistent connections
 ;; this is because the server was not responding to requests, with a 503, and the error logs were showing too many threads.
 ;; still investigation, but maybe the connections were sending a keep alive header.
@@ -90,6 +90,10 @@
   (handler-case (stop-kvrocks)
     (redis:redis-connection-error (err)
       (declare (ignore err)))))
+
+(defun restart-server ()
+  (stop-server)
+  (start-server))
 
 ;; websocket methods to handle communication via websocket
 (defmethod hunchensocket:client-connected ((endpoint ws-endpoint) ws-user))
@@ -132,6 +136,7 @@
 											     (setf (getprop *input* 'value) suggestion)
 											     (clear-suggestions))))
 					 (chain suggestions-container (append-child suggestion-div))))))))))
+
 (defroute index-page ("/" :method :get :decorators ()) ()
   (with-html-output-to-string (*standard-output*)
     (:html
@@ -163,17 +168,173 @@
                 (".search-input" :width "90%")
                 (".search-button" :width "90%")
                 (".autocomplete-suggestions" :width "90%")))))) ;; Responsive adjustments
+      (:body
+       (:div :class "container"
+	     (:div :class "logo" "PatientEdu")
+	     (:div :class "search-form"
+		   (:form :action "/search" :method "get"
+			  (:input :type "text" :name "query" :id "autocomplete-input" :placeholder "Search..." :class "search-input" :autocomplete "off")
+			  ;; Move the suggestions div directly below the input field
+			  (:div :id "suggestions" :class "autocomplete-suggestions")
+			  (:button :type "submit" :class "search-button" "Search"))))
+       (:script (str (ws-js-code)))
+       ;; Footer Section
+       (:div :class "footer"
+	     (:a :href "/about" "About")
+	     (:a :href "/privacy" "Privacy Policy")))))))
+
+(defroute search-page ("/search" :method :get :decorators ()) (query)
+  (with-html-output-to-string (*standard-output*)
+    (:html
+     (:head
+      (:title "Search | PatientEdu")
+      (:meta :charset "UTF-8")
+      (:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
+      (:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
+      (:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
+      ;; Include CSS
+      (:style
+       (str (cl-css:css
+	     '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)")
+	       (".container" :text-align "center" :width "90%" :max-width "600px" :display "flex" :flex-direction "column" :align-items "center" :justify-content "center" :flex "1")
+	       (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
+	       (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white")
+	       (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
+	       (".footer a:hover" :text-decoration "underline")
+	       (".search-result" :margin "10px 0" :width "100%" :text-align "center")
+	       (".search-result a" :display "block" :padding "15px" :margin "5px 0" :background-color "#f5f5f5" :color "black" :border-radius "5px" :text-decoration "none" :text-align "left")
+	       (".search-result a:hover" :background-color "#e0e0e0")
+	       (".search-result a:visited" :color "#800080") ;; Visited link color (purple)
+	       (".search-result .heading" :font-weight "bold" :margin-bottom "5px" :font-size "18px" :color "blue")
+	       (".search-result .description" :font-size "14px" :color "#666666")
+	       ;; Mobile adjustments
+	       ("@media (max-width: 600px)"
+		(".logo" :font-size "30px")
+		(".search-result a" :padding "12px")))))))
      (:body
       (:div :class "container"
-       (:div :class "logo" "PatientEdu")
-       (:div :class "search-form"
-        (:form :action "/search" :method "get"
-         (:input :type "text" :name "query" :id "autocomplete-input" :placeholder "Search..." :class "search-input" :autocomplete "off")
-         ;; Move the suggestions div directly below the input field
-         (:div :id "suggestions" :class "autocomplete-suggestions")
-         (:button :type "submit" :class "search-button" "Search"))))
-      (:script (str (ws-js-code)))
+	    (:div :class "logo" "PatientEdu")
+	    ;; Search Results Section
+	    
+	    (loop for result in (build-links query) do
+	      (htm (:div :class "search-result"
+			 (:a :href (str (format nil "/disease/~a" (make-url (car result))))
+	                     (:div :class "heading" (str (car result)))
+	                     (:div :class "description" (str (cdr result)) "..."))))))
       ;; Footer Section
       (:div :class "footer"
-       (:a :href "/about" "About")
-       (:a :href "/privacy" "Privacy Policy")))))))
+	    (:a :href "/about" "About")
+	    (:a :href "/privacy" "Privacy Policy"))))))
+
+(defun build-links (query)
+  "given a query, find all possible data that corresponds to it and return a list of (title . description)"
+  (let* (acc
+	 sacc
+	 (tokens (nlp:tokenize query))
+	 (h (make-hash-table :test #'equal)))
+    (dolist (token tokens)
+      (setq acc `(,@acc ,@(search-disease-data token))))
+    (dolist (token acc)
+      (setf (gethash token h) (+ (gethash token h 0) 1)))
+    (maphash (lambda (k v)
+	       (setq sacc `(,@sacc (,k . ,v)))) h)
+    (mapcar (lambda (k) (cons (disease-hget k "name")
+			      (disease-hget k "introduction")))
+	    (mapcar #'car (sort sacc #'> :key #'cdr)))))
+
+(defun make-url (text)
+  "given a text, replace spaces with -, then make lowercase"
+  (str:downcase (str:replace-all " " "-" text)))
+
+
+(defroute disease-page ("/disease/:url" :method :get :decorators ()) ()
+  (let* ((id (get-id-from-url url))
+	 (proper-name (disease-hget id "name"))
+	 (intro (disease-hget id "introduction"))
+	 (cause (disease-hget id "cause"))
+	 (epidemiology (disease-hget id "epidemiology"))
+	 (risk-factors (sexp:parse (disease-hget id "risk-factors")))
+	 (differential-diagnoses (sexp:parse (disease-hget id "differential-diagnoses")))
+	 (pathophysiology (disease-hget id "pathophysiology"))
+	 (signs-and-symptoms (sexp:parse (disease-hget id "signs-and-symptoms")))
+	 (complications (sexp:parse (disease-hget id "complications")))
+	 (alternative-names (sexp:parse (disease-hget id "alternative-names")))
+	 (prevention (sexp:parse (disease-hget id "prevention")))
+	 (living-with (sexp:parse (disease-hget id "living-with"))))
+    (format nil "~% ~a ~%" risk-factors)
+    (princ id)
+    (with-html-output-to-string (*standard-output*)
+      (:html
+       (:head
+	(:title (format nil "~a | PatientEdu" proper-name))
+	(:meta :charset "UTF-8")
+	(:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
+	(:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
+	(:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
+	;; Include CSS
+	(:style
+	 (str (cl-css:css
+	       '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)")
+  (".container" :text-align "left" :width "90%" :max-width "800px" :display "flex" :flex-direction "column" :align-items "flex-start" :justify-content "center" :flex "1")
+  (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
+  (".section" :margin-bottom "20px")
+  (".section h2" :font-size "24px" :color "#0044cc" :margin-bottom "10px" :border-bottom "2px solid #0044cc" :padding-bottom "5px")
+  (".section p" :font-size "16px" :line-height "1.6" :color "#333333")
+  (".section ul" :list-style-type "disc" :padding-left "20px")
+  (".section ul li" :font-size "16px" :line-height "1.6" :color "#333333")
+  (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white")
+  (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
+  (".footer a:hover" :text-decoration "underline")
+  ;; Mobile adjustments
+  ("@media (max-width: 600px)"
+   (".logo" :font-size "30px")))
+))))
+       (:body
+	(:div :class "container"
+              (:div :class "logo" "PatientEdu")
+              ;; Disease Information Sections
+              (:div :class "section"
+                    (:h2 (str proper-name))
+                    (:p (str intro)))
+              (:div :class "section"
+                    (:h2 "Cause")
+                    (:p (str cause)))
+              (:div :class "section"
+                    (:h2 "Epidemiology")
+                    (:p (str epidemiology)))
+              (:div :class "section"
+                    (:h2 "Risk Factors")
+                    (:ul (dolist (r risk-factors)
+			   (htm (:ul (str r))))))
+              (:div :class "section"
+                    (:h2 "Differential Diagnoses")
+                    (:ul (dolist (dd differential-diagnoses)
+			   (htm (:ul (str dd))))))
+              (:div :class "section"
+                    (:h2 "Pathophysiology")
+                    (:p pathophysiology))
+              (:div :class "section"
+                    (:h2 "Signs and Symptoms")
+                    (:ul (dolist (ss signs-and-symptoms)
+			   (htm (:ul (str ss))))))
+              (:div :class "section"
+                    (:h2 "Complications")
+		    (:ul (dolist (c complications)
+			   (htm (:ul (str c))))))
+              (:div :class "section"
+                    (:h2 "Alternative Names")
+                    (:ul (dolist (an alternative-names)
+			   (htm (:ul (str an))))))
+              (:div :class "section"
+                    (:h2 "Prevention")
+                    (:ul (dolist (p prevention)
+			   (htm (:ul (str p))))))
+              (:div :class "section"
+                    (:h2 "Living With")
+                    (:ul (dolist (lw living-with)
+			   (htm (:ul (str lw))))))
+	      )
+	;; Footer Section
+	(:div :class "footer"
+              (:a :href "/about" "About")
+              (:a :href "/privacy" "Privacy Policy")))))))
