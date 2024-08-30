@@ -152,6 +152,8 @@
              '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)")
                (".container" :text-align "center" :width "90%" :max-width "600px" :display "flex" :flex-direction "column" :align-items "center" :justify-content "center" :flex "1")
                (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
+	       (".logo a" :decoration none)
+	       (".logo a:visited" :color "#0044cc")
                (".search-form" :margin-top "20px" :display "flex" :flex-direction "column" :align-items "center" :position "relative")
                (".search-input" :width "calc(100% - 40px)" :padding "10px" :font-size "16px" :border "1px solid #ccc" :border-radius "4px" :margin-bottom "5px" :box-shadow "0 2px 5px rgba(0,0,0,0.1)")
                (".autocomplete-suggestions" :border "1px solid #ccc" :max-height "150px" :overflow-y "auto" :position "absolute" :background-color "white" :z-index "1000" :width "calc(100% - 40px)" :left "0" :box-shadow "0 2px 5px rgba(0,0,0,0.1)" :margin-left 19)
@@ -170,7 +172,7 @@
                 (".autocomplete-suggestions" :width "90%")))))) ;; Responsive adjustments
       (:body
        (:div :class "container"
-	     (:div :class "logo" "PatientEdu")
+	     (:div :class "logo" (:a :href "/" "PatientEdu"))
 	     (:div :class "search-form"
 		   (:form :action "/search" :method "get"
 			  (:input :type "text" :name "query" :id "autocomplete-input" :placeholder "Search..." :class "search-input" :autocomplete "off" :required t)
@@ -198,6 +200,9 @@
 	     '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)")
 	       (".container" :text-align "center" :width "90%" :max-width "600px" :display "flex" :flex-direction "column" :align-items "center" :justify-content "center" :flex "1")
 	       (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
+	       (".logo a" :decoration none)
+	       (".logo a:visited" :color "#0044cc")
+
 	       (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white")
 	       (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
 	       (".footer a:hover" :text-decoration "underline")
@@ -214,7 +219,7 @@
 		(".search-result .description" :font-size "16px" :color "#666666")))))))
      (:body
       (:div :class "container"
-	    (:div :class "logo" "PatientEdu")
+	    (:div :class "logo" (:a :href "/" "PatientEdu"))
 	    ;; Search Results Section
 	    
 	    (loop for result in (build-links query) do
@@ -279,6 +284,9 @@
 	       '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)" :font-size "18px")
 		 (".container" :text-align "left" :width "90%" :max-width "800px" :display "flex" :flex-direction "column" :align-items "flex-start" :justify-content "center" :flex "1")
 		 (".logo" :font-size "40px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
+		 (".logo a" :decoration none)
+		 (".logo a:visited" :color "#0044cc")
+
 		 (".section" :margin-bottom "20px")
 		 (".section h2" :font-size "26px" :color "#0044cc" :margin-bottom "10px" :border-bottom "2px solid #0044cc" :padding-bottom "5px")
 		 (".section p" :font-size "18px" :line-height "1.6" :color "#333333")
@@ -297,7 +305,7 @@
 	       ))))
        (:body
 	(:div :class "container"
-              (:div :class "logo" "PatientEdu")
+              (:div :class "logo" (:a :href "/" "PatientEdu"))
               ;; Disease Information Sections
               (:div :class "section"
                     (:h2 (str proper-name))

@@ -1,6 +1,6 @@
 (in-package :redis)
 
-(def-cmd ZUNION (&rest keys) :multi
+(def-cmd ZUNION (num &rest keys) :anything
   "Return the union between the Zsets stored at key1, key2, ..., keyN.")
 
 (in-package :patientedu)
@@ -134,9 +134,10 @@ merge them and remove duplicates, return the resultant list"
   (let ((tokens (str:split " " fragment)))
     (if (= 1 (length tokens))
 	(redis:red-zrange (format nil "{auto-complete}:~a" fragment) 0 10)
-	(let ((matches (handler-case (eval `(redis:red-zunion ,@(mapcar (lambda (e) (format nil "{auto-complete}:~a" e)) tokens)))
+	(let ((matches (handler-case (eval `(redis:red-zunion ,(length tokens)
+							      ,@(mapcar (lambda (e) (format nil "{auto-complete}:~a" e)) tokens)))
 			 (error (err) (declare (ignore err))))))
-	  (if (and matches (> 10 (length matches)))
+	  (if (and matches (< 10 (length matches)))
 	      (subseq matches 0 10)
 	      matches)))))
 
