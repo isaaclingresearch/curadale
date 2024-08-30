@@ -43,8 +43,11 @@
 
 the data is saved in the following process
 1. A disease id (uuid v7) is saved as key and a hash as value with fields corresponding to the fields of data.
-2. All the data is tokenised, normalised and tokens stored in reverse indexes for search."
+2. All the data is tokenised, normalised and tokens stored in reverse indexes for search.
+
+The urls will be based on the proper name"
   (let* ((id (to-string (make-v7)))
+	 (proper-name (getf data :proper-name))
 	 (intro (getf data :introduction))
 	 (cause (getf data :cause))
 	 (epidemiology (getf data :epidemiology))
@@ -56,10 +59,10 @@ the data is saved in the following process
 	 (alternative-names (getf data :alternative-names))
 	 (prevention (getf data :prevention))
 	 (living-with (getf data :living-with))
-	 (one-string (format nil "~a ~a ~a ~a ~{~a ~} ~{~a ~} ~a ~{~a ~} ~{~a ~} ~{~a ~} ~{~a ~} ~{~a ~}" disease intro cause epidemiology risk-factors differential-diagnoses pathophysiology signs-and-symptoms complications alternative-names prevention living-with))
+	 (one-string (format nil "~a ~a ~a ~a ~a ~{~a ~} ~{~a ~} ~a ~{~a ~} ~{~a ~} ~{~a ~} ~{~a ~} ~{~a ~}" proper-name disease intro cause epidemiology risk-factors differential-diagnoses pathophysiology signs-and-symptoms complications alternative-names prevention living-with))
 	 (tokens (nlp:tokenize one-string)))
     ;; save the data
-    (redis:red-hset id "name" disease)
+    (redis:red-hset id "name" proper-name)
     (redis:red-hset id "introduction" intro)
     (redis:red-hset id "cause" cause)
     (redis:red-hset id "epidemiology" epidemiology)
@@ -71,7 +74,7 @@ the data is saved in the following process
     (redis:red-hset id "alternative-names" alternative-names)
     (redis:red-hset id "prevention" prevention)
     (redis:red-hset id "living-with" living-with)
-    (index-disease-data id disease tokens)
+    (index-disease-data id proper-name tokens)
     id))
 
 (defun index-disease-data (id disease tokens)
@@ -85,21 +88,24 @@ finally save the tokens from both to the autocomplete sets"
       (redis:red-sadd (format nil "{index}:disease:~a" token) id))
     (dolist (token disease-tokens)
       (redis:red-sadd (format nil "{index}:disease-title:~a" token) id))
-    (create-autocomplete all-tokens)))
+    (create-autocomplete disease all-tokens)))
 
-(defun create-autocomplete (tokens)
+(defun create-autocomplete (disease tokens)
   "given a list of tokens, add them to autocomplete sets starting at words with 1 character.
-forexample: tokens is saved in tok, toke, token, tokens"
+forexample: tokens is saved in tok, toke, token, tokens
+
+all tokens are saved against disease. the disease name is the url, so we want to use the disease in the process of autocomplete.
+you don't return the words that match, you return the disease whose data contains a token, or fragment."
   (dolist (token tokens)
     (when (>= (length token) 1)
-      (save-to-autocomplete token))))
+      (save-to-autocomplete disease token))))
 
-(defun save-to-autocomplete (token &key (pos 1))
+(defun save-to-autocomplete (disease token &key (pos 1))
   "given a word, start at length 1 then save the word fragments to autoincrement, we use sorted sets, such that we can track the words appearing most in the dataset."
   (unless (> pos (1- (length token)))
     (let ((subtoken (str:substring 0 pos token)))
-      (redis:red-zincrby (format nil "{auto-complete}:~a" subtoken) 1 token))
-    (save-to-autocomplete token :pos (1+ pos))))
+      (redis:red-zincrby (format nil "{auto-complete}:~a" subtoken) 1 disease))
+    (save-to-autocomplete disease token :pos (1+ pos))))
 
 (defun search-disease-data (word)
   "given word, find any keys in disease title and disease indexes corresponding to it. 

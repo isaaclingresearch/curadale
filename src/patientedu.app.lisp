@@ -95,7 +95,6 @@
 (defmethod hunchensocket:client-connected ((endpoint ws-endpoint) ws-user))
 
 (defmethod hunchensocket:text-message-received ((endpoint ws-endpoint) ws-user message-json)
-  (print message-json)
   (let* ((message (jzon:parse message-json))
 	 (message-type (gethash "type" message nil)))
     (trivia:match message-type
@@ -178,6 +177,3 @@
       (:div :class "footer"
        (:a :href "/about" "About")
        (:a :href "/privacy" "Privacy Policy")))))))
-
-
-
