@@ -3,11 +3,11 @@
 (def-cmd ZUNION (num &rest keys) :anything
   "Return the union between the Zsets stored at key1, key2, ..., keyN.")
 
-(in-package :patientedu)
+(in-package :curaedu)
 
 (defun start-kvrocks ()
   (sb-ext:run-program (namestring (truename "~/.bin/kvrocks"))
-		      (list "-c" (namestring (truename "~/common-lisp/patientedu/conf/kvrocks.conf")))
+		      (list "-c" (namestring (truename "~/common-lisp/curaedu/conf/kvrocks.conf")))
 		      :wait nil)
   (sleep 3); allow some time for the program to start
   (handler-case (connect-kvrocks)

@@ -1,4 +1,4 @@
-(in-package :patientedu.apis)
+(in-package :curaedu.apis)
 
 (defun make-prompt (messages)
   "when given a list of messages, use it to create a system prompt"

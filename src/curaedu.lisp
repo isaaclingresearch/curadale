@@ -1,4 +1,4 @@
-(in-package :patientedu)
+(in-package :curaedu)
 
 (defun make-disease-prompt (disease)
   "create a prompt to get disease details."
@@ -43,7 +43,7 @@ when the model returns differentials, these will be the internal links, run the 
 
 (defun read-disease-data ()
   "get the diseases from the diseases file into a list."
-  (with-open-file (file #p"~/common-lisp/patientedu/data/diseases.txt")
+  (with-open-file (file #p"~/common-lisp/curaedu/data/diseases.txt")
     (loop for line = (read-line file nil)
 	  while line
 	  do (get-disease-details line))))
