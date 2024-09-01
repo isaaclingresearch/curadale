@@ -191,20 +191,29 @@
 		   (:a :href "/about" "About")
 		   (:a :href "/privacy" "Privacy Policy")))))))
 
+(defroute privacy-policy ("/privacy" :method :get :decorators ()) ()
+  (with-html-output-to-string (*standard-output*)
+    "The PatientEdu website doesn't collect user data, or use cookies but uses third party services for analytics (Google Analytics, Microsoft Clarity and Google Adsense) which use cookies. Those cookies are essential to the functioning of the website."))
+
+(defroute about ("/about" :method :get :decorators ()) ()
+  "This is a product of Ninx Technology Limited.")
+
 (defroute search-page ("/search" :method :get :decorators ()) (query)
   (with-html-output-to-string (*standard-output*)
-    (:html
+    "<!DOCTYPE html>"
+    (:html :lang "en"
      (:head
-      (:title "Search | PatientEdu")
+      (:title (str (format nil "~a | Search - PatientEdu" query)))
       (:meta :charset "UTF-8")
       (:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
+      (:meta :name "description" :content (str (format nil "Search results for ~a" query)))
       (:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
       (:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
       ;; Include CSS
       (:style
        (str (cl-css:css
 	     '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)")
-	       (".container" :text-align "center" :width "90%" :max-width "600px" :display "flex" :flex-direction "column" :align-items "center" :justify-content "center" :flex "1")
+	       (".container" :text-align "center" :width "98%" :max-width "600px" :display "flex" :flex-direction "column" :align-items "center" :justify-content "center" :flex "1")
 	       (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
 	       (".logo a" :decoration none)
 	       (".logo a:visited" :color "#0044cc")
@@ -227,7 +236,7 @@
       (:div :class "container"
 	    (:div :class "logo" (:a :href "/" "PatientEdu"))
 	    ;; Search Results Section
-	    
+	    (:p (str (format nil "Showing results for ~a" query)))
 	    (loop for result in (build-links query) do
 	      (htm (:div :class "search-result"
 			 (:a :href (str (format nil "/disease/~a" (make-url (car result))))
@@ -277,11 +286,13 @@
     (format nil "~% ~a ~%" risk-factors)
     (princ id)
     (with-html-output-to-string (*standard-output*)
-      (:html
+    "<!DOCTYPE html>"
+      (:html :lang "en"
        (:head
-	(:title (format nil "~a | PatientEdu" proper-name))
+	(:title (str (format nil "~a | PatientEdu" proper-name)))
 	(:meta :charset "UTF-8")
 	(:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
+	(:meta :name "description" :content (str (format nil "Disease details for ~a" proper-name)))
 	(:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
 	(:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
 	;; Include CSS
@@ -325,39 +336,39 @@
               (:div :class "section"
                     (:h2 "Risk Factors")
                     (:ul (dolist (r risk-factors)
-			   (htm (:ul (str r))))))
+			   (htm (:li (str r))))))
 	      (:div :class "section"
                     (:h2 "Pathophysiology")
                     (:p (str pathophysiology)))
 	      (:div :class "section"
                     (:h2 "Diagnosis")
                     (:ul (dolist (dd diagnosis)
-			   (htm (:ul (str dd))))))
+			   (htm (:li (str dd))))))
               (:div :class "section"
                     (:h2 "Differential Diagnoses")
                     (:ul (dolist (dd differential-diagnoses)
-			   (htm (:ul (str dd))))))
+			   (htm (:li (str dd))))))
               
               (:div :class "section"
                     (:h2 "Signs and Symptoms")
                     (:ul (dolist (ss signs-and-symptoms)
-			   (htm (:ul (str ss))))))
+			   (htm (:li (str ss))))))
               (:div :class "section"
                     (:h2 "Complications")
 		    (:ul (dolist (c complications)
-			   (htm (:ul (str c))))))
+			   (htm (:li (str c))))))
               (:div :class "section"
                     (:h2 "Alternative Names")
                     (:ul (dolist (an alternative-names)
-			   (htm (:ul (str an))))))
+			   (htm (:li (str an))))))
               (:div :class "section"
                     (:h2 "Prevention")
                     (:ul (dolist (p prevention)
-			   (htm (:ul (str p))))))
+			   (htm (:li (str p))))))
               (:div :class "section"
                     (:h2 (str (format nil "Living with ~a" proper-name)))
                     (:ul (dolist (lw living-with)
-			   (htm (:ul (str lw))))))
+			   (htm (:li (str lw))))))
 	      )
 	;; Footer Section
 	(:div :class "footer"
