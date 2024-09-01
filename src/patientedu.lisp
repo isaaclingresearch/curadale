@@ -9,8 +9,8 @@ Example of desired output: (:proper-name \"Some times the disease name given is 
 If you don't have any data about the disease: return nil (as in common lisp's nil). Do not make up any data as people's lives are at stake.
 " disease))
 
-(defun get-disease-details (disease)
-  "makes a call to the best meodel we have right now, now we will be using sexp to get the data, the data will be returned as plists.
+(defun get-disease-details (disease &key force)
+  "when force is true, the old disease data is overwritten, otherwise preserved, makes a call to the best meodel we have right now, now we will be using sexp to get the data, the data will be returned as plists.
 use the best model available to us, currently gpt-4o. generate a disease summary, cause, signs and symptoms, complications, differential diagnoses, effective drugs to the disease.
 
 the data returned should be markdown, to allow embedding of links: the differential diagnoses are links to the disease page, the treatments section is also a link to the disease page. this will improve visibility if all pages of the site.
@@ -20,24 +20,30 @@ we should also return the links in a separate list. forexample: link disease to 
 when the model returns non plist data, repeat until it returns the correct data. also do so when the model returns an error.
 
 when the model returns differentials, these will be the internal links, run the differentials through the get-disease-details, such that all diseases have some data to them. check if a disease has been saved before running to preserve compute."
-  (trivia:match (llms:query-azure-ai () :system-prompt (make-disease-prompt disease))
-    ((list :error _) (get-disease-details disease))
-    ((list data _ _ _)
-     (let ((sexp-data (sexp:parse (nlp:remove-lisp-encapsulation data))))
-       (when sexp-data
-	 (if (sexp:plistp sexp-data)
-	     (progn
-	       (save-disease-data disease sexp-data)
-	       (let ((differentials (getf sexp-data :differential-diagnoses nil)))
-		 (when differentials
-		   (dolist (differential differentials)
-		     (unless (get-id-from-url (make-url differential))
-		       (get-disease-details differential))))))
-	     (get-disease-details disease)))))))
+  (format t "~% Working on: ~a ~%" disease)
+  (let ((id (get-id-from-url (make-url disease))))
+    (if (or (null id) (and force (not (null id))))
+	(unless (get-id-from-url (make-url disease))
+	  (trivia:match (llms:query-azure-ai () :system-prompt (make-disease-prompt disease))
+	    ((list :error _) (get-disease-details disease))
+	    ((list data _ _ _)
+	     (let ((sexp-data (handler-case (sexp:parse (nlp:remove-lisp-encapsulation data))
+				(error (err)
+				  (declare (ignore err))))))
+	       (when sexp-data
+		 (if (sexp:plistp sexp-data)
+		     (progn
+		       (save-disease-data disease sexp-data)
+		       (let ((differentials (getf sexp-data :differential-diagnoses nil)))
+			 (when differentials
+			   (dolist (differential differentials)
+			     (unless (get-id-from-url (make-url differential))
+			       (get-disease-details differential))))))
+		     (get-disease-details disease))))))))))
 
 (defun read-disease-data ()
   "get the diseases from the diseases file into a list."
-  (with-open-file (file #p"~/common-lisp/patientedu/data/diseases.txt" :direction :input)
+  (with-open-file (file #p"~/common-lisp/patientedu/data/diseases.txt")
     (loop for line = (read-line file nil)
 	  while line
 	  do (get-disease-details line))))
