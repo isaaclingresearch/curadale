@@ -137,6 +137,7 @@
 											     (clear-suggestions))))
 					 (chain suggestions-container (append-child suggestion-div))))))))))
 
+
 (defun index-css ()
   "The CSS for the home page"
   (cl-css:css
@@ -155,41 +156,84 @@
      (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white" :position "fixed" :bottom "0" :left "0")
      (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
      (".footer a:hover" :text-decoration "underline")
+     ;; Cookie Banner
+     (".cookie-banner" :background-color "#000" :color "white" :position "fixed" :bottom "60px" :left "0" :right "0" :padding "15px" :text-align "center" :box-shadow "0 -2px 5px rgba(0,0,0,0.3)" :z-index "1000")
+     (".cookie-button" :background-color "#0044cc" :color "white" :border "none" :padding "10px 20px" :border-radius "5px" :cursor "pointer" :margin "0 5px")
+     (".cookie-button:hover" :background-color "#0033aa")
      ;; Mobile adjustments
      ("@media (max-width: 600px)"
       (".logo" :font-size "30px")
       (".search-input" :width "90%")
       (".search-button" :width "90%")
-      (".autocomplete-suggestions" :width "90%")))))
+      (".autocomplete-suggestions" :width "90%")
+      (".cookie-banner" :font-size "14px" :padding "10px")))))
+
+(defun cookie-banner-js ()
+  "return the js for the cookie banner, when the user accepts the cookies, save it to local storage and update third parties. 
+if the user has already accepted/rejected the cookies then do nothing."
+  (ps
+    (chain document
+	   (add-event-listener "DOMContentLoaded"
+			       (lambda ()
+				 (let ((cookie-banner (chain document (query-selector ".cookie-banner")))
+				       (accept-button (chain document (get-element-by-id "accept-cookies")))
+				       (reject-button (chain document (get-element-by-id "reject-cookies"))))
+				   (if (not (chain local-storage (get-item "cookieConsent")))
+				       (setf (chain cookie-banner style display) "block")
+				       (setf (chain cookie-banner style display) "none"))
+				   (chain accept-button (add-event-listener "click"
+									    (lambda ()
+									      (chain local-storage (set-item "cookieConsent" "accepted"))
+									      (setf (chain cookie-banner style display) "none"))))
+				   (chain reject-button (add-event-listener "click"
+									    (lambda ()
+									      (chain local-storage (set-item "cookieConsent" "rejected"))
+									      (setf (chain cookie-banner style display) "none"))))
+				   ))))))
+
+
+(defun analytics-js ()
+  "add google analytics and microsoft clarity"
+  (with-html-output (*standard-output*)
+    (htm (:script :async t :src "https://www.googletagmanager.com/gtag/js?id=G-0RVE9PJVYJ")
+	 (:script "window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0RVE9PJVYJ');"))))
 
 (defroute index-page ("/" :method :get :decorators ()) ()
   (with-html-output-to-string (*standard-output*)
     "<!DOCTYPE html>"
     (:html :lang "en"
-	   (:head
-	    (:title "PatientEdu")
-	    (:meta :charset "UTF-8")
-	    (:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
-	    (:meta :name "description" :content "The home page for PatientEdu.")
-	    (:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
-	    (:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
-	    ;; Include CSS with background colors, borders, shadows, and mobile adjustments
-	    (:style
-	     (str (index-css))) ;; Responsive adjustments
-	    (:body
-	     (:div :class "container"
-		   (:div :class "logo" (:a :aria-label "home-link" :href "/" "PatientEdu"))
-		   (:div :class "search-form"
-			 (:form :action "/search" :method "get" :role "search"
-				(:input :type "text" :name "query" :id "autocomplete-input" :placeholder "Search..." :class "search-input" :autocomplete "off" :required t :aria-label "search input")
-				;; Move the suggestions div directly below the input field
-				(:div :id "suggestions" :class "autocomplete-suggestions")
-				(:button :type "submit" :class "search-button" "Search"))))
-	     (:script (str (ws-js-code)))
-	     ;; Footer Section
-	     (:div :class "footer"
-		   (:a :href "/about" "About")
-		   (:a :href "/privacy" "Privacy Policy")))))))
+           (:head
+            (:title "PatientEdu")
+            (:meta :charset "UTF-8")
+            (:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
+            (:meta :name "description" :content "The home page for PatientEdu.")
+            (:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
+            (:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
+            (:style
+             (str (index-css)))
+	    (analytics-js))
+           (:body
+            (:div :class "container"
+                  (:div :class "logo" (:a :aria-label "home-link" :href "/" "PatientEdu"))
+                  (:div :class "search-form"
+                        (:form :action "/search" :method "get" :role "search"
+                               (:input :type "text" :name "query" :id "autocomplete-input" :placeholder "Search..." :class "search-input" :autocomplete "off" :required t :aria-label "search input")
+                               (:div :id "suggestions" :class "autocomplete-suggestions")
+                               (:button :type "submit" :class "search-button" "Search"))))
+            ;; Cookie Banner Section
+            (:div :class "cookie-banner"
+                  (:p "This website uses cookies to ensure you get the best experience on our website. " 
+                      (:button :id "accept-cookies" :class "cookie-button" "Accept") " "
+                      (:button :id "reject-cookies" :class "cookie-button" "Reject")))
+	    (:script (str (ws-js-code))
+		     (str (cookie-banner-js)))
+	    ;; Footer Section
+            (:div :class "footer"
+                  (:a :href "/about" "About")
+                  (:a :href "/privacy" "Privacy Policy"))))))
 
 (defroute privacy-policy ("/privacy" :method :get :decorators ()) ()
   (with-html-output-to-string (*standard-output*)
