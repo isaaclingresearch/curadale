@@ -137,6 +137,31 @@
 											     (clear-suggestions))))
 					 (chain suggestions-container (append-child suggestion-div))))))))))
 
+(defun index-css ()
+  "The CSS for the home page"
+  (cl-css:css
+   '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :height "85vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)")
+     (".container" :text-align "center" :width "90%" :max-width "600px" :display "flex" :flex-direction "column" :align-items "center" :justify-content "center" :flex 1)
+     (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
+     (".logo a" :text-decoration "none")
+     (".logo a:visited" :color "#0044cc")
+     (".search-form" :margin-top "20px" :display "flex" :flex-direction "column" :align-items "center" :position "relative")
+     (".search-input" :width "calc(100% - 40px)" :padding "10px" :font-size "16px" :border "1px solid #ccc" :border-radius "4px" :margin-bottom "5px" :box-shadow "0 2px 5px rgba(0,0,0,0.1)")
+     (".autocomplete-suggestions" :border "1px solid #ccc" :max-height "150px" :overflow-y "auto" :position "absolute" :background-color "white" :z-index "1000" :width "calc(100% - 40px)" :left "3%" :box-shadow "0 2px 5px rgba(0,0,0,0.1)" :margin-left 19)
+     (".autocomplete-suggestion" :padding "10px" :cursor "pointer" :border-bottom "1px solid #ddd")
+     (".autocomplete-suggestion:hover" :background-color "#f0f0f0")
+     (".search-button" :padding "10px 20px" :font-size "16px" :color "white" :background-color "#003D00" :border "none" :border-radius "4px" :cursor "pointer" :box-shadow "0 2px 5px rgba(0,0,0,0.2)" :margin-top "5px")
+     (".search-button:hover" :background-color "#218838" :transform "scale(1.05)" :transition "transform 0.2s")
+     (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white" :position "fixed" :bottom "0" :left "0")
+     (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
+     (".footer a:hover" :text-decoration "underline")
+     ;; Mobile adjustments
+     ("@media (max-width: 600px)"
+      (".logo" :font-size "30px")
+      (".search-input" :width "90%")
+      (".search-button" :width "90%")
+      (".autocomplete-suggestions" :width "90%")))))
+
 (defroute index-page ("/" :method :get :decorators ()) ()
   (with-html-output-to-string (*standard-output*)
     "<!DOCTYPE html>"
@@ -150,28 +175,7 @@
 	    (:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
 	    ;; Include CSS with background colors, borders, shadows, and mobile adjustments
 	    (:style
-	     (str (cl-css:css
-		   '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)")
-		     (".container" :text-align "center" :width "90%" :max-width "600px" :display "flex" :flex-direction "column" :align-items "center" :justify-content "center" :flex "1")
-		     (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
-		     (".logo a" :decoration none)
-		     (".logo a:visited" :color "#0044cc")
-		     (".search-form" :margin-top "20px" :display "flex" :flex-direction "column" :align-items "center" :position "relative")
-		     (".search-input" :width "calc(100% - 40px)" :padding "10px" :font-size "16px" :border "1px solid #ccc" :border-radius "4px" :margin-bottom "5px" :box-shadow "0 2px 5px rgba(0,0,0,0.1)")
-		     (".autocomplete-suggestions" :border "1px solid #ccc" :max-height "150px" :overflow-y "auto" :position "absolute" :background-color "white" :z-index "1000" :width "calc(100% - 40px)" :left "3%" :box-shadow "0 2px 5px rgba(0,0,0,0.1)" :margin-left 19)
-		     (".autocomplete-suggestion" :padding "10px" :cursor "pointer" :border-bottom "1px solid #ddd")
-		     (".autocomplete-suggestion:hover" :background-color "#f0f0f0")
-		     (".search-button" :padding "10px 20px" :font-size "16px" :color "white" :background-color "#003D00" :border "none" :border-radius "4px" :cursor "pointer" :box-shadow "0 2px 5px rgba(0,0,0,0.2)" :margin-top "5px")
-		     (".search-button:hover" :background-color "#218838" :transform "scale(1.05)" :transition "transform 0.2s")
-		     (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white")
-		     (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
-		     (".footer a:hover" :text-decoration "underline")
-		     ;; Mobile adjustments
-		     ("@media (max-width: 600px)"
-                      (".logo" :font-size "30px")
-                      (".search-input" :width "90%")
-                      (".search-button" :width "90%")
-                      (".autocomplete-suggestions" :width "90%")))))) ;; Responsive adjustments
+	     (str (index-css))) ;; Responsive adjustments
 	    (:body
 	     (:div :class "container"
 		   (:div :class "logo" (:a :aria-label "home-link" :href "/" "PatientEdu"))
