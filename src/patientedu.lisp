@@ -17,12 +17,27 @@ the data returned should be markdown, to allow embedding of links: the different
 
 we should also return the links in a separate list. forexample: link disease to its treatment and then link each possible treatment. but let's handle diseases first. then we'll see about the treatments.
 
-when the model returns non plist data, repeat until it returns the correct data. also do so when the model returns an error."
+when the model returns non plist data, repeat until it returns the correct data. also do so when the model returns an error.
+
+when the model returns differentials, these will be the internal links, run the differentials through the get-disease-details, such that all diseases have some data to them. check if a disease has been saved before running to preserve compute."
   (trivia:match (llms:query-azure-ai () :system-prompt (make-disease-prompt disease))
     ((list :error _) (get-disease-details disease))
     ((list data _ _ _)
      (let ((sexp-data (sexp:parse (nlp:remove-lisp-encapsulation data))))
        (when sexp-data
 	 (if (sexp:plistp sexp-data)
-	     (save-disease-data disease sexp-data)
+	     (progn
+	       (save-disease-data disease sexp-data)
+	       (let ((differentials (getf sexp-data :differential-diagnoses nil)))
+		 (when differentials
+		   (dolist (differential differentials)
+		     (unless (get-id-from-url (make-url differential))
+		       (get-disease-details differential))))))
 	     (get-disease-details disease)))))))
+
+(defun read-disease-data ()
+  "get the diseases from the diseases file into a list."
+  (with-open-file (file #p"~/common-lisp/patientedu/data/diseases.txt" :direction :input)
+    (loop for line = (read-line file nil)
+	  while line
+	  do (get-disease-details line))))
