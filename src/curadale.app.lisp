@@ -1,14 +1,14 @@
-(in-package :curaedu)
+(in-package :curadale)
 
 ;;; HTTP(S) 
 (setq *show-lisp-errors-p* t) ;; set this to show error files in /priv/errors
 
 ;; define server config
 ;;;; these are set in $HOME/.bashrc to be accessible in the sbcl repl 
-(defvar *curaedu-http-port* (parse-integer (uiop:getenv "CURAEDU_HTTP_PORT")))
-(defvar *curaedu-https-port* (parse-integer (uiop:getenv "CURAEDU_HTTPS_PORT")))
-(defvar *curaedu-ssl-cert* (uiop:getenv "CURAEDU_SSL_CERT"))
-(defvar *curaedu-ssl-key* (uiop:getenv "CURAEDU_SSL_KEY"))
+(defvar *curadale-http-port* (parse-integer (uiop:getenv "CURADALE_HTTP_PORT")))
+(defvar *curadale-https-port* (parse-integer (uiop:getenv "CURADALE_HTTPS_PORT")))
+(defvar *curadale-ssl-cert* (uiop:getenv "CURADALE_SSL_CERT"))
+(defvar *curadale-ssl-key* (uiop:getenv "CURADALE_SSL_KEY"))
 
 
 ;; WEBSOCKET SERVER AND FUNCTIONS
@@ -42,32 +42,32 @@
 (defclass http-to-https-acceptor (hunchentoot:acceptor) ())
 (defmethod hunchentoot:acceptor-dispatch-request ((acceptor http-to-https-acceptor) request)
   (hunchentoot:redirect (hunchentoot:request-uri request)
-                        :protocol :https :port *curaedu-https-port*))
+                        :protocol :https :port *curadale-https-port*))
 
-(defvar *curaedu-wss-acceptor* (make-instance 'ws-routes-ssl-acceptor :port *curaedu-https-port*
-									 :ssl-certificate-file *curaedu-ssl-cert*
-									 :ssl-privatekey-file *curaedu-ssl-key*
-									 :document-root (truename "~/common-lisp/curaedu/priv/")
-									 :error-template-directory (truename "~/common-lisp/curaedu/priv/errors/")))
+(defvar *curadale-wss-acceptor* (make-instance 'ws-routes-ssl-acceptor :port *curadale-https-port*
+									 :ssl-certificate-file *curadale-ssl-cert*
+									 :ssl-privatekey-file *curadale-ssl-key*
+									 :document-root (truename "~/common-lisp/curadale/priv/")
+									 :error-template-directory (truename "~/common-lisp/curadale/priv/errors/")))
 
-(defvar *curaedu-http-acceptor* (make-instance 'http-to-https-acceptor :port *curaedu-http-port*))
+(defvar *curadale-http-acceptor* (make-instance 'http-to-https-acceptor :port *curadale-http-port*))
 
 ;; set logging to files
-					;(setf (acceptor-message-log-destination *curaedu-wss-acceptor*) (truename "~/common-lisp/curaedu/logs/message.log"))
-					;(setf (acceptor-access-log-destination *curaedu-wss-acceptor*) (truename "~/common-lisp/curaedu/logs/access.log"))
+					;(setf (acceptor-message-log-destination *curadale-wss-acceptor*) (truename "~/common-lisp/curadale/logs/message.log"))
+					;(setf (acceptor-access-log-destination *curadale-wss-acceptor*) (truename "~/common-lisp/curadale/logs/access.log"))
 ;; don't allow persistent connections
 ;; this is because the server was not responding to requests, with a 503, and the error logs were showing too many threads.
 ;; still investigation, but maybe the connections were sending a keep alive header.
-(setf (acceptor-persistent-connections-p *curaedu-http-acceptor*) nil)
-(setf (acceptor-persistent-connections-p *curaedu-wss-acceptor*) nil)
+(setf (acceptor-persistent-connections-p *curadale-http-acceptor*) nil)
+(setf (acceptor-persistent-connections-p *curadale-wss-acceptor*) nil)
 
 ;; after reviewing the taskmaster section of the docs, either of two things happened, because i was having one active connections
 ;; 1). the connections persisted, I don't why that is, but i have stopped persistent connections.
 ;; 2). The taskmaster ran out of threads, or the max accept was exceeded by the active requests.
 ;; 3). this is the solution, stop persistent connections above, then increase the threads to 1000, and max accept to 1500.
 
-(let ((http-taskmaster (slot-value *curaedu-http-acceptor* 'taskmaster))
-      (https-taskmaster (slot-value *curaedu-wss-acceptor* 'taskmaster)))
+(let ((http-taskmaster (slot-value *curadale-http-acceptor* 'taskmaster))
+      (https-taskmaster (slot-value *curadale-wss-acceptor* 'taskmaster)))
   (setf (slot-value http-taskmaster 'hunchentoot::max-thread-count) 10000)
   (setf (slot-value http-taskmaster 'hunchentoot::max-accept-count) 15000)
   (setf (slot-value https-taskmaster 'hunchentoot::max-thread-count) 10000)
@@ -77,16 +77,16 @@
   "Start the server"
   (stop-server)
   (start-kvrocks)
-  (hunchentoot:start *curaedu-http-acceptor*)
-  (hunchentoot:start *curaedu-wss-acceptor*)
+  (hunchentoot:start *curadale-http-acceptor*)
+  (hunchentoot:start *curadale-wss-acceptor*)
   )
 
 (defun stop-server ()
   "Stop the server"
-  (when (started-p *curaedu-http-acceptor*)
-    (stop *curaedu-http-acceptor*))
-  (when (started-p *curaedu-wss-acceptor*)
-    (stop *curaedu-wss-acceptor*))
+  (when (started-p *curadale-http-acceptor*)
+    (stop *curadale-http-acceptor*))
+  (when (started-p *curadale-wss-acceptor*)
+    (stop *curadale-wss-acceptor*))
   (handler-case (stop-kvrocks)
     (redis:redis-connection-error (err)
       (declare (ignore err)))))
@@ -206,10 +206,10 @@ if the user has already accepted/rejected the cookies then do nothing."
     "<!DOCTYPE html>"
     (:html :lang "en"
            (:head
-            (:title "Curaedu")
+            (:title "Curadale")
             (:meta :charset "UTF-8")
             (:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
-            (:meta :name "description" :content "The home page for Curaedu.")
+            (:meta :name "description" :content "The home page for Curadale.")
             (:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
             (:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
             (:style
@@ -217,7 +217,7 @@ if the user has already accepted/rejected the cookies then do nothing."
 	    (analytics-js))
            (:body
             (:div :class "container"
-                  (:div :class "logo" (:a :aria-label "home-link" :href "/" "Curaedu"))
+                  (:div :class "logo" (:a :aria-label "home-link" :href "/" "Curadale"))
                   (:div :class "search-form"
                         (:form :action "/search" :method "get" :role "search"
                                (:input :type "text" :name "query" :id "autocomplete-input" :placeholder "Search..." :class "search-input" :autocomplete "off" :required t :aria-label "search input")
@@ -237,7 +237,7 @@ if the user has already accepted/rejected the cookies then do nothing."
 
 (defroute privacy-policy ("/privacy" :method :get :decorators ()) ()
   (with-html-output-to-string (*standard-output*)
-    "The Curaedu website doesn't collect user data, or use cookies but uses third party services for analytics (Google Analytics, Microsoft Clarity and Google Adsense) which use cookies. Those cookies are essential to the functioning of the website."))
+    "The Curadale website doesn't collect user data, or use cookies but uses third party services for analytics (Google Analytics, Microsoft Clarity and Google Adsense) which use cookies. Those cookies are essential to the functioning of the website."))
 
 (defroute about ("/about" :method :get :decorators ()) ()
   "This is a product of Ninx Technology Limited.")
@@ -247,7 +247,7 @@ if the user has already accepted/rejected the cookies then do nothing."
     "<!DOCTYPE html>"
     (:html :lang "en"
      (:head
-      (:title (str (format nil "~a | Search - Curaedu" query)))
+      (:title (str (format nil "~a | Search - Curadale" query)))
       (:meta :charset "UTF-8")
       (:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
       (:meta :name "description" :content (str (format nil "Search results for ~a" query)))
@@ -278,7 +278,7 @@ if the user has already accepted/rejected the cookies then do nothing."
 		(".search-result .description" :font-size "16px" :color "#666666")))))))
      (:body
       (:div :class "container"
-	    (:div :class "logo" (:a :href "/" "Curaedu"))
+	    (:div :class "logo" (:a :href "/" "Curadale"))
 	    ;; Search Results Section
 	    (:p (str (format nil "Showing results for ~a" query)))
 	    (loop for result in (build-links query) do
@@ -308,8 +308,8 @@ if the user has already accepted/rejected the cookies then do nothing."
 	    (mapcar #'car (sort sacc #'> :key #'cdr)))))
 
 (defun make-url (text)
-  "given a text, replace spaces with -, then make lowercase"
-  (str:downcase (str:replace-all " " "-" text)))
+  "given a text, replace spaces with -, then make lowercase, remove all other punctution marks"
+  (str:downcase (str:replace-all " " "-" (nlp:remove-punctuation text))))
 
 
 (defroute disease-page ("/disease/:url" :method :get :decorators ()) ()
@@ -333,7 +333,7 @@ if the user has already accepted/rejected the cookies then do nothing."
     "<!DOCTYPE html>"
       (:html :lang "en"
        (:head
-	(:title (str (format nil "~a | Curaedu" proper-name)))
+	(:title (str (format nil "~a | Curadale" proper-name)))
 	(:meta :charset "UTF-8")
 	(:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
 	(:meta :name "description" :content (str (format nil "Disease details for ~a" proper-name)))
@@ -366,7 +366,7 @@ if the user has already accepted/rejected the cookies then do nothing."
 	       ))))
        (:body
 	(:div :class "container"
-              (:div :class "logo" (:a :href "/" "Curaedu"))
+              (:div :class "logo" (:a :href "/" "Curadale"))
               ;; Disease Information Sections
               (:div :class "section"
                     (:h2 (str proper-name))

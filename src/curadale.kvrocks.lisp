@@ -3,11 +3,11 @@
 (def-cmd ZUNION (num &rest keys) :anything
   "Return the union between the Zsets stored at key1, key2, ..., keyN.")
 
-(in-package :curaedu)
+(in-package :curadale)
 
 (defun start-kvrocks ()
   (sb-ext:run-program (namestring (truename "~/.bin/kvrocks"))
-		      (list "-c" (namestring (truename "~/common-lisp/curaedu/conf/kvrocks.conf")))
+		      (list "-c" (namestring (truename "~/common-lisp/curadale/conf/kvrocks.conf")))
 		      :wait nil)
   (sleep 3); allow some time for the program to start
   (handler-case (connect-kvrocks)
@@ -84,6 +84,9 @@ as we will be presenting human readable urls to the readers."
 
 (defun disease-hget (id field)
   (redis:red-hget id field))
+
+(defun save-disease-id (url id)
+  (redis:red-set (format nil "{url}:~a" url) id))
 
 (defun get-id-from-url (url)
   (redis:red-get (format nil "{url}:~a" url)))

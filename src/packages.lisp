@@ -4,14 +4,14 @@
   (:documentation "Processes strings and sexps")
   (:export :parse :stringify :ensure-plist :plistp))
 
-(defpackage :curaedu.nlp
+(defpackage :curadale.nlp
   (:use :cl :str :trivia)
   (:nicknames :nlp)
   (:shadow str:match)
   (:documentation "This package for processing text")
-  (:export :remove-json-encapsulation :remove-lisp-encapsulation :make-strict-json :tokenize :count-terms :compute-tf))
+  (:export :remove-punctuation :remove-json-encapsulation :remove-lisp-encapsulation :make-strict-json :tokenize :count-terms :compute-tf))
 
-(defpackage :curaedu.apis
+(defpackage :curadale.apis
   (:use :cl :drakma :com.inuoe.jzon)
   (:nicknames :llms)
   (:documentation "This package for making rest api calls to llm endpoints")
@@ -30,9 +30,9 @@
 	   *default-together-model*
 	   *qwen-system-prompt*))
 
-(defpackage :curaedu
+(defpackage :curadale
   (:use :cl :redis :easy-routes :hunchentoot :hunchensocket :cl-who :cl-css :cl-base64 :frugal-uuid :trivia :com.inuoe.jzon :parenscript :local-time)
   (:shadow easy-routes:redirect hunchentoot:reply parenscript:@ parenscript:stringify parenscript:% redis:close-connection cl-who:fmt redis:tell str:match)
-  (:documentation "The main package of the curaedu application.")
+  (:documentation "The main package of the curadale application.")
   (:local-nicknames (:jzon :com.inuoe.jzon))
   (:export :start-server :restart-server :create-tables))
