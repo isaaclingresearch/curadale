@@ -56,3 +56,45 @@ if a disease countn't be found, then save it's url with \"not-found\" to prevent
     (loop for line = (read-line file nil)
 	  while line
 	  do (get-disease-details line))))
+
+(defun create-site-map ()
+  "get all disease urls and create a sitemap with them."
+  (let* ((host (uiop:getenv "CURADALE_HOST"))
+	 (urls `("https://curadale.com"
+		 "https://curadale.com/privacy"
+		 "https://curadale.com/about"
+		 ,@(mapcar (lambda (url)
+			     (format nil "https://~a/disease/~a" host (cadr (str:split ":" url))))
+			   (redis:red-keys "{url}*")))))
+    (generate-sitemap urls)))
+
+(defun generate-sitemap (urls)
+  "Generate a sitemap.xml from a list of URLs and save it to the specified output-file."
+  (with-open-file (stream (truename #p"~/common-lisp/curadale/priv/sitemap.xml")
+                          :direction :output
+                          :if-exists :supersede
+                          :if-does-not-exist :create)
+    (format stream "<?xml version=\"1.0\" encoding=\"UTF-8\"?>~%")
+    (format stream "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">~%")
+    (dolist (url urls)
+      (format stream "  <url>~%")
+      (format stream "    <loc>~a</loc>~%"
+              (escape-xml url))
+      (format stream "  </url>~%"))
+    (format stream "</urlset>~%")))
+
+(defun escape-xml (str)
+  "Escape XML special characters in STR."
+  (let ((escaped-str (copy-seq str)))
+    (setf escaped-str (cl-ppcre:regex-replace-all "&" escaped-str "&amp;"))
+    (setf escaped-str (cl-ppcre:regex-replace-all "<" escaped-str "&lt;"))
+    (setf escaped-str (cl-ppcre:regex-replace-all ">" escaped-str "&gt;"))
+    (setf escaped-str (cl-ppcre:regex-replace-all "\"" escaped-str "&quot;"))
+    (setf escaped-str (cl-ppcre:regex-replace-all "'" escaped-str "&apos;"))
+    escaped-str))
+
+;; Example usage:
+(let ((urls '("https://example.com/page1"
+              "https://example.com/page2"
+              "https://example.com/page3")))
+  (generate-sitemap urls "sitemap.xml"))

@@ -9,7 +9,7 @@
 (defvar *curadale-https-port* (parse-integer (uiop:getenv "CURADALE_HTTPS_PORT")))
 (defvar *curadale-ssl-cert* (uiop:getenv "CURADALE_SSL_CERT"))
 (defvar *curadale-ssl-key* (uiop:getenv "CURADALE_SSL_KEY"))
-
+(defvar *curadale-url* (uiop:getenv "CURADALE_HOST"))
 
 ;; WEBSOCKET SERVER AND FUNCTIONS
 (defclass ws-endpoint (hunchensocket:websocket-resource)
