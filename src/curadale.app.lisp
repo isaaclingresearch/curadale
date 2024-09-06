@@ -53,8 +53,8 @@
 (defvar *curadale-http-acceptor* (make-instance 'http-to-https-acceptor :port *curadale-http-port*))
 
 ;; set logging to files
-					;(setf (acceptor-message-log-destination *curadale-wss-acceptor*) (truename "~/common-lisp/curadale/logs/message.log"))
-					;(setf (acceptor-access-log-destination *curadale-wss-acceptor*) (truename "~/common-lisp/curadale/logs/access.log"))
+(setf (acceptor-message-log-destination *curadale-wss-acceptor*) (truename "~/common-lisp/curadale/logs/message.log"))
+(setf (acceptor-access-log-destination *curadale-wss-acceptor*) (truename "~/common-lisp/curadale/logs/access.log"))
 ;; don't allow persistent connections
 ;; this is because the server was not responding to requests, with a 503, and the error logs were showing too many threads.
 ;; still investigation, but maybe the connections were sending a keep alive header.
