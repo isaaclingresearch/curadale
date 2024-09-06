@@ -80,6 +80,7 @@ if a disease countn't be found, then save it's url with \"not-found\" to prevent
       (format stream "  <url>~%")
       (format stream "    <loc>~a</loc>~%"
               (escape-xml url))
+      (format stream "    <lastmod>~a</lastmod>~%" (make-date))
       (format stream "  </url>~%"))
     (format stream "</urlset>~%")))
 
@@ -93,8 +94,3 @@ if a disease countn't be found, then save it's url with \"not-found\" to prevent
     (setf escaped-str (cl-ppcre:regex-replace-all "'" escaped-str "&apos;"))
     escaped-str))
 
-;; Example usage:
-(let ((urls '("https://example.com/page1"
-              "https://example.com/page2"
-              "https://example.com/page3")))
-  (generate-sitemap urls "sitemap.xml"))

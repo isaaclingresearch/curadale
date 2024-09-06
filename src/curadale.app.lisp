@@ -45,10 +45,10 @@
                         :protocol :https :port *curadale-https-port*))
 
 (defvar *curadale-wss-acceptor* (make-instance 'ws-routes-ssl-acceptor :port *curadale-https-port*
-									 :ssl-certificate-file *curadale-ssl-cert*
-									 :ssl-privatekey-file *curadale-ssl-key*
-									 :document-root (truename "~/common-lisp/curadale/priv/")
-									 :error-template-directory (truename "~/common-lisp/curadale/priv/errors/")))
+								       :ssl-certificate-file *curadale-ssl-cert*
+								       :ssl-privatekey-file *curadale-ssl-key*
+								       :document-root (truename "~/common-lisp/curadale/priv/")
+								       :error-template-directory (truename "~/common-lisp/curadale/priv/errors/")))
 
 (defvar *curadale-http-acceptor* (make-instance 'http-to-https-acceptor :port *curadale-http-port*))
 
@@ -201,6 +201,15 @@ if the user has already accepted/rejected the cookies then do nothing."
   gtag('js', new Date());
   gtag('config', 'G-0RVE9PJVYJ');"))))
 
+(defun cookie-banner ()
+  "returns the html and js of the cookie banner"
+  (with-html-output (*standard-output*)
+    (htm (:div :class "cookie-banner"
+               (:p "This website uses cookies to ensure you get the best experience on our website. " 
+                   (:button :id "accept-cookies" :class "cookie-button" "Accept") " "
+                   (:button :id "reject-cookies" :class "cookie-button" "Reject")))
+	 (:script (str (cookie-banner-js))))))
+
 (defroute index-page ("/" :method :get :decorators ()) ()
   (with-html-output-to-string (*standard-output*)
     "<!DOCTYPE html>"
@@ -224,12 +233,8 @@ if the user has already accepted/rejected the cookies then do nothing."
                                (:div :id "suggestions" :class "autocomplete-suggestions")
                                (:button :type "submit" :class "search-button" "Search"))))
             ;; Cookie Banner Section
-            (:div :class "cookie-banner"
-                  (:p "This website uses cookies to ensure you get the best experience on our website. " 
-                      (:button :id "accept-cookies" :class "cookie-button" "Accept") " "
-                      (:button :id "reject-cookies" :class "cookie-button" "Reject")))
-	    (:script (str (ws-js-code))
-		     (str (cookie-banner-js)))
+	    (cookie-banner)
+	    (:script (str (ws-js-code)))
 	    ;; Footer Section
             (:div :class "footer"
                   (:a :href "/about" "About")
@@ -246,50 +251,58 @@ if the user has already accepted/rejected the cookies then do nothing."
   (with-html-output-to-string (*standard-output*)
     "<!DOCTYPE html>"
     (:html :lang "en"
-     (:head
-      (:title (str (format nil "~a | Search - Curadale" query)))
-      (:meta :charset "UTF-8")
-      (:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
-      (:meta :name "description" :content (str (format nil "Search results for ~a" query)))
-      (:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
-      (:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
-      ;; Include CSS
-      (:style
-       (str (cl-css:css
-	     '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)")
-	       (".container" :text-align "center" :width "98%" :max-width "600px" :display "flex" :flex-direction "column" :align-items "center" :justify-content "center" :flex "1")
-	       (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
-	       (".logo a" :decoration none)
-	       (".logo a:visited" :color "#0044cc")
+	   (:head
+	    (:title (str (format nil "~a | Search - Curadale" query)))
+	    (:meta :charset "UTF-8")
+	    (:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
+	    (:meta :name "description" :content (str (format nil "Search results for ~a" query)))
+	    (:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
+	    (:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
+	    (analytics-js))
+	   ;; Include CSS
+	   (:style
+	    (str (cl-css:css
+		  '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)")
+		    (".container" :text-align "center" :width "98%" :max-width "600px" :display "flex" :flex-direction "column" :align-items "center" :justify-content "center" :flex "1")
+		    (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
+		    (".logo a" :decoration none)
+		    (".logo a:visited" :color "#0044cc")
 
-	       (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white")
-	       (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
-	       (".footer a:hover" :text-decoration "underline")
-	       (".search-result" :margin "10px 0" :width "100%" :text-align "center")
-	       (".search-result a" :display "block" :padding "15px" :margin "5px 0" :background-color "#f5f5f5" :color "black" :border-radius "5px" :text-decoration "none" :text-align "left")
-	       (".search-result a:hover" :background-color "#e0e0e0")
-	       (".search-result a:visited" :color "#800080") ;; Visited link color (purple)
-	       (".search-result .heading" :font-weight "bold" :margin-bottom "5px" :font-size "18px" :color "blue")
-	       (".search-result .description" :font-size "14px" :color "#666666")
-	       ;; Mobile adjustments
-	       ("@media (max-width: 600px)"
-		(".logo" :font-size "30px")
-		(".search-result a" :padding "10px")
-		(".search-result .description" :font-size "16px" :color "#666666")))))))
-     (:body
-      (:div :class "container"
-	    (:div :class "logo" (:a :href "/" "Curadale"))
-	    ;; Search Results Section
-	    (:p (str (format nil "Showing results for ~a" query)))
-	    (loop for result in (build-links query) do
-	      (htm (:div :class "search-result"
-			 (:a :href (str (format nil "/disease/~a" (make-url (car result))))
-	                     (:div :class "heading" (str (car result)))
-	                     (:div :class "description" (str (cdr result)) "..."))))))
-      ;; Footer Section
-      (:div :class "footer"
-	    (:a :href "/about" "About")
-	    (:a :href "/privacy" "Privacy Policy"))))))
+		    (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white")
+		    (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
+		    (".footer a:hover" :text-decoration "underline")
+		    (".search-result" :margin "10px 0" :width "100%" :text-align "center")
+		    (".search-result a" :display "block" :padding "15px" :margin "5px 0" :background-color "#f5f5f5" :color "black" :border-radius "5px" :text-decoration "none" :text-align "left")
+		    (".search-result a:hover" :background-color "#e0e0e0")
+		    (".search-result a:visited" :color "#800080") ;; Visited link color (purple)
+		    (".search-result .heading" :font-weight "bold" :margin-bottom "5px" :font-size "18px" :color "blue")
+		    (".search-result .description" :font-size "14px" :color "#666666")
+		    ;; cookie banner
+	            (".cookie-banner" :background-color "#000" :color "white" :position "fixed" :bottom "60px" :left "0" :right "0" :padding "15px" :text-align "center" :box-shadow "0 -2px 5px rgba(0,0,0,0.3)" :z-index "1000")
+		    (".cookie-button" :background-color "#0044cc" :color "white" :border "none" :padding "10px 20px" :border-radius "5px" :cursor "pointer" :margin "0 5px")
+		    (".cookie-button:hover" :background-color "#0033aa")
+
+		    ;; Mobile adjustments
+		    ("@media (max-width: 600px)"
+		     (".logo" :font-size "30px")
+		     (".search-result a" :padding "10px")
+		     (".cookie-banner" :font-size "14px" :padding "10px")
+		     (".search-result .description" :font-size "16px" :color "#666666")))))))
+    (:body
+     (:div :class "container"
+	   (:div :class "logo" (:a :href "/" "Curadale"))
+	   ;; Search Results Section
+	   (:p (str (format nil "Showing results for ~a" query)))
+	   (loop for result in (build-links query) do
+	     (htm (:div :class "search-result"
+			(:a :href (str (format nil "/disease/~a" (make-url (car result))))
+	                    (:div :class "heading" (str (car result)))
+	                    (:div :class "description" (str (cdr result)) "..."))))))
+     (cookie-banner)
+     ;; Footer Section
+     (:div :class "footer"
+	   (:a :href "/about" "About")
+	   (:a :href "/privacy" "Privacy Policy")))))
 
 (defun build-links (query)
   "given a query, find all possible data that corresponds to it and return a list of (title . description)"
@@ -330,91 +343,100 @@ if the user has already accepted/rejected the cookies then do nothing."
     (format nil "~% ~a ~%" risk-factors)
     (princ id)
     (with-html-output-to-string (*standard-output*)
-    "<!DOCTYPE html>"
+      "<!DOCTYPE html>"
       (:html :lang "en"
-       (:head
-	(:title (str (format nil "~a | Curadale" proper-name)))
-	(:meta :charset "UTF-8")
-	(:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
-	(:meta :name "description" :content (str (format nil "Disease details for ~a" proper-name)))
-	(:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
-	(:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
-	;; Include CSS
-	(:style
-	 (str (cl-css:css
-	       '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)" :font-size "18px")
-		 (".container" :text-align "left" :width "90%" :max-width "800px" :display "flex" :flex-direction "column" :align-items "flex-start" :justify-content "center" :flex "1")
-		 (".logo" :font-size "40px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
-		 (".logo a" :decoration none)
-		 (".logo a:visited" :color "#0044cc")
+	     (:head
+	      (:title (str (format nil "~a | Curadale" proper-name)))
+	      (:meta :charset "UTF-8")
+	      (:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
+	      (:meta :name "description" :content (str (format nil "Disease details for ~a" proper-name)))
+	      (:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
+	      (:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
+	      (analytics-js))
+	     ;; Include CSS
+	     (:style
+	      (str (cl-css:css
+		    '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)" :font-size "18px")
+		      (".container" :text-align "left" :width "90%" :max-width "800px" :display "flex" :flex-direction "column" :align-items "flex-start" :justify-content "center" :flex "1")
+		      (".logo" :font-size "40px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
+		      (".logo a" :decoration none)
+		      (".logo a:visited" :color "#0044cc")
 
-		 (".section" :margin-bottom "20px")
-		 (".section h2" :font-size "26px" :color "#0044cc" :margin-bottom "10px" :border-bottom "2px solid #0044cc" :padding-bottom "5px")
-		 (".section p" :font-size "18px" :line-height "1.6" :color "#333333")
-		 (".section ul" :list-style-type "disc" :padding-left "20px")
-		 (".section ul li" :font-size "18px" :line-height "1.6" :color "#333333")
-		 (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white")
-		 (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
-		 (".footer a:hover" :text-decoration "underline")
-		 ;; Mobile adjustments
-		 ("@media (max-width: 600px)"
-		  (".logo" :font-size "34px")
-		  (".section h2" :font-size "22px")
-		  (".section p" :font-size "16px")
-		  (".section ul li" :font-size "16px")))
+		      (".section" :margin-bottom "20px")
+		      (".section h2" :font-size "26px" :color "#0044cc" :margin-bottom "10px" :border-bottom "2px solid #0044cc" :padding-bottom "5px")
+		      (".section p" :font-size "18px" :line-height "1.6" :color "#333333")
+		      (".section ul" :list-style-type "disc" :padding-left "20px")
+		      (".section ul li" :font-size "18px" :line-height "1.6" :color "#333333")
+		      (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white")
+		      (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
+		      (".footer a:hover" :text-decoration "underline")
+		      ;; cookie banner
+		      (".cookie-banner" :background-color "#000" :color "white" :position "fixed" :bottom "60px" :left "0" :right "0" :padding "15px" :text-align "center" :box-shadow "0 -2px 5px rgba(0,0,0,0.3)" :z-index "1000")
+		      (".cookie-button" :background-color "#0044cc" :color "white" :border "none" :padding "10px 20px" :border-radius "5px" :cursor "pointer" :margin "0 5px")
+		      (".cookie-button:hover" :background-color "#0033aa")
+		      ;; Mobile adjustments
+		      ("@media (max-width: 600px)"
+		       (".logo" :font-size "34px")
+		       (".section h2" :font-size "22px")
+		       (".section p" :font-size "16px")
+		       (".cookie-banner" :font-size "14px" :padding "10px")
+		       (".section ul li" :font-size "16px")))
 
-	       ))))
-       (:body
-	(:div :class "container"
-              (:div :class "logo" (:a :href "/" "Curadale"))
-              ;; Disease Information Sections
-              (:div :class "section"
-                    (:h2 (str proper-name))
-                    (:p (str intro)))
-              (:div :class "section"
-                    (:h2 "Cause")
-                    (:p (str cause)))
-              (:div :class "section"
-                    (:h2 "Epidemiology")
-                    (:p (str epidemiology)))
-              (:div :class "section"
-                    (:h2 "Risk Factors")
-                    (:ul (dolist (r risk-factors)
-			   (htm (:li (str r))))))
-	      (:div :class "section"
-                    (:h2 "Pathophysiology")
-                    (:p (str pathophysiology)))
-	      (:div :class "section"
-                    (:h2 "Diagnosis")
-                    (:ul (dolist (dd diagnosis)
-			   (htm (:li (str dd))))))
-              (:div :class "section"
-                    (:h2 "Differential Diagnoses")
-                    (:ul (dolist (dd differential-diagnoses)
-			   (htm (:li (str dd))))))
-              
-              (:div :class "section"
-                    (:h2 "Signs and Symptoms")
-                    (:ul (dolist (ss signs-and-symptoms)
-			   (htm (:li (str ss))))))
-              (:div :class "section"
-                    (:h2 "Complications")
-		    (:ul (dolist (c complications)
-			   (htm (:li (str c))))))
-              (:div :class "section"
-                    (:h2 "Alternative Names")
-                    (:ul (dolist (an alternative-names)
-			   (htm (:li (str an))))))
-              (:div :class "section"
-                    (:h2 "Prevention")
-                    (:ul (dolist (p prevention)
-			   (htm (:li (str p))))))
-              (:div :class "section"
-                    (:h2 (str (format nil "Living with ~a" proper-name)))
-                    (:ul (dolist (lw living-with)
-			   (htm (:li (str lw))))))
-	      )
-	;; Footer Section
-	(:div :class "footer"
-              (:a :href "/about" "About")
-              (:a :href "/privacy" "Privacy Policy")))))))
+		    ))))
+      (:body
+       (:div :class "container"
+             (:div :class "logo" (:a :href "/" "Curadale"))
+             ;; Disease Information Sections
+             (:div :class "section"
+                   (:h2 (str proper-name))
+                   (:p (str intro)))
+             (:div :class "section"
+                   (:h2 "Cause")
+                   (:p (str cause)))
+             (:div :class "section"
+                   (:h2 "Epidemiology")
+                   (:p (str epidemiology)))
+             (:div :class "section"
+                   (:h2 "Risk Factors")
+                   (:ul (dolist (r risk-factors)
+			  (htm (:li (str r))))))
+	     (:div :class "section"
+                   (:h2 "Pathophysiology")
+                   (:p (str pathophysiology)))
+	     (:div :class "section"
+                   (:h2 "Diagnosis")
+                   (:ul (dolist (dd diagnosis)
+			  (htm (:li (str dd))))))
+	     ;; each differential is a list. but link only diseases whose urls are saved.
+             (:div :class "section"
+                   (:h2 "Differential Diagnoses")
+                   (:ul (dolist (dd differential-diagnoses)
+			  (if (redis:red-get (format nil "{url}:~a" (make-url dd)))
+			      (htm (:li (:a :href (str (format nil "/disease/~a" (make-url dd))) (str dd))))
+			      (htm (:li (str dd)))))))
+             (:div :class "section"
+                   (:h2 "Signs and Symptoms")
+                   (:ul (dolist (ss signs-and-symptoms)
+			  (htm (:li (str ss))))))
+             (:div :class "section"
+                   (:h2 "Complications")
+		   (:ul (dolist (c complications)
+			  (htm (:li (str c))))))
+             (:div :class "section"
+                   (:h2 "Alternative Names")
+                   (:ul (dolist (an alternative-names)
+			  (htm (:li (str an))))))
+             (:div :class "section"
+                   (:h2 "Prevention")
+                   (:ul (dolist (p prevention)
+			  (htm (:li (str p))))))
+             (:div :class "section"
+                   (:h2 (str (format nil "Living with ~a" proper-name)))
+                   (:ul (dolist (lw living-with)
+			  (htm (:li (str lw))))))
+	     )
+       (cookie-banner)
+       ;; Footer Section
+       (:div :class "footer"
+             (:a :href "/about" "About")
+             (:a :href "/privacy" "Privacy Policy"))))))
