@@ -871,3 +871,5 @@ URI ~s contains illegal character ~s at position ~d." :FMT-ARGUMENTS ("/static/c
 
 [2024-08-29 15:20:54 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X7A57E0000DB0) (SSL_get_error: 1). ERR_print_errors(): C0F63FFD577A0000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
 
+[2024-09-11 10:56:30 [ERROR]] Error while processing connection: A failure in the SSL library occurred on handle #.(SB-SYS:INT-SAP #X70F168000B90) (SSL_get_error: 1). ERR_print_errors(): C0F65F8AF1700000:error:0A000126:SSL routines:ssl3_read_n:unexpected eof while reading:../ssl/record/rec_layer_s3.c:316:
+

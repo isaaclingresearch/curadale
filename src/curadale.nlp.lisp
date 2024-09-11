@@ -4,7 +4,7 @@
  '("a" "an" "the" "and" "or" "but" "if" "then" "else" "when" "at" "by" "from" "for" "with" "about" "against" "between" "into" "through" "during" "before" "after" "above" "below" "to" "from" "up" "down" "in" "out" "on" "off" "over" "under" "again" "further" "then" "once" "here" "there" "all" "any" "both" "each" "few" "more" "most" "other" "some" "such" "no" "nor" "not" "only" "own" "same" "so" "than" "too" "very" "hi"))
 
 (defun remove-punctuation (str)
-  (remove-if (lambda (char) (find char ".,;:!?\"'()[]{}`-_~/"))
+  (remove-if (lambda (char) (find char ".,;:!?\"'()[]{}`-_~/±"))
              str))
 
 (defun tokenize (message)
@@ -12,11 +12,11 @@
 when tokenising, we need to take into account the ' you want to find eg boy's, you want to link to boy and boy's, to do that we will need to run tokenise on the message after replacing ' with space, and again when we don't to capture both variants."
   (if (stringp message)
       (let* ((tokens-without-apostrophe (split-sequence:split-sequence #\Space (str:replace-all "'" " " message) :remove-empty-subseqs t))
-	    (tokens-with-apostrophe (split-sequence:split-sequence #\Space (str:replace-all "_" " " message) :remove-empty-subseqs t))
+	     (tokens-with-apostrophe (split-sequence:split-sequence #\Space (str:replace-all "_" " " message) :remove-empty-subseqs t))
 	     (tokens (remove-duplicates `(,@tokens-without-apostrophe ,@tokens-with-apostrophe) :test #'equal)))
 	(remove-if (lambda (word)
                      (member word *stop-words* :test #'string=))
-		   (mapcar #'string-downcase (mapcar #'string (mapcar #'remove-punctuation tokens)))))
+		   (mapcar #'str:trim (mapcar #'string-downcase (mapcar #'string (mapcar #'remove-punctuation tokens))))))
       (remove-duplicates (let (acc)
 			   (dolist (m message)
 			     (setq acc `(,@acc ,@(tokenize m))))

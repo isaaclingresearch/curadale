@@ -62,8 +62,7 @@ as we will be presenting human readable urls to the readers."
 	 (alternative-names (getf data :alternative-names))
 	 (prevention (getf data :prevention))
 	 (living-with (getf data :living-with))
-	 (one-string (format nil "~a ~a ~a ~a ~a ~{~a ~} ~{~a ~} ~a ~{~a ~} ~{~a ~} ~{~a ~} ~{~a ~} ~{~a ~}" proper-name disease intro cause epidemiology risk-factors differential-diagnoses pathophysiology signs-and-symptoms complications alternative-names prevention living-with))
-	 (tokens (nlp:tokenize one-string)))
+	 (one-string (format nil "~a ~a ~a ~a ~a ~{~a ~} ~{~a ~} ~a ~{~a ~} ~{~a ~} ~{~a ~} ~{~a ~} ~{~a ~}" proper-name disease intro cause epidemiology risk-factors differential-diagnoses pathophysiology signs-and-symptoms complications alternative-names prevention living-with)))
     ;; save the data
     (redis:red-hset id "name" proper-name)
     (redis:red-hset id "introduction" intro)
@@ -79,7 +78,7 @@ as we will be presenting human readable urls to the readers."
     (redis:red-hset id "prevention" prevention)
     (redis:red-hset id "living-with" living-with)
     (redis:red-set (format nil "{url}:~a" (make-url proper-name)) id)
-    (index-disease-data id proper-name tokens)
+    (create-zset-index id proper-name one-string) ;; create indexes for both autocomplete and search
     id))
 
 (defun disease-hget (id field)
@@ -91,56 +90,76 @@ as we will be presenting human readable urls to the readers."
 (defun get-id-from-url (url)
   (redis:red-get (format nil "{url}:~a" url)))
 
-|#
-at first it might seem like a duplication of data, maintaining an index for words and then their fragments, the fragments thing is for autocomplete. the word thing is for search. maps to ids which are then used to disease details.
-#|
+(defun get-search (txt)
+  "given a fragment, get all product ids of it in order of which contain many instances of tokens in txt"
+  (let* ((tokens (nlp:tokenize txt))
+	 (names (mapcar (lambda (token)
+			  (to-alist
+			   (redis:red-zrange (format nil "{index}{search}:~a" (string-downcase token)) 0 -1 :withscores)))
+			tokens)))
+    (unless (equal '(nil) names)
+      (mapcar #'car (combine-alists names)))))
 
-(defun index-disease-data (id disease tokens)
-  "words in disease titles are indexed independently. then all the other tokens.
+(defun create-zset-index (&optional key proper-name sdata)
+  "from the disease data saved, create a zset for index using the title and all other data"
+  (let* ((keys (if key (list key) (redis:red-keys "{disease}:*"))))
+    (dolist (key keys)
+      (let* ((data (remove-if (lambda (d) (equal "NIL" d)) (to-alist (redis:red-hgetall key)) :key #'cdr))
+	     ;; add name tokens to boost rank of specific id when searching as they will appear twice, once in general and in name
+	     (name (or proper-name (cdr (find "name" data :key #'car :test #'equal))))
+	     (name-tokens (nlp:tokenize name))
+	     (string-data (or sdata (format nil "~{~a ~}" data)))
+	     (tokens `(,@(nlp:tokenize string-data) ,@name-tokens)))
+	(dolist (token tokens)
+	 (save-to-index key name token))))))
 
-indexes are stored in sets, reverse indexes with key as disease-title-index:word or disease-index:word and ids in the set
-finally save the tokens from both to the autocomplete sets"
-  (let* ((disease-tokens (nlp:tokenize disease))
-	 (all-tokens (remove-duplicates `(,@disease-tokens ,@tokens))))
-    (dolist (token tokens)
-      (redis:red-sadd (format nil "{index}:disease:~a" token) id))
-    (dolist (token disease-tokens)
-      (redis:red-sadd (format nil "{index}:disease-title:~a" token) id))
-    (create-autocomplete disease all-tokens)))
-
-(defun create-autocomplete (disease tokens)
-  "given a list of tokens, add them to autocomplete sets starting at words with 1 character.
-forexample: tokens is saved in tok, toke, token, tokens
-
-all tokens are saved against disease. the disease name is the url, so we want to use the disease in the process of autocomplete.
-you don't return the words that match, you return the disease whose data contains a token, or fragment."
-  (dolist (token tokens)
-    (when (>= (length token) 1)
-      (save-to-autocomplete disease token))))
-
-(defun save-to-autocomplete (disease token &key (pos 1))
-  "given a word, start at length 1 then save the word fragments to autoincrement, we use sorted sets, such that we can track the words appearing most in the dataset."
+(defun save-to-index (id name token &key (pos 1))
+  "given a word, start at length 1 then save the word fragments to {index}{search}
+   we use sorted sets, such that we can track the words appearing most in the dataset."
   (unless (> pos (length token))
     (let ((subtoken (str:substring 0 pos token)))
-      (redis:red-zincrby (format nil "{auto-complete}:~a" subtoken) 1 disease))
-    (save-to-autocomplete disease token :pos (1+ pos))))
+      (redis:red-zincrby (format nil "{index}{autocomplete}:~a" subtoken) 1 name)
+      (redis:red-zincrby (format nil "{index}{search}:~a" subtoken) 1 id))
+    (save-to-index id name token :pos (1+ pos))))
 
-(defun search-disease-data (word)
-  "given word, find any keys in disease title and disease indexes corresponding to it. 
-since data is going to be stored in different slots, sunion will not work
-merge them and remove duplicates, return the resultant list"
-  (redis:red-sunion (format nil "{index}:disease:~a" word)
-		    (format nil "{index}:disease-title:~a" word)))
+(defun reset-index ()
+  "delete all data in {index} and recreate it"
+  (let ((keys `(,@(redis:red-keys "{index}*") ,@(redis:red-keys "{auto-complete}*"))))
+    (dolist (key keys)
+      (redis:red-del key))
+    (create-zset-index)))
 
-(defun get-autocomplete (fragment)
-  "given a fragment of a word, find the autocomplete for it."
-  (let ((tokens (str:split " " fragment)))
-    (if (= 1 (length tokens))
-	(redis:red-zrange (format nil "{auto-complete}:~a" fragment) 0 10)
-	(let ((matches (handler-case (eval `(redis:red-zunion ,(length tokens)
-							      ,@(mapcar (lambda (e) (format nil "{auto-complete}:~a" e)) tokens)))
-			 (error (err) (declare (ignore err))))))
-	  (if (and matches (< 10 (length matches)))
-	      (subseq matches 0 10)
-	      matches)))))
+(defun get-autocomplete (txt)
+  "given a fragment, get all disease names for which it is part, return only 10 of the most frequent"
+  (let* ((tokens (nlp:tokenize txt))
+	 (names (mapcar (lambda (token)
+			  (to-alist
+			   (redis:red-zrange (format nil "{index}{autocomplete}:~a" (string-downcase token)) 0 -1 :withscores)))
+			tokens)))
+    (unless (equal '(nil) names)
+      (let ((combined-alist (combine-alists names)))
+	(if (<= (length combined-alist) 10)
+	    (mapcar #'car combined-alist)
+	    (mapcar #'car (subseq combined-alist 0 10)))))))
 
+
+(defun to-alist (lst)
+  "Convert a list of elements into an alist assuming alternating key-value pairs."
+  (loop for (key value) on lst by #'cddr
+        collect (cons key value)))
+
+(defun combine-alists (alist-list)
+  "Combine a list of alists, summing integer values for each key."
+  (let ((result (make-hash-table :test 'equal)))
+    (dolist (alist alist-list)
+      (dolist (pair alist)
+        (let* ((key (car pair))
+               (value (parse-integer (cdr pair)))
+               (current (gethash key result 0)))
+          (setf (gethash key result) (+ current value)))))
+    ;; Convert hash table to alist
+    (let ((combined-alist nil))
+      (maphash (lambda (key value)
+                 (push (cons key value) combined-alist))
+               result)
+      (sort combined-alist (lambda (a b) (> (cdr a) (cdr b)))))))

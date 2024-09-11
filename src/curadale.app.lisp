@@ -247,27 +247,13 @@ if the user has already accepted/rejected the cookies then do nothing."
 (defroute about ("/about" :method :get :decorators ()) ()
   "This is a product of Ninx Technology Limited.")
 
-(defroute search-page ("/search" :method :get :decorators ()) (query)
-  (with-html-output-to-string (*standard-output*)
-    "<!DOCTYPE html>"
-    (:html :lang "en"
-	   (:head
-	    (:title (str (format nil "~a | Search - Curadale" query)))
-	    (:meta :charset "UTF-8")
-	    (:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
-	    (:meta :name "description" :content (str (format nil "Search results for ~a" query)))
-	    (:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
-	    (:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
-	    (analytics-js))
-	   ;; Include CSS
-	   (:style
-	    (str (cl-css:css
+(defun search-css ()
+  (cl-css:css
 		  '((body :font-family "Arial, sans-serif" :margin "0" :padding "0" :display "flex" :flex-direction "column" :justify-content "center" :align-items "center" :min-height "100vh" :background "linear-gradient(to bottom, #f0f0f0, #e0e0e0)")
 		    (".container" :text-align "center" :width "98%" :max-width "600px" :display "flex" :flex-direction "column" :align-items "center" :justify-content "center" :flex "1")
 		    (".logo" :font-size "36px" :font-weight "bold" :margin-bottom "20px" :color "#0044cc" :padding "10px" :background-color "#e6f0ff" :border-radius "8px")
 		    (".logo a" :decoration none)
 		    (".logo a:visited" :color "#0044cc")
-
 		    (".footer" :margin-top "auto" :padding "10px 0" :text-align "center" :width "100%" :background-color "#0044cc" :color "white")
 		    (".footer a" :color "white" :text-decoration "none" :margin "0 10px")
 		    (".footer a:hover" :text-decoration "underline")
@@ -277,6 +263,11 @@ if the user has already accepted/rejected the cookies then do nothing."
 		    (".search-result a:visited" :color "#800080") ;; Visited link color (purple)
 		    (".search-result .heading" :font-weight "bold" :margin-bottom "5px" :font-size "18px" :color "blue")
 		    (".search-result .description" :font-size "14px" :color "#666666")
+		    ;; Pagination styles
+		    (".pagination" :display "flex" :justify-content "center" :align-items "center" :margin "20px 0")
+		    (".pagination a" :padding "10px 15px" :margin "0 5px" :border "1px solid #007BFF" :background-color "#007BFF" :color "white" :text-decoration "none" :border-radius "5px")
+		    (".pagination a:hover" :background-color "#0056b3")
+		    (".pagination .current-page" :padding "10px 15px" :margin "0 5px" :border "1px solid #333" :background-color "#333" :color "white" :border-radius "5px")
 		    ;; cookie banner
 	            (".cookie-banner" :background-color "#000" :color "white" :position "fixed" :bottom "60px" :left "0" :right "0" :padding "15px" :text-align "center" :box-shadow "0 -2px 5px rgba(0,0,0,0.3)" :z-index "1000")
 		    (".cookie-button" :background-color "#0044cc" :color "white" :border "none" :padding "10px 20px" :border-radius "5px" :cursor "pointer" :margin "0 5px")
@@ -287,38 +278,69 @@ if the user has already accepted/rejected the cookies then do nothing."
 		     (".logo" :font-size "30px")
 		     (".search-result a" :padding "10px")
 		     (".cookie-banner" :font-size "14px" :padding "10px")
-		     (".search-result .description" :font-size "16px" :color "#666666")))))))
-    (:body
-     (:div :class "container"
-	   (:div :class "logo" (:a :href "/" "Curadale"))
-	   ;; Search Results Section
-	   (:p (str (format nil "Showing results for ~a" query)))
-	   (loop for result in (build-links query) do
-	     (htm (:div :class "search-result"
-			(:a :href (str (format nil "/disease/~a" (make-url (car result))))
-	                    (:div :class "heading" (str (car result)))
-	                    (:div :class "description" (str (cdr result)) "..."))))))
-     (cookie-banner)
-     ;; Footer Section
-     (:div :class "footer"
-	   (:a :href "/about" "About")
-	   (:a :href "/privacy" "Privacy Policy")))))
+		     (".search-result .description" :font-size "16px" :color "#666666")))))
+
+
+(defroute search-page ("/search" :method :get) (query page)
+  (let* ((results (build-links query))
+         (total-results (length results))
+         (results-per-page 20)
+         (total-pages (ceiling (/ total-results results-per-page)))
+         (current-page (parse-integer (or page "1")))
+         (start-index (* (1- current-page) results-per-page))
+         (end-index (min total-results (* current-page results-per-page)))
+         (paged-results (subseq results start-index end-index))
+         (start-page (max 1 (- current-page 4)))
+         (end-page (min total-pages (+ current-page 4))))
+    (with-html-output-to-string (*standard-output*)
+      "<!DOCTYPE html>"
+      (:html :lang "en"
+	     (:head
+	      (:title (str (format nil "~a | Search - Curadale" query)))
+	      (:meta :charset "UTF-8")
+	      (:meta :name "viewport" :content "width=device-width, initial-scale=1.0")
+	      (:meta :name "description" :content (str (format nil "Search results for ~a" query)))
+	      (:link :rel "icon" :href "/static/icons/web/favicon.ico" :sizes "any")
+	      (:link :rel "apple-touch-icon" :href "/static/icons/web/apple-touch-icon.png")
+	      (analytics-js))
+	     ;; Include CSS
+	     (:style (str (search-css))))
+      (:body
+       (:div :class "container"
+	     (:div :class "logo" (:a :href "/" "Curadale"))
+	     ;; Search Results Section
+	     (:p (str (format nil "Showing results for ~a" query)))
+	     (dolist (result paged-results)
+	       (htm (:div :class "search-result"
+			  (:a :href (str (format nil "/disease/~a" (make-url (car result))))
+	                      (:div :class "heading" (str (car result)))
+	                      (:div :class "description" (str (cdr result)) "...")))))
+	     
+	     ;; Pagination
+	     (:div :class "pagination"
+		   ;; Back button
+		   (when (> current-page 1)
+		     (htm (:a :href (format nil "/search?query=~a&page=~a" (make-url query) (- current-page 1)) "Back")))
+		   ;; Page numbers
+		   (loop for i from start-page to end-page do
+		     (if (= i current-page)
+			 (htm (:span :class "current-page" (str i)))
+			 (htm (:a :href (format nil "/search?query=~a&page=~a" (make-url query) i) (str i)))))
+		   ;; Next button
+		   (when (< current-page total-pages)
+		     (htm (:a :href (format nil "/search?query=~a&page=~a" (make-url query) (+ current-page 1)) "Next")))))
+       (cookie-banner)
+       ;; Footer Section
+       (:div :class "footer"
+	     (:a :href "/about" "About")
+	     (:a :href "/privacy" "Privacy Policy"))))))
 
 (defun build-links (query)
   "given a query, find all possible data that corresponds to it and return a list of (title . description)"
-  (let* (acc
-	 sacc
-	 (tokens (nlp:tokenize query))
-	 (h (make-hash-table :test #'equal)))
-    (dolist (token tokens)
-      (setq acc `(,@acc ,@(search-disease-data token))))
-    (dolist (token acc)
-      (setf (gethash token h) (+ (gethash token h 0) 1)))
-    (maphash (lambda (k v)
-	       (setq sacc `(,@sacc (,k . ,v)))) h)
+  (let ((ids (get-search query)))
     (mapcar (lambda (k) (cons (disease-hget k "name")
 			      (disease-hget k "introduction")))
-	    (mapcar #'car (sort sacc #'> :key #'cdr)))))
+	    ids)))
 
 (defun make-url (text)
   "given a text, replace spaces with -, then make lowercase, remove all other punctution marks"
